@@ -4551,3 +4551,332 @@ id,target,mutants_in_minimal,test_suites,assertions,mutants,killed_mutants,not_e
 497,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.cli.Util,stripLeadingHyphens(java.lang.String),commons-cli
 499,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.cli.Util,stripLeadingHyphens(java.lang.String),20,0,commons-cli
 501,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.cli.Util,stripLeadingAndTrailingQuotes(java.lang.String),commons-cli
+0,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.Const,getOperandType(int,int),744,commons-bcel
+1,-exp,1,1,1,2,2,2,100.00%,True,AODU exp,,AODU exp,ODL exp,,org.apache.bcel.Const,getInterfacesImplementedByArrays(),673,commons-bcel
+21,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.Const,getMethodHandleName(int),909,0,commons-bcel
+28,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.Const,getProduceStack(int),772,0,commons-bcel
+39,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.Const,getShortTypeName(int),730,0,commons-bcel
+46,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.Const,getConstantName(int),182,0,commons-bcel
+47,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.Const,getConsumeStack(int),765,0,commons-bcel
+54,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.Const,getItemName(int),862,0,commons-bcel
+67,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.Const,getNoOfOperands(int),737,0,commons-bcel
+76,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.Const,getOpcodeName(int),758,0,commons-bcel
+80,-exp,1,1,1,2,2,2,100.00%,True,AODU exp,,ODL exp,AODU exp,,org.apache.bcel.Const,getInterfacesImplementedByArrays(),675,commons-bcel
+103,-exp,1,1,1,2,2,2,100.00%,True,AODU exp,,ODL exp,AODU exp,,org.apache.bcel.Const,getInterfacesImplementedByArrays(),677,commons-bcel
+119,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.Const,getClassTypeName(int),723,0,commons-bcel
+135,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.Const,getAccessName(int),141,0,commons-bcel
+137,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.Const,getTypeName(int),716,0,commons-bcel
+143,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.Const,getAttributeName(int),837,0,commons-bcel
+152,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.Const,getOperandTypeCount(int),749,0,commons-bcel
+285,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.AnnotationDefault,dump(java.io.DataOutputStream),55,0,commons-bcel
+290,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.bcel.classfile.AnnotationElementValue,,commons-bcel
+293,lexp != rexp,3,3,3,8,8,8,100.00%,True,ROR >,ROR <,ROR true,,ROR ==,ROR <=,ROR >,ROR false,commons-bcel
+302,lexp != rexp,3,3,3,8,8,8,100.00%,True,ROR >,ROR true,ROR <,,ROR >=,ROR >,ROR <=,COI !(),commons-bcel
+312,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.bcel.classfile.ArrayElementValue,,commons-bcel
+350,exp,5,5,5,5,5,5,100.00%,True,AOIS exp--,AOIS --exp,AOIS exp++,LOI ~exp,AOIS ++exp,,AOIS exp--,AOIS --exp,commons-bcel
+353,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,CDL lexp,ODL rexp,,org.apache.bcel.classfile.BootstrapMethod,commons-bcel
+371,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL lexp,CDL lexp,ODL rexp,,org.apache.bcel.classfile.BootstrapMethod,commons-bcel
+385,exp,4,4,4,4,4,4,100.00%,True,LOI ~exp,AOIS exp++,AOIU -exp,AOIS exp--,,LOI ~exp,AOIS exp++,AOIU -exp,commons-bcel
+387,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.BootstrapMethod,dump(java.io.DataOutputStream),100,0,commons-bcel
+390,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.BootstrapMethod,,43,0,commons-bcel
+401,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.BootstrapMethods,toString(),93,0,commons-bcel
+435,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ClassElementValue,getIndex(),26,0,commons-bcel
+442,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ClassElementValue,dump(java.io.DataOutputStream),44,0,commons-bcel
+478,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ClassParser,,77,0,commons-bcel
+481,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ClassParser,readID(),171,0,commons-bcel
+487,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,COI !(),ROR ==,,org.apache.bcel.classfile.ClassParser,parse(),116,commons-bcel
+493,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,ROR ==,COI !(),,org.apache.bcel.classfile.ClassParser,parse(),109,commons-bcel
+507,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ClassParser,,63,0,commons-bcel
+508,lexp + rexp,2,2,2,4,4,4,100.00%,True,ODL rexp,ODL lexp,,VDL rexp,ODL lexp,ODL rexp,CDL lexp,,commons-bcel
+516,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.bcel.classfile.ClassParser,parse(),86,0,commons-bcel
+523,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.bcel.classfile.ClassParser,parse(),85,0,commons-bcel
+542,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.Code,toString(boolean),190,0,commons-bcel
+572,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.Code,,48,0,commons-bcel
+649,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,VDL lexp,ODL rexp,,org.apache.bcel.classfile.CodeException,commons-bcel
+650,lexp + rexp,2,2,2,4,4,4,100.00%,True,ODL rexp,ODL lexp,,VDL lexp,ODL rexp,ODL lexp,CDL rexp,,commons-bcel
+655,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.CodeException,dump(java.io.DataOutputStream),55,0,commons-bcel
+657,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.CodeException,,41,0,commons-bcel
+660,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,CDL lexp,ODL lexp,ODL rexp,,org.apache.bcel.classfile.CodeException,commons-bcel
+662,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,VDL lexp,ODL lexp,,org.apache.bcel.classfile.CodeException,commons-bcel
+665,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL rexp,CDL lexp,ODL lexp,,org.apache.bcel.classfile.CodeException,commons-bcel
+669,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,CDL lexp,ODL lexp,,org.apache.bcel.classfile.CodeException,commons-bcel
+673,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.CodeException,toString(),101,0,commons-bcel
+684,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.CodeException,toString(org.apache.bcel.classfile.ConstantPool),117,0,commons-bcel
+687,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.CodeException,dump(java.io.DataOutputStream),55,0,commons-bcel
+689,exp,3,3,3,3,3,3,100.00%,True,AOIS exp++,AOIS exp--,LOI ~exp,,AOIS exp++,AOIS exp--,LOI ~exp,,commons-bcel
+694,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.CodeException,getCatchType(),61,0,commons-bcel
+696,lexp == rexp,3,3,3,8,8,8,100.00%,True,ROR <=,ROR >=,ROR false,,ROR !=,ROR <=,ROR >,ROR false,commons-bcel
+698,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,CDL lexp,ODL rexp,,org.apache.bcel.classfile.CodeException,commons-bcel
+700,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,ODL lexp,CDL lexp,,org.apache.bcel.classfile.CodeException,commons-bcel
+705,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.CodeException,,41,0,commons-bcel
+707,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,VDL lexp,ODL rexp,ODL lexp,,org.apache.bcel.classfile.CodeException,commons-bcel
+707,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantClass,getBytes(org.apache.bcel.classfile.ConstantPool),66,0,commons-bcel
+709,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,ODL lexp,CDL lexp,,org.apache.bcel.classfile.ConstantClass,commons-bcel
+710,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,ODL rexp,VDL lexp,,org.apache.bcel.classfile.ConstantClass,commons-bcel
+711,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,ODL rexp,CDL lexp,,org.apache.bcel.classfile.ConstantClass,commons-bcel
+714,exp,4,4,4,4,4,4,100.00%,True,AOIS exp++,AOIS exp--,AOIU -exp,LOI ~exp,,AOIS exp++,AOIS exp--,AOIU -exp,commons-bcel
+718,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantClass,dump(java.io.DataOutputStream),44,0,commons-bcel
+721,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantClass,toString(),71,0,commons-bcel
+722,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,ODL rexp,CDL lexp,,org.apache.bcel.classfile.ConstantDouble,commons-bcel
+724,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantDouble,toString(),60,0,commons-bcel
+725,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,ODL lexp,VDL lexp,,org.apache.bcel.classfile.ConstantDouble,commons-bcel
+727,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,ODL lexp,CDL lexp,,org.apache.bcel.classfile.ConstantDouble,commons-bcel
+731,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantDouble,dump(java.io.DataOutputStream),44,0,commons-bcel
+732,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantDynamic,toString(),44,0,commons-bcel
+736,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantDynamic,getBootstrapMethodAttrIndex(),39,0,commons-bcel
+740,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,ODL rexp,CDL lexp,,org.apache.bcel.classfile.ConstantFloat,commons-bcel
+742,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantFloat,toString(),60,0,commons-bcel
+743,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,ODL lexp,VDL lexp,,org.apache.bcel.classfile.ConstantFloat,commons-bcel
+745,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,ODL lexp,CDL lexp,,org.apache.bcel.classfile.ConstantFloat,commons-bcel
+747,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantFloat,getBytes(),50,0,commons-bcel
+749,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantFloat,dump(java.io.DataOutputStream),44,0,commons-bcel
+750,exp,3,3,3,3,3,3,100.00%,True,AOIS exp++,AOIS exp--,LOI ~exp,,AOIS exp++,AOIS exp--,LOI ~exp,,commons-bcel
+751,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,ODL rexp,CDL lexp,,org.apache.bcel.classfile.ConstantInteger,commons-bcel
+752,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantInteger,toString(),60,0,commons-bcel
+754,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,ODL lexp,CDL lexp,,org.apache.bcel.classfile.ConstantInteger,commons-bcel
+757,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantInteger,getBytes(),50,0,commons-bcel
+758,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantInteger,dump(java.io.DataOutputStream),44,0,commons-bcel
+764,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantInvokeDynamic,toString(),44,0,commons-bcel
+768,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantInvokeDynamic,getBootstrapMethodAttrIndex(),39,0,commons-bcel
+769,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,ODL rexp,CDL lexp,,org.apache.bcel.classfile.ConstantLong,commons-bcel
+770,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantLong,toString(),60,0,commons-bcel
+771,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL lexp,ODL rexp,VDL lexp,,org.apache.bcel.classfile.ConstantLong,commons-bcel
+772,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,ODL lexp,CDL lexp,,org.apache.bcel.classfile.ConstantLong,commons-bcel
+775,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantLong,getBytes(),50,0,commons-bcel
+776,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantLong,dump(java.io.DataOutputStream),44,0,commons-bcel
+780,exp,4,4,4,4,4,4,100.00%,True,AOIS exp--,LOI ~exp,AOIU -exp,AOIS exp++,,AOIS exp++,AOIU -exp,LOI ~exp,commons-bcel
+782,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantMethodHandle,dump(java.io.DataOutputStream),48,0,commons-bcel
+785,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,VDL lexp,ODL lexp,,org.apache.bcel.classfile.ConstantMethodHandle,commons-bcel
+790,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,ODL lexp,VDL lexp,,org.apache.bcel.classfile.ConstantMethodHandle,commons-bcel
+791,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,ODL lexp,CDL lexp,,org.apache.bcel.classfile.ConstantMethodHandle,commons-bcel
+793,exp,4,4,4,4,4,4,100.00%,True,AOIS exp++,AOIS exp--,AOIU -exp,LOI ~exp,,AOIS exp++,AOIS exp--,AOIU -exp,commons-bcel
+794,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantMethodHandle,getReferenceKind(),54,0,commons-bcel
+796,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantMethodHandle,toString(),74,0,commons-bcel
+797,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantMethodHandle,getReferenceIndex(),64,0,commons-bcel
+798,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,ODL rexp,CDL lexp,,org.apache.bcel.classfile.ConstantMethodHandle,commons-bcel
+799,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,CDL lexp,ODL rexp,,org.apache.bcel.classfile.ConstantMethodHandle,commons-bcel
+801,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantMethodHandle,dump(java.io.DataOutputStream),48,0,commons-bcel
+806,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL rexp,ODL lexp,VDL lexp,,org.apache.bcel.classfile.ConstantMethodType,commons-bcel
+807,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,ODL lexp,CDL lexp,,org.apache.bcel.classfile.ConstantMethodType,commons-bcel
+808,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantMethodType,dump(java.io.DataOutputStream),44,0,commons-bcel
+809,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantMethodType,toString(),60,0,commons-bcel
+810,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,CDL lexp,ODL rexp,,org.apache.bcel.classfile.ConstantMethodType,commons-bcel
+811,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantMethodType,getDescriptorIndex(),50,0,commons-bcel
+812,exp,4,4,4,4,4,4,100.00%,True,AOIS exp--,AOIS exp++,LOI ~exp,AOIU -exp,,AOIS exp--,AOIU -exp,AOIS exp++,commons-bcel
+814,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantModule,getBytes(org.apache.bcel.classfile.ConstantPool),66,0,commons-bcel
+816,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,ODL lexp,CDL lexp,,org.apache.bcel.classfile.ConstantModule,commons-bcel
+817,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL lexp,ODL rexp,VDL lexp,,org.apache.bcel.classfile.ConstantModule,commons-bcel
+818,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,ODL rexp,CDL lexp,,org.apache.bcel.classfile.ConstantModule,commons-bcel
+821,exp,4,4,4,4,4,4,100.00%,True,AOIS exp++,AOIS exp--,AOIU -exp,LOI ~exp,,AOIS exp++,AOIS exp--,AOIU -exp,commons-bcel
+823,exp,4,4,4,4,4,4,100.00%,True,AOIU -exp,AOIS exp++,AOIS exp--,LOI ~exp,,AOIU -exp,AOIS exp++,AOIS exp--,commons-bcel
+828,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantModule,toString(),71,0,commons-bcel
+828,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantNameAndType,,35,0,commons-bcel
+830,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL lexp,ODL rexp,VDL lexp,,org.apache.bcel.classfile.ConstantNameAndType,commons-bcel
+835,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,ODL rexp,CDL lexp,,org.apache.bcel.classfile.ConstantNameAndType,commons-bcel
+837,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantNameAndType,getSignatureIndex(),64,0,commons-bcel
+838,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,ODL lexp,CDL lexp,,org.apache.bcel.classfile.ConstantNameAndType,commons-bcel
+840,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantNameAndType,getName(org.apache.bcel.classfile.ConstantPool),59,0,commons-bcel
+842,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantNameAndType,getSignature(org.apache.bcel.classfile.ConstantPool),69,0,commons-bcel
+843,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,VDL lexp,ODL lexp,,org.apache.bcel.classfile.ConstantNameAndType,commons-bcel
+844,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,CDL lexp,ODL rexp,,org.apache.bcel.classfile.ConstantNameAndType,commons-bcel
+845,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantNameAndType,toString(),84,0,commons-bcel
+846,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantNameAndType,getNameIndex(),54,0,commons-bcel
+852,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantNameAndType,dump(java.io.DataOutputStream),48,0,commons-bcel
+850,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantPackage,getBytes(org.apache.bcel.classfile.ConstantPool),66,0,commons-bcel
+852,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,ODL lexp,CDL lexp,,org.apache.bcel.classfile.ConstantPackage,commons-bcel
+853,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL lexp,ODL rexp,VDL lexp,,org.apache.bcel.classfile.ConstantPackage,commons-bcel
+854,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,ODL rexp,CDL lexp,,org.apache.bcel.classfile.ConstantPackage,commons-bcel
+860,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantPackage,getNameIndex(),50,0,commons-bcel
+864,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantPackage,toString(),71,0,commons-bcel
+935,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.bcel.classfile.ConstantPool,setConstant(int,org.apache.bcel.classfile.Constant),244,commons-bcel
+965,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantPool,dump(java.io.DataOutputStream),176,0,commons-bcel
+976,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantPool,,35,0,commons-bcel
+981,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL rexp,CDL lexp,ODL lexp,,org.apache.bcel.classfile.ConstantPool,commons-bcel
+993,lexp + rexp,2,2,2,4,4,4,100.00%,True,ODL rexp,ODL lexp,,VDL lexp,ODL lexp,ODL rexp,CDL rexp,,commons-bcel
+1016,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantString,toString(),60,0,commons-bcel
+1017,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL lexp,ODL rexp,VDL lexp,,org.apache.bcel.classfile.ConstantString,commons-bcel
+1019,exp,4,4,4,4,4,4,100.00%,True,AOIS exp++,AOIU -exp,LOI ~exp,AOIS exp--,,AOIS exp++,AOIU -exp,LOI ~exp,commons-bcel
+1020,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantString,getBytes(org.apache.bcel.classfile.ConstantPool),71,0,commons-bcel
+1022,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,ODL lexp,CDL lexp,,org.apache.bcel.classfile.ConstantString,commons-bcel
+1025,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantString,dump(java.io.DataOutputStream),44,0,commons-bcel
+1027,exp,4,4,4,4,4,4,100.00%,True,AOIS exp--,AOIS exp++,LOI ~exp,AOIU -exp,,AOIS exp--,AOIU -exp,AOIS exp++,commons-bcel
+1032,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ConstantValue,getConstantValueIndex(),50,0,commons-bcel
+1052,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.Deprecated,,38,0,commons-bcel
+1057,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.Deprecated,,36,0,commons-bcel
+1062,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.Deprecated,dump(java.io.DataOutputStream),52,0,commons-bcel
+1066,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.Deprecated,toString(),67,0,commons-bcel
+1072,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ElementValuePair,toShortString(),48,0,commons-bcel
+1082,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.ElementValuePair,getNameIndex(),42,0,commons-bcel
+1114,lexp != rexp,3,3,3,8,8,8,100.00%,True,ROR <,ROR >,ROR true,,ROR ==,ROR <=,ROR >,ROR false,commons-bcel
+1125,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.bcel.classfile.EnumElementValue,,commons-bcel
+1131,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,ROR ==,COI !(),,org.apache.bcel.classfile.ExceptionTable,,26,commons-bcel
+1137,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,COI !(),ROR ==,,org.apache.bcel.classfile.ExceptionTable,setExceptionIndexTable(int),76,commons-bcel
+1165,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.bcel.classfile.ExceptionTable,getNumberOfExceptions(),62,commons-bcel
+1177,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.bcel.classfile.ExceptionTable,,36,0,commons-bcel
+1178,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.Field,hashCode(),115,0,commons-bcel
+1193,return_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.bcel.classfile.Field,equals(java.lang.Object),commons-bcel
+1205,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,VDL lexp,ODL rexp,ODL lexp,,org.apache.bcel.classfile.InnerClass,commons-bcel
+1227,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,ODL rexp,VDL lexp,,org.apache.bcel.classfile.InnerClass,commons-bcel
+1240,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,CDL lexp,ODL lexp,,org.apache.bcel.classfile.InnerClass,commons-bcel
+1301,lexp & rexp,2,2,2,6,6,6,100.00%,True,ODL lexp,ODL rexp,,VDL lexp,CDL rexp,ODL lexp,ODL rexp,LOR |,commons-bcel
+1302,exp,5,5,5,5,5,5,100.00%,True,AOIS ++exp,AOIS --exp,LOI ~exp,AOIS exp++,AOIS exp--,,AOIS ++exp,AOIS --exp,commons-bcel
+1303,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.LineNumber,getLineNumber(),51,0,commons-bcel
+1306,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.LineNumber,toString(),71,0,commons-bcel
+1307,lexp + rexp,2,2,2,4,4,4,100.00%,True,ODL lexp,ODL rexp,,VDL lexp,ODL rexp,ODL lexp,CDL rexp,,commons-bcel
+1959,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.PMGClass,,35,0,commons-bcel
+2034,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.Signature,getData(),75,0,commons-bcel
+2068,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.Signature,unread(),82,0,commons-bcel
+2095,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.SimpleElementValue,getIndex(),26,0,commons-bcel
+2128,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.SimpleElementValue,toString(),117,0,commons-bcel
+2175,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.SimpleElementValue,dump(java.io.DataOutputStream),190,0,commons-bcel
+2177,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.SourceFile,dump(java.io.DataOutputStream),44,0,commons-bcel
+2180,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.SourceFile,toString(),66,0,commons-bcel
+2216,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.StackMap,dump(java.io.DataOutputStream),42,0,commons-bcel
+2226,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.StackMapType,printIndex(),89,0,commons-bcel
+2244,lexp > rexp,2,2,2,8,7,8,87.50%,True,ROR !=,ROR >=,ROR false,ROR true,ROR >=,ROR <,COI !(),ROR !=,commons-bcel
+2251,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.bcel.classfile.StackMapType,,commons-bcel
+2255,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.StackMapType,getIndex(),63,0,commons-bcel
+2260,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.StackMapType,toString(),98,0,commons-bcel
+2264,lexp < rexp,2,2,2,8,7,8,87.50%,True,ROR !=,ROR <=,ROR false,ROR !=,ROR ==,ROR >,ROR >=,ROR true,commons-bcel
+2267,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.StackMapType,,39,0,commons-bcel
+2279,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.StackMapType,printIndex(),93,0,commons-bcel
+2284,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.StackMapType,printIndex(),92,0,commons-bcel
+2295,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.Synthetic,,36,0,commons-bcel
+2297,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.Synthetic,dump(java.io.DataOutputStream),51,0,commons-bcel
+2301,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.Synthetic,,36,0,commons-bcel
+2307,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.Synthetic,toString(),71,0,commons-bcel
+2310,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.Synthetic,,38,0,commons-bcel
+2310,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.AALOAD,accept(org.apache.bcel.generic.Visitor),21,0,commons-bcel
+2314,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.AASTORE,accept(org.apache.bcel.generic.Visitor),21,0,commons-bcel
+2319,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.ACONST_NULL,accept(org.apache.bcel.generic.Visitor),25,0,commons-bcel
+2324,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.ALOAD,accept(org.apache.bcel.generic.Visitor),23,0,commons-bcel
+2326,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.ANEWARRAY,accept(org.apache.bcel.generic.Visitor),35,0,commons-bcel
+2331,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.ARETURN,accept(org.apache.bcel.generic.Visitor),21,0,commons-bcel
+2338,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.ASTORE,accept(org.apache.bcel.generic.Visitor),23,0,commons-bcel
+2342,lexp != rexp,3,3,3,8,8,8,100.00%,True,ROR >,ROR <,ROR true,,ROR ==,ROR <=,ROR >,ROR false,commons-bcel
+2345,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.bcel.generic.AnnotationElementValueGen,,36,0,commons-bcel
+2351,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.bcel.generic.ArrayType,getElementType(),commons-bcel
+2353,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.ArrayType,,54,0,commons-bcel
+2354,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.ArrayType,,38,0,commons-bcel
+2356,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.bcel.generic.ArrayType,,commons-bcel
+2361,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.ArrayType,equals(java.lang.Object),87,0,commons-bcel
+2363,lexp ^ rexp,2,2,2,5,5,5,100.00%,True,LOR &,LOR |,,LOR &,ODL rexp,ODL lexp,VDL lexp,LOR |,commons-bcel
+2367,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.ArrayType,getDimensions(),73,0,commons-bcel
+2368,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.bcel.generic.ArrayType,equals(java.lang.Object),commons-bcel
+2374,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.ArrayType,,38,0,commons-bcel
+2375,lexp == rexp,3,3,3,8,8,8,100.00%,True,ROR false,ROR >=,ROR <=,,ROR true,ROR >=,COI !(),ROR >,commons-bcel
+2377,lexp - rexp,3,3,3,8,8,8,100.00%,True,ODL rexp,ODL lexp,AORB %,,AORB /,ODL rexp,AORB *,VDL rexp,commons-bcel
+2378,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.ArrayType,,46,0,commons-bcel
+2381,case_stm,3,3,3,3,3,3,100.00%,True,SDL,SDL,SDL,,SDL,SDL,SDL,,commons-bcel
+2385,lexp > rexp,2,2,2,8,7,8,87.50%,True,ROR !=,ROR >=,ROR false,ROR true,ROR >=,ROR <,COI !(),ROR !=,commons-bcel
+2386,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.ArrayType,,39,0,commons-bcel
+2389,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.ArrayType,,46,0,commons-bcel
+2392,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.ArrayType,hashCode(),78,0,commons-bcel
+2396,lexp < rexp,2,2,2,8,7,8,87.50%,True,ROR <=,ROR !=,ROR false,ROR !=,ROR ==,ROR >,ROR >=,COI !(),commons-bcel
+2394,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.BALOAD,accept(org.apache.bcel.generic.Visitor),21,0,commons-bcel
+2398,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.BASTORE,accept(org.apache.bcel.generic.Visitor),21,0,commons-bcel
+2402,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.BIPUSH,toString(boolean),37,0,commons-bcel
+2405,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.BIPUSH,dump(java.io.DataOutputStream),31,0,commons-bcel
+2406,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.BIPUSH,accept(org.apache.bcel.generic.Visitor),62,0,commons-bcel
+2407,exp,3,3,3,3,3,3,100.00%,True,AOIS exp--,LOI ~exp,AOIS exp++,,AOIS exp--,LOI ~exp,AOIS exp++,,commons-bcel
+2408,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.BIPUSH,initFromFile(org.apache.bcel.util.ByteSequence,boolean),43,commons-bcel
+2410,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,ODL lexp,CDL lexp,,org.apache.bcel.generic.BIPUSH,commons-bcel
+2412,exp,4,4,4,4,4,4,100.00%,True,AOIU -exp,AOIS exp++,AOIS exp--,LOI ~exp,,AOIU -exp,AOIS exp++,AOIS exp--,commons-bcel
+2414,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.bcel.generic.BIPUSH,toString(boolean),36,0,commons-bcel
+2415,exp,4,4,4,4,4,4,100.00%,True,LOI ~exp,AOIS exp++,AOIU -exp,AOIS exp--,,LOI ~exp,AOIS exp++,AOIU -exp,commons-bcel
+2424,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.BasicType,,19,0,commons-bcel
+2425,lexp < rexp,2,2,2,8,7,8,87.50%,True,ROR <=,ROR !=,ROR false,ROR !=,ROR ==,ROR >,ROR >=,COI !(),commons-bcel
+2441,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.BasicType,hashCode(),60,0,commons-bcel
+2444,lexp + rexp,2,2,2,4,4,4,100.00%,True,ODL rexp,ODL lexp,,ODL lexp,CDL rexp,ODL rexp,VDL lexp,,commons-bcel
+2455,!exp,1,1,1,2,2,2,100.00%,True,COD exp,,COD exp,ODL exp,,org.apache.bcel.generic.BranchHandle,setInstruction(org.apache.bcel.generic.Instruction),59,commons-bcel
+2456,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.CALOAD,accept(org.apache.bcel.generic.Visitor),21,0,commons-bcel
+2460,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.CASTORE,accept(org.apache.bcel.generic.Visitor),21,0,commons-bcel
+2465,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.CHECKCAST,accept(org.apache.bcel.generic.Visitor),44,0,commons-bcel
+2472,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.ClassElementValueGen,getClassString(),55,0,commons-bcel
+2473,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.bcel.generic.ClassElementValueGen,,39,0,commons-bcel
+2475,exp,4,4,4,4,4,4,100.00%,True,AOIS exp--,AOIS exp++,AOIU -exp,LOI ~exp,,AOIS exp--,AOIU -exp,AOIS exp++,commons-bcel
+2481,exp,4,4,4,4,4,4,100.00%,True,AOIS exp++,LOI ~exp,AOIU -exp,AOIS exp--,,AOIU -exp,AOIS exp++,LOI ~exp,commons-bcel
+2483,exp,4,4,4,4,4,4,100.00%,True,AOIU -exp,AOIS exp++,AOIS exp--,LOI ~exp,,AOIU -exp,AOIS exp--,LOI ~exp,commons-bcel
+2485,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.ClassElementValueGen,,44,0,commons-bcel
+2486,!exp,1,1,1,2,2,2,100.00%,True,COD exp,,COD exp,ODL exp,,org.apache.bcel.generic.CodeExceptionGen,updateTarget(org.apache.bcel.generic.InstructionHandle,org.apache.bcel.generic.InstructionHandle),commons-bcel
+2487,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,ODL rexp,CDL lexp,,org.apache.bcel.generic.CodeExceptionGen,commons-bcel
+2489,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.bcel.generic.CodeExceptionGen,containsTarget(org.apache.bcel.generic.InstructionHandle),74,commons-bcel
+2491,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.CodeExceptionGen,,26,0,commons-bcel
+2493,lexp + rexp,2,2,2,4,4,4,100.00%,True,ODL lexp,ODL rexp,,ODL rexp,CDL rexp,ODL lexp,VDL lexp,,commons-bcel
+2511,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,ODL rexp,VDL lexp,,org.apache.bcel.generic.CodeExceptionGen,commons-bcel
+2518,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL rexp,ODL lexp,CDL lexp,,org.apache.bcel.generic.CodeExceptionGen,commons-bcel
+2524,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.bcel.generic.CodeExceptionGen,containsTarget(org.apache.bcel.generic.InstructionHandle),74,commons-bcel
+2526,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.bcel.generic.CodeExceptionGen,updateTarget(org.apache.bcel.generic.InstructionHandle,org.apache.bcel.generic.InstructionHandle),commons-bcel
+2527,lexp + rexp,3,3,3,6,6,6,100.00%,True,ODL rexp,ODL lexp,AORB %,,AORB /,ODL lexp,ODL rexp,AORB -,commons-bcel
+2528,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.CodeExceptionGen,toString(),105,0,commons-bcel
+2530,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.DALOAD,accept(org.apache.bcel.generic.Visitor),21,0,commons-bcel
+2534,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.DASTORE,accept(org.apache.bcel.generic.Visitor),21,0,commons-bcel
+2544,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.bcel.generic.DCONST,,commons-bcel
+2548,lexp == rexp,3,3,3,8,8,8,100.00%,True,ROR <=,ROR >=,ROR false,,ROR false,ROR true,ROR >,ROR >=,commons-bcel
+2555,lexp == rexp,3,3,3,8,8,8,100.00%,True,ROR >=,ROR <=,ROR false,,ROR !=,ROR <=,ROR >,ROR false,commons-bcel
+2556,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.DCONST,,27,0,commons-bcel
+2558,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.DCONST,accept(org.apache.bcel.generic.Visitor),47,0,commons-bcel
+2564,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.DLOAD,accept(org.apache.bcel.generic.Visitor),23,0,commons-bcel
+2575,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.DRETURN,accept(org.apache.bcel.generic.Visitor),21,0,commons-bcel
+2582,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.DSTORE,accept(org.apache.bcel.generic.Visitor),23,0,commons-bcel
+2588,exp,4,4,4,4,4,4,100.00%,True,AOIS exp++,AOIU -exp,LOI ~exp,AOIS exp--,,LOI ~exp,AOIU -exp,AOIS exp++,commons-bcel
+2590,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.ElementValuePairGen,getNameString(),69,0,commons-bcel
+2591,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.bcel.generic.ElementValuePairGen,,commons-bcel
+2594,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.ElementValuePairGen,dump(java.io.DataOutputStream),58,0,commons-bcel
+2595,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.ElementValuePairGen,toString(),79,0,commons-bcel
+2597,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.ElementValuePairGen,getNameIndex(),64,0,commons-bcel
+2598,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL lexp,CDL lexp,ODL rexp,,org.apache.bcel.generic.ElementValuePairGen,commons-bcel
+2599,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.bcel.generic.ElementValuePairGen,,26,0,commons-bcel
+2602,exp,4,4,4,4,4,4,100.00%,True,AOIS exp--,LOI ~exp,AOIU -exp,AOIS exp++,,AOIS exp--,LOI ~exp,AOIU -exp,commons-bcel
+2603,lexp + rexp,2,2,2,2,2,2,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,ODL rexp,,org.apache.bcel.generic.ElementValuePairGen,toString(),commons-bcel
+2606,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.EnumElementValueGen,getEnumValueString(),78,0,commons-bcel
+2607,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.EnumElementValueGen,dump(java.io.DataOutputStream),61,0,commons-bcel
+2613,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.EnumElementValueGen,,54,0,commons-bcel
+2614,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.EnumElementValueGen,dump(java.io.DataOutputStream),61,0,commons-bcel
+2616,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.EnumElementValueGen,,49,0,commons-bcel
+2617,exp,4,4,4,4,4,4,100.00%,True,LOI ~exp,AOIS exp++,AOIU -exp,AOIS exp--,,LOI ~exp,AOIS exp++,AOIU -exp,commons-bcel
+2619,exp,4,4,4,4,4,4,100.00%,True,LOI ~exp,AOIS exp++,AOIU -exp,AOIS exp--,,AOIS exp++,AOIS exp--,LOI ~exp,commons-bcel
+2620,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.bcel.generic.EnumElementValueGen,,47,0,commons-bcel
+2624,exp,4,4,4,4,4,4,100.00%,True,AOIS exp++,AOIS exp--,LOI ~exp,AOIU -exp,,AOIS exp--,AOIS exp++,LOI ~exp,commons-bcel
+2625,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.EnumElementValueGen,getElementValue(),34,0,commons-bcel
+2626,exp,4,4,4,4,4,4,100.00%,True,LOI ~exp,AOIS exp++,AOIU -exp,AOIS exp--,,LOI ~exp,AOIS exp--,AOIU -exp,commons-bcel
+2629,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.EnumElementValueGen,getTypeIndex(),88,0,commons-bcel
+2635,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.EnumElementValueGen,stringifyValue(),68,0,commons-bcel
+2636,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.EnumElementValueGen,,28,0,commons-bcel
+2638,exp,4,4,4,4,4,4,100.00%,True,AOIS exp++,LOI ~exp,AOIS exp--,AOIU -exp,,AOIS exp++,LOI ~exp,AOIS exp--,commons-bcel
+2640,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.EnumElementValueGen,,41,0,commons-bcel
+2645,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.FALOAD,accept(org.apache.bcel.generic.Visitor),21,0,commons-bcel
+2649,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.FASTORE,accept(org.apache.bcel.generic.Visitor),21,0,commons-bcel
+2663,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.bcel.generic.FCONST,,commons-bcel
+2666,lexp == rexp,3,3,3,8,8,8,100.00%,True,ROR <=,ROR >=,ROR false,,ROR >=,ROR >,ROR <=,COI !(),commons-bcel
+2669,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.FCONST,,31,0,commons-bcel
+2670,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.FCONST,,30,0,commons-bcel
+2674,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.FCONST,accept(org.apache.bcel.generic.Visitor),51,0,commons-bcel
+2677,lexp == rexp,3,3,3,8,8,8,100.00%,True,ROR <=,ROR >=,ROR false,,ROR false,ROR true,ROR >,ROR >=,commons-bcel
+2682,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.FLOAD,accept(org.apache.bcel.generic.Visitor),23,0,commons-bcel
+2693,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.FRETURN,accept(org.apache.bcel.generic.Visitor),21,0,commons-bcel
+2700,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.FSTORE,accept(org.apache.bcel.generic.Visitor),23,0,commons-bcel
+2704,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.GETFIELD,produceStack(org.apache.bcel.generic.ConstantPoolGen),26,0,commons-bcel
+2715,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.GETSTATIC,accept(org.apache.bcel.generic.Visitor),43,0,commons-bcel
+2718,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.GETSTATIC,produceStack(org.apache.bcel.generic.ConstantPoolGen),26,0,commons-bcel
+2723,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.bcel.generic.GOTO,updatePosition(int,commons-bcel
+2729,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.GOTO,dump(java.io.DataOutputStream),34,0,commons-bcel
+2737,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.GOTO,updatePosition(int,int),46,commons-bcel
+2742,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.GOTO,updatePosition(int,int),45,commons-bcel
+2744,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.GOTO,dump(java.io.DataOutputStream),35,0,commons-bcel
+2750,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.GOTO_W,dump(java.io.DataOutputStream),30,0,commons-bcel
+2754,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.GOTO_W,dump(java.io.DataOutputStream),30,0,commons-bcel
+2755,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.GOTO_W,initFromFile(org.apache.bcel.util.ByteSequence,boolean),37,commons-bcel
+2759,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.generic.IALOAD,accept(org.apache.bcel.generic.Visitor),21,0,commons-bcel
+12,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.crypto.cipher.JceCipher,,35,0,commons-crypto
+13,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.crypto.cipher.JceCipher,,30,commons-crypto
+17,lexp || rexp,4,4,4,9,9,9,100.00%,True,ODL lexp,COR true,ODL rexp,COR !=,,COR ==,COR ^,COR true,commons-crypto
+29,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,COI !(),ROR ==,,org.apache.commons.crypto.cipher.OpenSslCipher,,34,commons-crypto
+215,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.crypto.stream.input.ChannelInput,read(java.nio.ByteBuffer),30,0,commons-crypto
+228,-exp,1,1,1,2,2,2,100.00%,True,AODU exp,,AODU exp,ODL exp,,org.apache.commons.crypto.stream.input.StreamInput,read(java.nio.ByteBuffer),37,commons-crypto
+238,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.crypto.stream.input.StreamInput,read(java.nio.ByteBuffer),49,0,commons-crypto
+242,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.crypto.stream.input.StreamInput,available(),61,0,commons-crypto
+250,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.crypto.stream.input.StreamInput,skip(long),55,0,commons-crypto
+257,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.crypto.stream.output.ChannelOutput,write(java.nio.ByteBuffer),26,0,commons-crypto
+259,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.crypto.stream.output.StreamOutput,write(java.nio.ByteBuffer),37,0,commons-crypto
+260,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.crypto.stream.output.StreamOutput,write(java.nio.ByteBuffer),40,0,commons-crypto
