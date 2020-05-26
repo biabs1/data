@@ -4880,3 +4880,418 @@ id,target,mutants_in_minimal,test_suites,assertions,mutants,killed_mutants,not_e
 257,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.crypto.stream.output.ChannelOutput,write(java.nio.ByteBuffer),26,0,commons-crypto
 259,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.crypto.stream.output.StreamOutput,write(java.nio.ByteBuffer),37,0,commons-crypto
 260,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.crypto.stream.output.StreamOutput,write(java.nio.ByteBuffer),40,0,commons-crypto
+4,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,COI !(),ROR ==,,org.apache.bsf.BSFException,printStackTrace(),55,commons-bsf
+6,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.BSFException,getReason(),46,0,commons-bsf
+7,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.BSFException,printStackTrace(),64,0,commons-bsf
+10,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,ROR ==,COI !(),,org.apache.bsf.BSFException,printStackTrace(),57,commons-bsf
+13,exp,4,4,4,4,4,4,100.00%,True,AOIS exp++,AOIS exp--,LOI ~exp,AOIU -exp,,AOIS exp--,AOIS exp++,AOIU -exp,commons-bsf
+127,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.bsf.engines.javaclass.JavaClassEngine,call(java.lang.Object,java.lang.String,commons-bsf
+128,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,COI !(),ROR ==,,org.apache.bsf.engines.javaclass.JavaClassEngine,call(java.lang.Object,java.lang.String,commons-bsf
+133,exp,6,6,6,6,6,6,100.00%,True,AOIU -exp,LOI ~exp,AOIS exp--,AOIS --exp,AOIS exp++,AOIS ++exp,,AOIS ++exp,commons-bsf
+135,lexp + rexp,2,2,2,4,4,4,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,VDL lexp,CDL rexp,ODL lexp,,commons-bsf
+228,try_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.bsf.util.BSFEventProcessor,processEvent(java.lang.String,commons-bsf
+239,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,COI !(),ROR ==,,org.apache.bsf.util.BSFEventProcessor,processExceptionableEvent(java.lang.String,java.lang.Object[]),commons-bsf
+243,lexp && rexp,4,4,4,9,9,9,100.00%,True,ODL lexp,COR ==,ODL rexp,COR false,,COR ==,COR ^,COR true,commons-bsf
+249,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.BSFEventProcessor,,39,0,commons-bsf
+250,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.bsf.util.BSFEventProcessor,isFilteredEvent(java.lang.String,java.lang.String),67,commons-bsf
+288,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.bsf.util.BSFEventProcessorReturningEventInfos,isFilteredEvent(java.lang.String,java.lang.String),83,commons-bsf
+305,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.BSFEventProcessorReturningEventInfos,,43,0,commons-bsf
+308,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,COI !(),ROR ==,,org.apache.bsf.util.BSFEventProcessorReturningEventInfos,processExceptionableEvent(java.lang.String,java.lang.Object[]),commons-bsf
+307,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.BSFFunctions,,22,0,commons-bsf
+312,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.IOUtils,getStringFromReader(java.io.Reader),31,0,commons-bsf
+319,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.ObjInfo,toString(),67,0,commons-bsf
+321,!exp,1,1,1,2,2,2,100.00%,True,COD exp,,COD exp,ODL exp,,org.apache.bsf.util.ObjInfo,isExecutable(),35,commons-bsf
+325,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.ObjInfo,,21,0,commons-bsf
+328,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.ObjInfo,isExecutable(),55,0,commons-bsf
+332,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,ROR ==,COI !(),,org.apache.bsf.util.ObjInfo,isValueReturning(),61,commons-bsf
+333,!exp,1,1,1,2,2,2,100.00%,True,COD exp,,COD exp,ODL exp,,org.apache.bsf.util.ObjInfo,isExecutable(),45,commons-bsf
+337,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.ObjInfo,isExecutable(),42,0,commons-bsf
+339,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.ObjInfo,isExecutable(),57,0,commons-bsf
+340,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.ObjInfo,isExecutable(),53,0,commons-bsf
+341,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.bsf.util.ObjInfo,isExecutable(),31,0,commons-bsf
+343,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.ObjInfo,isExecutable(),48,0,commons-bsf
+344,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,VDL lexp,ODL lexp,ODL rexp,,org.apache.bsf.util.ObjInfo,commons-bsf
+345,exp,6,6,6,6,6,6,100.00%,True,AOIS ++exp,AOIU -exp,AOIS exp++,AOIS --exp,LOI ~exp,AOIS exp--,,AOIS ++exp,commons-bsf
+353,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.ObjInfo,isExecutable(),47,0,commons-bsf
+355,exp,6,6,6,6,6,6,100.00%,True,LOI ~exp,AOIS exp--,AOIS --exp,AOIS exp++,AOIS ++exp,AOIU -exp,,AOIS ++exp,commons-bsf
+356,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.ObjInfo,isExecutable(),52,0,commons-bsf
+359,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,COI !(),ROR ==,,org.apache.bsf.util.ObjInfo,isValueReturning(),61,commons-bsf
+360,exp,6,6,6,6,6,6,100.00%,True,AOIS ++exp,AOIS --exp,LOI ~exp,AOIU -exp,AOIS exp--,AOIS exp++,,AOIS ++exp,commons-bsf
+362,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.ObjInfo,isExecutable(),54,0,commons-bsf
+362,lexp + rexp,2,2,2,4,4,4,100.00%,True,ODL rexp,ODL lexp,,ODL lexp,VDL lexp,CDL rexp,ODL rexp,,commons-bsf
+365,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.bsf.util.ObjectRegistry,lookup(java.lang.String),commons-bsf
+369,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.bsf.util.ScriptSymbolTable,get(java.lang.Object),23,commons-bsf
+371,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.bsf.util.StringUtils,getValidIdentifierName(java.lang.String),196,commons-bsf
+378,exp,6,6,6,6,6,6,100.00%,True,AOIU -exp,LOI ~exp,AOIS ++exp,AOIS exp--,AOIS exp++,AOIS --exp,,AOIS ++exp,commons-bsf
+381,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.StringUtils,isValidIdentifierName(java.lang.String),220,0,commons-bsf
+383,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.StringUtils,isValidIdentifierName(java.lang.String),212,0,commons-bsf
+397,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.StringUtils,isValidPackageName(java.lang.String),248,0,commons-bsf
+400,lexp || rexp,4,4,4,9,9,9,100.00%,True,ODL rexp,ODL lexp,COR true,COR !=,,COR ^,COR true,COR &&,commons-bsf
+406,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.StringUtils,getCommaListFromVector(java.util.Vector),104,0,commons-bsf
+408,!exp,1,1,1,2,2,2,100.00%,True,COD exp,,ODL exp,COD exp,,org.apache.bsf.util.StringUtils,isValidPackageName(java.lang.String),238,commons-bsf
+411,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.StringUtils,isValidIdentifierName(java.lang.String),223,0,commons-bsf
+424,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.StringUtils,getSafeString(java.lang.String),156,0,commons-bsf
+425,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.StringUtils,getValidIdentifierName(java.lang.String),205,0,commons-bsf
+428,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,ROR ==,COI !(),,org.apache.bsf.util.StringUtils,getSafeString(java.lang.String),148,commons-bsf
+437,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.StringUtils,isValidPackageName(java.lang.String),240,0,commons-bsf
+440,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.StringUtils,cleanString(java.lang.String),77,0,commons-bsf
+549,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,CDL lexp,ODL rexp,ODL lexp,,org.apache.bsf.util.StringUtils,commons-bsf
+552,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.bsf.util.StringUtils,isValidIdentifierName(java.lang.String),commons-bsf
+555,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.bsf.util.StringUtils,cleanString(java.lang.String),46,commons-bsf
+571,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.cf.CodeFormatter,printLine(java.lang.String,org.apache.bsf.util.IndentWriter),209,commons-bsf
+575,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.cf.CodeFormatter,printLine(java.lang.String,org.apache.bsf.util.IndentWriter),219,commons-bsf
+582,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.cf.CodeFormatter,printLine(java.lang.String,org.apache.bsf.util.IndentWriter),164,commons-bsf
+587,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.cf.CodeFormatter,addTok(java.lang.StringBuffer,java.lang.StringBuffer,org.apache.bsf.util.IndentWriter),commons-bsf
+588,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.bsf.util.cf.CodeFormatter,addTok(java.lang.StringBuffer,commons-bsf
+590,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.cf.CodeFormatter,formatCode(java.io.Reader,java.io.Writer),79,commons-bsf
+594,exp,6,6,6,6,6,6,100.00%,True,AOIU -exp,LOI ~exp,AOIS exp++,AOIS exp--,AOIS ++exp,AOIS --exp,,AOIU -exp,commons-bsf
+597,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.cf.CodeFormatter,printLine(java.lang.String,org.apache.bsf.util.IndentWriter),204,commons-bsf
+600,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.cf.CodeFormatter,printLine(java.lang.String,org.apache.bsf.util.IndentWriter),189,commons-bsf
+602,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.cf.CodeFormatter,addTok(java.lang.StringBuffer,java.lang.StringBuffer,org.apache.bsf.util.IndentWriter),commons-bsf
+606,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.cf.CodeFormatter,printLine(java.lang.String,org.apache.bsf.util.IndentWriter),209,commons-bsf
+609,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.bsf.util.cf.CodeFormatter,printLine(java.lang.String,org.apache.bsf.util.IndentWriter),150,commons-bsf
+610,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.cf.CodeFormatter,printLine(java.lang.String,org.apache.bsf.util.IndentWriter),180,commons-bsf
+615,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.cf.CodeFormatter,printLine(java.lang.String,org.apache.bsf.util.IndentWriter),154,commons-bsf
+616,exp,4,4,4,4,4,4,100.00%,True,AOIS exp--,AOIS exp++,LOI ~exp,AOIU -exp,,AOIS exp--,AOIS exp++,LOI ~exp,commons-bsf
+623,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.cf.CodeFormatter,printLine(java.lang.String,org.apache.bsf.util.IndentWriter),180,commons-bsf
+625,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.cf.CodeFormatter,printLine(java.lang.String,org.apache.bsf.util.IndentWriter),180,commons-bsf
+634,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.cf.CodeFormatter,printLine(java.lang.String,org.apache.bsf.util.IndentWriter),204,commons-bsf
+637,exp,6,6,6,6,6,6,100.00%,True,AOIS ++exp,AOIS exp--,AOIS exp++,AOIU -exp,LOI ~exp,AOIS --exp,,LOI ~exp,commons-bsf
+639,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.cf.CodeFormatter,getIndentationStep(),94,0,commons-bsf
+643,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.cf.CodeFormatter,printLine(java.lang.String,org.apache.bsf.util.IndentWriter),229,commons-bsf
+649,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.cf.CodeFormatter,printLine(java.lang.String,org.apache.bsf.util.IndentWriter),197,commons-bsf
+652,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.cf.CodeFormatter,formatCode(java.io.Reader,java.io.Writer),76,commons-bsf
+656,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.cf.CodeFormatter,printLine(java.lang.String,org.apache.bsf.util.IndentWriter),171,commons-bsf
+657,lexp + rexp,3,3,3,7,7,7,100.00%,True,AORB %,ODL rexp,ODL lexp,,AORB %,VDL lexp,AORB -,AORB /,commons-bsf
+659,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.cf.CodeFormatter,printLine(java.lang.String,org.apache.bsf.util.IndentWriter),220,commons-bsf
+668,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.bsf.util.cf.CodeFormatter,printLine(java.lang.String,commons-bsf
+681,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.cf.CodeFormatter,formatCode(java.io.Reader,java.io.Writer),76,commons-bsf
+683,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.bsf.util.cf.CodeFormatter,printLine(java.lang.String,org.apache.bsf.util.IndentWriter),117,commons-bsf
+686,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.cf.CodeFormatter,addTok(java.lang.StringBuffer,java.lang.StringBuffer,org.apache.bsf.util.IndentWriter),commons-bsf
+696,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.bsf.util.cf.CodeFormatter,printLine(java.lang.String,org.apache.bsf.util.IndentWriter),121,commons-bsf
+697,exp,6,6,6,6,6,6,100.00%,True,AOIS ++exp,LOI ~exp,AOIS exp--,AOIS --exp,AOIU -exp,AOIS exp++,,AOIS --exp,commons-bsf
+701,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.cf.CodeFormatter,printLine(java.lang.String,org.apache.bsf.util.IndentWriter),221,commons-bsf
+711,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.cf.CodeFormatter,getDelimiters(),89,0,commons-bsf
+713,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.cf.CodeFormatter,addTok(java.lang.StringBuffer,java.lang.StringBuffer,org.apache.bsf.util.IndentWriter),commons-bsf
+720,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.cf.CodeFormatter,printLine(java.lang.String,org.apache.bsf.util.IndentWriter),134,commons-bsf
+721,lexp + rexp,3,3,3,8,8,8,100.00%,True,ODL rexp,AORB %,ODL lexp,,AORB -,VDL rexp,ODL rexp,VDL lexp,commons-bsf
+722,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.cf.CodeFormatter,addTok(java.lang.StringBuffer,java.lang.StringBuffer,org.apache.bsf.util.IndentWriter),commons-bsf
+727,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.cf.CodeFormatter,addTok(java.lang.StringBuffer,java.lang.StringBuffer,org.apache.bsf.util.IndentWriter),commons-bsf
+730,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,ROR ==,COI !(),,org.apache.bsf.util.cf.CodeFormatter,formatCode(java.io.Reader,java.io.Writer),commons-bsf
+733,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.cf.CodeFormatter,printLine(java.lang.String,org.apache.bsf.util.IndentWriter),214,commons-bsf
+744,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.bsf.util.event.EventAdapterRegistry,lookup(java.lang.Class),29,commons-bsf
+746,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.bsf.util.event.EventAdapterRegistry,lookup(java.lang.Class),commons-bsf
+756,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,COI !(),ROR ==,,org.apache.bsf.util.event.generator.AdapterClassLoader,loadClass(java.lang.String,boolean),commons-bsf
+767,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.bsf.util.event.generator.AdapterClassLoader,defineClass(java.lang.String,byte),commons-bsf
+0,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.MemoryLimitException,getMemoryNeededInKb(),36,0,commons-compress
+1,exp,4,4,4,4,4,4,100.00%,True,AOIU -exp,AOIS exp++,LOI ~exp,AOIS exp--,,AOIU -exp,AOIS exp++,LOI ~exp,commons-compress
+6,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,CDL lexp,ODL lexp,,org.apache.commons.compress.MemoryLimitException,commons-compress
+7,exp,4,4,4,4,4,4,100.00%,True,LOI ~exp,AOIS exp++,AOIU -exp,AOIS exp--,,AOIU -exp,AOIS exp++,LOI ~exp,commons-compress
+8,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,ODL lexp,VDL lexp,,org.apache.commons.compress.MemoryLimitException,commons-compress
+9,exp,4,4,4,4,4,4,100.00%,True,AOIU -exp,LOI ~exp,AOIS exp--,AOIS exp++,,AOIU -exp,LOI ~exp,AOIS exp--,commons-compress
+13,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.MemoryLimitException,buildMessage(long,int),46,commons-compress
+19,lexp + rexp,2,2,2,4,4,4,100.00%,True,ODL lexp,ODL rexp,,CDL lexp,ODL lexp,ODL rexp,VDL rexp,,commons-compress
+20,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,CDL lexp,ODL lexp,ODL rexp,,org.apache.commons.compress.MemoryLimitException,commons-compress
+19,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,CDL lexp,ODL lexp,,org.apache.commons.compress.PasswordRequiredException,commons-compress
+20,lexp + rexp,2,2,2,4,4,4,100.00%,True,ODL lexp,ODL rexp,,ODL rexp,ODL lexp,VDL lexp,CDL rexp,,commons-compress
+23,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.StreamingNotSupportedException,getFormat(),23,0,commons-compress
+24,lexp * rexp,3,3,3,7,7,7,100.00%,True,AORB /,ODL lexp,ODL rexp,,CDL rexp,ODL lexp,AORB %,AORB +,commons-compress
+26,lexp || rexp,4,4,4,9,9,9,100.00%,True,ODL lexp,COR !=,ODL rexp,COR true,,COI !(),COR !=,COR ^,commons-compress
+28,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.compress.archivers.ar.ArArchiveEntry,equals(java.lang.Object),116,commons-compress
+33,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.compress.archivers.ar.ArArchiveEntry,equals(java.lang.Object),108,commons-compress
+35,return_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.ar.ArArchiveEntry,equals(java.lang.Object),commons-compress
+37,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.ar.ArArchiveEntry,getMode(),76,0,commons-compress
+38,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.compress.archivers.ar.ArArchiveEntry,equals(java.lang.Object),111,commons-compress
+40,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.ar.ArArchiveEntry,equals(java.lang.Object),120,0,commons-compress
+42,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.ar.ArArchiveEntry,hashCode(),104,0,commons-compress
+43,lexp / rexp,2,2,2,7,7,7,100.00%,True,AORB *,AORB %,,ODL lexp,CDL lexp,AORB -,AORB %,ODL rexp,commons-compress
+47,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,ROR ==,COI !(),,org.apache.commons.compress.archivers.ar.ArArchiveEntry,equals(java.lang.Object),111,commons-compress
+51,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.ar.ArArchiveEntry,equals(java.lang.Object),113,0,commons-compress
+53,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.ar.ArArchiveEntry,isDirectory(),96,0,commons-compress
+56,lexp + rexp,3,3,3,6,5,6,83.33%,True,AORB %,ODL rexp,ODL lexp,AORB -,ODL rexp,ODL lexp,AORB /,AORB %,commons-compress
+59,lexp / rexp,2,2,2,7,7,7,100.00%,True,AORB %,AORB *,,CDL lexp,AORB -,AORB +,AORB %,ODL rexp,commons-compress
+60,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.compress.archivers.ar.ArArchiveEntry,equals(java.lang.Object),115,commons-compress
+65,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.ar.ArArchiveEntry,equals(java.lang.Object),commons-compress
+70,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.compress.archivers.ar.ArArchiveEntry,hashCode(),102,commons-compress
+71,return_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.ar.ArArchiveEntry,equals(java.lang.Object),commons-compress
+72,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.ar.ArArchiveEntry,hashCode(),103,0,commons-compress
+73,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.ar.ArArchiveInputStream,trackReadBytes(long),261,0,commons-compress
+80,lexp == rexp,3,3,3,8,8,8,100.00%,True,ROR false,ROR >=,ROR <=,,ROR false,ROR !=,ROR >=,ROR true,commons-compress
+86,return_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.ar.ArArchiveInputStream,matches(byte,commons-compress
+100,!exp,1,1,1,2,2,2,100.00%,True,COD exp,,COD exp,ODL exp,,org.apache.commons.compress.archivers.ar.ArArchiveInputStream,close(),194,commons-compress
+109,lexp == rexp,3,3,3,8,8,8,100.00%,True,ROR >=,ROR false,ROR <=,,ROR >,ROR false,ROR <=,ROR <,commons-compress
+158,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,ROR ==,COI !(),,org.apache.commons.compress.archivers.ar.ArArchiveInputStream,getNextArEntry(),67,commons-compress
+166,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,CDL rexp,ODL rexp,ODL lexp,,org.apache.commons.compress.archivers.ar.ArArchiveInputStream,commons-compress
+407,exp,4,4,4,4,4,4,100.00%,True,AOIS exp++,LOI ~exp,AOIU -exp,AOIS exp--,,AOIS exp++,LOI ~exp,AOIU -exp,commons-compress
+409,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.arj.ArjArchiveEntry,getMethod(),76,0,commons-compress
+414,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.arj.ArjArchiveEntry,getName(),33,0,commons-compress
+415,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.arj.ArjArchiveEntry,equals(java.lang.Object),commons-compress
+417,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,COI !(),ROR ==,,org.apache.commons.compress.archivers.arj.ArjArchiveEntry,equals(java.lang.Object),89,commons-compress
+418,exp,5,5,5,5,5,5,100.00%,True,AOIS ++exp,LOI ~exp,AOIS exp--,AOIS --exp,AOIS exp++,,AOIS --exp,AOIS ++exp,commons-compress
+423,lexp || rexp,4,4,4,9,9,9,100.00%,True,ODL lexp,ODL rexp,COR !=,COR true,,ODL lexp,COR ==,COR false,commons-compress
+425,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.arj.ArjArchiveEntry,getHostOs(),66,0,commons-compress
+426,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.arj.ArjArchiveEntry,getUnixMode(),61,0,commons-compress
+429,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.arj.ArjArchiveEntry,getMode(),56,0,commons-compress
+431,exp,4,4,4,4,4,4,100.00%,True,AOIU -exp,LOI ~exp,AOIS exp--,AOIS exp++,,AOIU -exp,LOI ~exp,AOIS exp--,commons-compress
+434,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.arj.ArjArchiveEntry,equals(java.lang.Object),91,0,commons-compress
+435,lexp & rexp,2,2,2,4,4,4,100.00%,True,ODL lexp,ODL rexp,,LOR ^,LOR |,ODL lexp,ODL rexp,,commons-compress
+436,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.compress.archivers.arj.ArjArchiveEntry,equals(java.lang.Object),89,commons-compress
+437,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.compress.archivers.arj.ArjArchiveEntry,hashCode(),81,commons-compress
+439,return_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.arj.ArjArchiveEntry,equals(java.lang.Object),commons-compress
+440,return_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.arj.ArjArchiveEntry,isHostOsUnix(),commons-compress
+663,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,getRemoteDevice(),252,0,commons-compress
+664,lexp + rexp,2,2,2,4,4,4,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,ODL lexp,CDL lexp,CDL rexp,,commons-compress
+668,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,getRemoteDeviceMaj(),258,0,commons-compress
+673,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,equals(java.lang.Object),438,0,commons-compress
+677,exp,4,4,4,4,4,4,100.00%,True,AOIS exp++,LOI ~exp,AOIS exp--,AOIU -exp,,AOIS exp++,LOI ~exp,AOIS exp--,commons-compress
+680,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,getHeaderPadCount(java.nio.charset.Charset),191,commons-compress
+682,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,hashCode(),429,0,commons-compress
+686,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,getHeaderPadCount(long),commons-compress
+689,lexp == rexp,3,3,3,8,8,8,100.00%,True,ROR <=,ROR >=,ROR false,,ROR !=,ROR >,ROR <=,ROR <,commons-compress
+690,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,getNumberOfLinks(),247,0,commons-compress
+697,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,setMode(long),368,0,commons-compress
+699,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,hashCode(),428,0,commons-compress
+702,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,hashCode(),427,commons-compress
+705,lexp + rexp,2,2,2,2,2,2,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,ODL lexp,,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,setMode(long),commons-compress
+789,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,setRemoteDeviceMin(long),410,0,commons-compress
+790,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,getChksum(),139,0,commons-compress
+791,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,getHeaderPadCount(long),commons-compress
+792,lexp == rexp,3,3,3,8,8,8,100.00%,True,ROR <=,ROR >=,ROR false,,ROR >=,ROR true,ROR >,ROR !=,commons-compress
+793,lexp + rexp,2,2,2,2,2,2,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,ODL lexp,,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,setMode(long),commons-compress
+823,return_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,isDirectory(),commons-compress
+827,lexp == rexp,3,3,3,8,8,8,100.00%,True,ROR >=,ROR <=,ROR false,,COI !(),ROR true,ROR <,ROR >=,commons-compress
+828,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,ROR ==,COI !(),,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,getHeaderPadCount(long),206,commons-compress
+832,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,getHeaderPadCount(java.nio.charset.Charset),commons-compress
+834,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,getHeaderPadCount(long),commons-compress
+841,exp,4,4,4,4,4,4,100.00%,True,AOIS exp++,LOI ~exp,AOIS exp--,AOIU -exp,,AOIS exp++,LOI ~exp,AOIS exp--,commons-compress
+842,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,setRemoteDeviceMaj(long),404,0,commons-compress
+844,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,getHeaderPadCount(java.nio.charset.Charset),194,commons-compress
+847,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,setChksum(long),325,0,commons-compress
+848,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,getRemoteDeviceMin(),264,0,commons-compress
+849,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,checkNewFormat(),126,0,commons-compress
+850,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,getRemoteDeviceMin(),265,0,commons-compress
+853,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,getDevice(),144,0,commons-compress
+856,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,getDeviceMin(),156,0,commons-compress
+859,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,getHeaderPadCount(),187,0,commons-compress
+861,lexp == rexp,3,3,3,8,8,8,100.00%,True,ROR <=,ROR >=,ROR false,,ROR false,ROR <=,ROR <,ROR !=,commons-compress
+863,return_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,isCharacterDevice(),commons-compress
+864,return_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,isBlockDevice(),commons-compress
+866,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,checkOldFormat(),133,0,commons-compress
+867,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,getRemoteDeviceMaj(),259,0,commons-compress
+868,exp,4,4,4,4,4,4,100.00%,True,AOIS exp++,AOIS exp--,AOIU -exp,LOI ~exp,,AOIS exp++,LOI ~exp,AOIU -exp,commons-compress
+871,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,setRemoteDevice(long),398,0,commons-compress
+872,lexp > rexp,2,2,2,8,7,8,87.50%,True,ROR !=,ROR >=,ROR false,ROR >=,ROR !=,ROR <=,COI !(),ROR ==,commons-compress
+873,lexp || rexp,4,4,4,9,9,9,,True,ODL lexp,COR !=,ODL rexp,COR true,,COI !(),COR &&,COR ==,commons-compress
+879,lexp * rexp,3,3,3,7,7,7,,True,AORB /,ODL lexp,ODL rexp,,CDL rexp,AORB -,ODL lexp,AORB /,commons-compress
+882,exp,4,4,4,4,4,4,,True,AOIU -exp,AOIS exp++,LOI ~exp,AOIS exp--,,AOIU -exp,AOIS exp++,LOI ~exp,commons-compress
+884,lexp & rexp,2,2,2,5,5,5,,True,ODL rexp,ODL lexp,,ODL lexp,LOR ^,ODL rexp,LOR |,VDL lexp,commons-compress
+887,stm_list,1,1,1,1,1,1,,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,setDeviceMaj(long),337,0,commons-compress
+888,return_stm,1,1,1,1,1,1,,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,getDeviceMaj(),151,0,commons-compress
+877,lexp > rexp,2,2,2,8,7,8,875,True,ROR !=,ROR >=,ROR false,ROR >=,ROR <=,ROR <,ROR true,ROR !=,commons-compress
+880,stm_list,1,1,1,1,1,1,,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,getNextCPIOEntry(),140,0,commons-compress
+897,stm_list,2,2,2,2,2,2,,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,read(byte,commons-compress
+914,-exp,1,1,1,2,2,2,,True,AODU exp,,ODL exp,AODU exp,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,read(byte,int,commons-compress
+915,return_stm,1,1,1,1,1,1,,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,matches(byte,int),390,commons-compress
+943,if_stm,2,2,2,2,2,2,,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,matches(byte,commons-compress
+944,stm_list,1,1,1,1,1,1,,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,close(),89,0,commons-compress
+956,return_stm,1,1,1,1,1,1,,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,read(byte,int,int),commons-compress
+962,lexp < rexp,2,2,2,8,7,8,875,True,ROR !=,ROR <=,ROR false,ROR <=,COI !(),ROR ==,ROR true,ROR !=,commons-compress
+965,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,skip(long),361,0,commons-compress
+967,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,getNextCPIOEntry(),151,0,commons-compress
+981,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,available(),78,0,commons-compress
+991,lexp - rexp,3,3,3,7,7,7,100.00%,True,ODL lexp,AORB %,ODL rexp,,AORB +,VDL lexp,AORB /,ODL lexp,commons-compress
+1003,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,read(byte,int,commons-compress
+1006,!exp,1,1,1,2,2,2,100.00%,True,COD exp,,COD exp,ODL exp,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,close(),87,commons-compress
+1034,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,ensureOpen(),105,0,commons-compress
+1043,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,matches(byte,int),399,commons-compress
+1051,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,,commons-compress
+1052,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,available(),82,0,commons-compress
+1069,lexp <= rexp,2,2,2,8,8,8,100.00%,True,ROR <,ROR ==,,ROR >,ROR !=,ROR >=,ROR false,ROR <,commons-compress
+1103,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,matches(byte,commons-compress
+1108,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,skip(long),commons-compress
+1119,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,available(),commons-compress
+1134,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,getNextCPIOEntry(),151,0,commons-compress
+1146,lexp || rexp,4,4,4,9,9,9,100.00%,True,ODL lexp,COR !=,COR true,ODL rexp,,COI !(),COR ==,COR false,commons-compress
+1155,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,ensureOpen(),102,0,commons-compress
+1202,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,available(),81,0,commons-compress
+1211,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,matches(byte,commons-compress
+1211,!exp,1,1,1,2,2,2,100.00%,True,COD exp,,ODL exp,COD exp,,org.apache.commons.compress.archivers.cpio.CpioUtil,byteArray2long(byte,boolean),commons-compress
+1213,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioUtil,fileType(long),13,0,commons-compress
+1214,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.cpio.CpioUtil,long2byteArray(long,commons-compress
+1215,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.compress.archivers.cpio.CpioUtil,byteArray2long(byte,boolean),29,commons-compress
+1217,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.compress.archivers.cpio.CpioUtil,long2byteArray(long,int,boolean),commons-compress
+1219,lexp % rexp,3,3,3,8,8,8,100.00%,True,AORB /,AORB +,AORB -,,AORB -,CDL lexp,AORB +,AORB /,commons-compress
+1222,exp,6,6,6,6,6,6,100.00%,True,AOIS ++exp,AOIS --exp,LOI ~exp,AOIS exp--,AOIU -exp,AOIS exp++,,AOIS --exp,commons-compress
+1223,lexp || rexp,4,4,4,9,9,9,100.00%,True,ODL rexp,COR !=,ODL lexp,COR true,,COR !=,COI !(),COR ^,commons-compress
+1224,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.cpio.CpioUtil,byteArray2long(byte,commons-compress
+1225,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioUtil,byteArray2long(byte,boolean),37,commons-compress
+1226,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioUtil,long2byteArray(long,int,boolean),commons-compress
+1230,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.cpio.CpioUtil,byteArray2long(byte,commons-compress
+1234,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.compress.archivers.cpio.CpioUtil,byteArray2long(byte,boolean),28,commons-compress
+1236,lexp >= rexp,2,2,2,6,6,6,100.00%,True,ROR >,ROR ==,,COI !(),ROR !=,ROR <=,ROR ==,ROR <,commons-compress
+1238,lexp & rexp,2,2,2,5,5,5,100.00%,True,ODL lexp,ODL rexp,,LOR ^,LOR |,ODL lexp,VDL rexp,ODL rexp,commons-compress
+1241,lexp & rexp,2,2,2,6,6,6,100.00%,True,ODL rexp,ODL lexp,,ODL lexp,LOR ^,LOR |,ODL rexp,VDL rexp,commons-compress
+1242,++exp,2,2,2,3,3,3,100.00%,True,AODS exp,LOI ~exp,,ODL exp,AODS exp,LOI ~exp,,org.apache.commons.compress.archivers.cpio.CpioUtil,commons-compress
+1243,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioUtil,byteArray2long(byte,boolean),38,commons-compress
+1245,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioUtil,byteArray2long(byte,boolean),37,commons-compress
+1247,lexp < rexp,2,2,2,8,7,8,87.50%,True,ROR <=,ROR !=,ROR false,COI !(),ROR !=,ROR ==,ROR <=,ROR >,commons-compress
+1251,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioUtil,long2byteArray(long,int,boolean),commons-compress
+1252,lexp <<= rexp,2,2,2,4,4,4,100.00%,True,ASRS >>=,SDL,,ASRS >>=,ASRS >>=,ODL lexp = rexp,SDL,,commons-compress
+1254,exp,6,6,6,6,6,6,100.00%,True,LOI ~exp,AOIS exp--,AOIS ++exp,AOIS exp++,AOIU -exp,AOIS --exp,,LOI ~exp,commons-compress
+1257,exp,6,6,6,6,6,6,100.00%,True,LOI ~exp,AOIS exp--,AOIS exp++,AOIS --exp,AOIS ++exp,AOIU -exp,,AOIS exp--,commons-compress
+1258,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioUtil,byteArray2long(byte,boolean),29,commons-compress
+1260,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioUtil,long2byteArray(long,int,boolean),commons-compress
+1263,exp,5,5,5,5,5,5,100.00%,True,AOIS --exp,AOIS exp++,LOI ~exp,AOIS ++exp,AOIS exp--,,AOIS --exp,LOI ~exp,commons-compress
+1268,!exp,1,1,1,2,2,2,100.00%,True,COD exp,,ODL exp,COD exp,,org.apache.commons.compress.archivers.cpio.CpioUtil,long2byteArray(long,int,commons-compress
+1271,lexp - rexp,3,3,3,8,8,8,100.00%,True,ODL rexp,ODL lexp,AORB %,,AORB /,AORB %,AORB *,VDL rexp,commons-compress
+1272,lexp & rexp,2,2,2,6,6,6,100.00%,True,ODL rexp,ODL lexp,,CDL lexp,LOR ^,ODL rexp,LOR |,VDL rexp,commons-compress
+1273,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.compress.archivers.cpio.CpioUtil,long2byteArray(long,int,boolean),commons-compress
+1274,exp,6,6,6,6,6,6,100.00%,True,AOIS exp--,AOIU -exp,LOI ~exp,AOIS exp++,AOIS ++exp,AOIS --exp,,AOIS exp--,commons-compress
+1279,lexp % rexp,3,3,3,7,7,7,100.00%,True,AORB -,AORB /,AORB +,,CDL lexp,AORB -,AORB /,AORB +,commons-compress
+1281,exp,6,6,6,6,6,6,100.00%,True,LOI ~exp,AOIS exp--,AOIS ++exp,AOIS exp++,AOIU -exp,AOIS --exp,,AOIS exp--,commons-compress
+1282,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioUtil,long2byteArray(long,int,boolean),commons-compress
+1284,exp,6,6,6,6,6,6,100.00%,True,AOIS --exp,AOIS exp++,LOI ~exp,AOIU -exp,AOIS ++exp,AOIS exp--,,AOIU -exp,commons-compress
+1285,++exp,2,2,2,3,3,3,100.00%,True,LOI ~exp,AODS exp,,LOI ~exp,ODL exp,AODS exp,,org.apache.commons.compress.archivers.cpio.CpioUtil,commons-compress
+1286,lexp >>= rexp,2,2,2,3,2,2,100.00%,True,ODL lexp = rexp,ASRS <<=,,ASRS <<=,ODL lexp = rexp,ASRS >>=,org.apache.commons.compress.archivers.cpio.CpioUtil,long2byteArray(long,commons-compress
+1287,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.compress.archivers.cpio.CpioUtil,long2byteArray(long,int,boolean),commons-compress
+1288,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioUtil,byteArray2long(byte,boolean),29,commons-compress
+1285,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.dump.Dirent,getType(),39,0,commons-compress
+1286,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.dump.Dirent,getName(),44,0,commons-compress
+1295,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.dump.Dirent,getParentIno(),34,0,commons-compress
+1296,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.dump.Dirent,getIno(),29,0,commons-compress
+1297,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.dump.Dirent,toString(),49,0,commons-compress
+1379,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.dump.DumpArchiveSummary,,50,0,commons-compress
+1395,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.dump.DumpArchiveSummary,,50,0,commons-compress
+1408,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.dump.DumpArchiveUtil,decode(org.apache.commons.compress.archivers.zip.ZipEncoding,byte,int,commons-compress
+1411,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.dump.DumpArchiveUtil,convert32(byte,int),52,commons-compress
+1414,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.dump.DumpArchiveUtil,convert16(byte,int),57,commons-compress
+1426,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.dump.DumpArchiveUtil,getIno(byte),42,0,commons-compress
+1429,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.dump.DumpArchiveUtil,convert64(byte,int),47,commons-compress
+1437,lexp + rexp,3,3,3,8,8,8,100.00%,True,ODL rexp,AORB %,ODL lexp,,AORB *,AORB -,VDL lexp,AORB %,commons-compress
+1439,lexp + rexp,2,2,2,4,4,4,100.00%,True,ODL lexp,ODL rexp,,CDL rexp,ODL lexp,ODL rexp,VDL lexp,,commons-compress
+1441,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.dump.InvalidFormatException,getOffset(),28,0,commons-compress
+1442,exp,4,4,4,4,4,4,100.00%,True,AOIU -exp,AOIS exp++,LOI ~exp,AOIS exp--,,AOIS exp++,AOIU -exp,LOI ~exp,commons-compress
+1444,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,CDL lexp,ODL lexp,,org.apache.commons.compress.archivers.dump.UnsupportedCompressionAlgorithmException,commons-compress
+1445,lexp + rexp,2,2,2,4,4,4,100.00%,True,ODL lexp,ODL rexp,,CDL rexp,ODL lexp,ODL rexp,VDL lexp,,commons-compress
+1461,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,CDL lexp,ODL lexp,ODL rexp,,org.apache.commons.compress.archivers.sevenz.Archive,commons-compress
+1463,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.sevenz.Archive,lengthOf(java.lang.Object[]),42,0,commons-compress
+1464,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.sevenz.Archive,lengthOf(long),37,0,commons-compress
+1465,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.compress.archivers.sevenz.Archive,lengthOf(java.lang.Object[]),41,commons-compress
+1467,exp,5,5,5,5,5,5,100.00%,True,AOIS ++exp,LOI ~exp,AOIS --exp,AOIS exp--,AOIS exp++,,AOIS exp--,AOIS ++exp,commons-compress
+1469,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,CDL lexp,ODL lexp,,org.apache.commons.compress.archivers.sevenz.Archive,commons-compress
+1471,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,CDL lexp,ODL rexp,ODL lexp,,org.apache.commons.compress.archivers.sevenz.Archive,commons-compress
+1472,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.sevenz.Archive,toString(),32,0,commons-compress
+1474,lexp + rexp,2,2,2,2,2,2,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,ODL rexp,,org.apache.commons.compress.archivers.sevenz.Archive,toString(),commons-compress
+1481,exp,5,5,5,5,5,5,100.00%,True,AOIS ++exp,LOI ~exp,AOIS exp--,AOIS --exp,AOIS exp++,,AOIS --exp,AOIS ++exp,commons-compress
+1482,exp,3,3,3,3,3,3,100.00%,True,AOIS exp--,LOI ~exp,AOIS exp++,,AOIS exp--,LOI ~exp,AOIS exp++,,commons-compress
+1484,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.sevenz.BindPair,toString(),17,0,commons-compress
+1485,lexp > rexp,2,2,2,8,7,8,87.50%,True,ROR >=,ROR !=,ROR false,ROR >=,ROR ==,ROR <=,ROR !=,ROR true,commons-compress
+1490,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.sevenz.BoundedSeekableByteChannelInputStream,,33,0,commons-compress
+1492,lexp <= rexp,2,2,2,8,7,8,87.50%,True,ROR <,ROR ==,ROR true,ROR false,ROR !=,COI !(),ROR <,ROR ==,commons-compress
+1494,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.sevenz.BoundedSeekableByteChannelInputStream,,32,0,commons-compress
+1499,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.sevenz.BoundedSeekableByteChannelInputStream,read(byte,commons-compress
+1507,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.sevenz.BoundedSeekableByteChannelInputStream,read(),47,0,commons-compress
+1510,lexp == rexp,3,3,3,8,8,8,100.00%,True,ROR false,ROR <=,ROR >=,,ROR <,ROR false,COI !(),ROR <=,commons-compress
+1513,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.sevenz.BoundedSeekableByteChannelInputStream,read(byte,commons-compress
+1515,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.sevenz.BoundedSeekableByteChannelInputStream,read(byte,commons-compress
+1517,-exp,1,1,1,2,2,2,100.00%,True,AODU exp,,AODU exp,ODL exp,,org.apache.commons.compress.archivers.sevenz.BoundedSeekableByteChannelInputStream,read(byte,int,commons-compress
+1524,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.sevenz.BoundedSeekableByteChannelInputStream,read(byte,int,int),commons-compress
+1531,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.sevenz.BoundedSeekableByteChannelInputStream,read(int),85,0,commons-compress
+1536,-exp,1,1,1,2,2,2,100.00%,True,AODU exp,,AODU exp,ODL exp,,org.apache.commons.compress.archivers.sevenz.BoundedSeekableByteChannelInputStream,read(),46,commons-compress
+1542,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.sevenz.BoundedSeekableByteChannelInputStream,read(),commons-compress
+1544,exp,4,4,4,4,4,4,100.00%,True,AOIS exp++,AOIU -exp,LOI ~exp,AOIS exp--,,AOIU -exp,AOIS exp++,LOI ~exp,commons-compress
+1550,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.compress.archivers.sevenz.SevenZFileOptions,getUseDefaultNameForUnnamedEntries(),46,0,commons-compress
+1551,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.sevenz.SevenZFileOptions,withUseDefaultNameForUnnamedEntries(boolean),57,0,commons-compress
+1554,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.sevenz.SevenZFileOptions,withMaxMemoryLimitInKb(int),51,0,commons-compress
+1556,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.compress.archivers.sevenz.SevenZFileOptions,withUseDefaultNameForUnnamedEntries(boolean),56,0,commons-compress
+1564,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,CDL lexp,ODL rexp,,org.apache.commons.compress.archivers.sevenz.StreamMap,commons-compress
+1565,lexp + rexp,2,2,2,2,2,2,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,ODL rexp,,org.apache.commons.compress.archivers.sevenz.StreamMap,toString(),commons-compress
+1569,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,CDL lexp,ODL lexp,ODL rexp,,org.apache.commons.compress.archivers.sevenz.StreamMap,commons-compress
+1571,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,ODL rexp,CDL lexp,,org.apache.commons.compress.archivers.sevenz.StreamMap,commons-compress
+1574,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,ODL rexp,CDL rexp,,org.apache.commons.compress.archivers.sevenz.StreamMap,commons-compress
+1576,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,CDL lexp,ODL lexp,,org.apache.commons.compress.archivers.sevenz.StreamMap,commons-compress
+1577,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.sevenz.StreamMap,toString(),21,0,commons-compress
+1578,lexp + rexp,2,2,2,2,2,2,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,ODL lexp,,org.apache.commons.compress.archivers.sevenz.StreamMap,toString(),commons-compress
+1583,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.tar.TarArchiveStructSparse,getOffset(),48,0,commons-compress
+1584,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL rexp,VDL lexp,ODL lexp,,org.apache.commons.compress.archivers.tar.TarArchiveStructSparse,commons-compress
+1591,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.tar.TarArchiveStructSparse,equals(java.lang.Object),30,0,commons-compress
+1592,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.compress.archivers.tar.TarArchiveStructSparse,equals(java.lang.Object),25,commons-compress
+1593,lexp || rexp,4,4,4,9,9,9,100.00%,True,COR !=,ODL lexp,COR true,ODL rexp,,COR !=,ODL rexp,COR ^,commons-compress
+1594,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.tar.TarArchiveStructSparse,toString(),43,0,commons-compress
+1596,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.tar.TarArchiveStructSparse,equals(java.lang.Object),commons-compress
+1598,lexp && rexp,4,4,4,9,9,9,100.00%,True,ODL rexp,COR ==,COR false,ODL lexp,,COR ==,COI !(),COR false,commons-compress
+1601,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.tar.TarArchiveStructSparse,getNumbytes(),53,0,commons-compress
+1602,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.compress.archivers.tar.TarArchiveStructSparse,equals(java.lang.Object),28,commons-compress
+1606,return_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.tar.TarArchiveStructSparse,equals(java.lang.Object),commons-compress
+1612,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,ROR ==,COI !(),,org.apache.commons.compress.archivers.tar.TarArchiveStructSparse,equals(java.lang.Object),28,commons-compress
+1615,lexp + rexp,3,3,3,7,7,7,100.00%,True,AORB %,ODL rexp,ODL lexp,,CDL lexp,ODL lexp,AORB *,AORB %,commons-compress
+1617,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.zip.AsiExtraField,parseFromLocalFileData(byte,int,int),commons-compress
+1618,lexp - rexp,3,3,3,8,8,8,100.00%,True,AORB %,ODL rexp,ODL lexp,,AORB +,AORB *,ODL rexp,AORB %,commons-compress
+1620,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.zip.AsiExtraField,getLocalFileDataData(),64,0,commons-compress
+1626,!exp,1,1,1,2,2,2,100.00%,True,COD exp,,COD exp,ODL exp,,org.apache.commons.compress.archivers.zip.AsiExtraField,isDirectory(),126,commons-compress
+1627,lexp + rexp,3,3,3,7,6,7,85.71%,True,ODL lexp,AORB %,ODL rexp,AORB *,AORB -,ODL lexp,AORB /,ODL rexp,commons-compress
+1629,lexp != rexp,3,3,3,8,8,8,100.00%,True,ROR >,ROR <,ROR true,,ROR ==,ROR >,COI !(),ROR <,commons-compress
+1631,lexp & rexp,2,2,2,6,6,6,100.00%,True,ODL rexp,ODL lexp,,LOR ^,VDL lexp,LOR |,ODL lexp,ODL rexp,commons-compress
+1632,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.zip.AsiExtraField,getLocalFileDataData(),64,0,commons-compress
+1635,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.zip.AsiExtraField,parseFromLocalFileData(byte,int,int),commons-compress
+1636,lexp - rexp,3,3,3,8,8,8,100.00%,True,ODL lexp,ODL rexp,AORB %,,AORB *,ODL rexp,AORB /,AORB +,commons-compress
+1638,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.zip.AsiExtraField,getMode(int),174,0,commons-compress
+1643,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.zip.AsiExtraField,getUserId(),80,0,commons-compress
+1649,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,CDL lexp,ODL rexp,ODL lexp,,org.apache.commons.compress.archivers.zip.AsiExtraField,commons-compress
+1652,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.compress.archivers.zip.AsiExtraField,setDirectory(boolean),120,0,commons-compress
+1654,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.zip.AsiExtraField,getMode(int),176,0,commons-compress
+1655,return_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.zip.AsiExtraField,isLink(),commons-compress
+1661,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.zip.AsiExtraField,setLinkedFile(java.lang.String),95,0,commons-compress
+1663,lexp - rexp,3,3,3,7,7,7,100.00%,True,ODL lexp,AORB %,ODL rexp,,ODL lexp,VDL lexp,AORB /,AORB %,commons-compress
+1664,lexp + rexp,3,3,3,7,7,7,100.00%,True,ODL rexp,AORB %,ODL lexp,,AORB -,AORB %,AORB /,ODL rexp,commons-compress
+1673,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.zip.AsiExtraField,getLocalFileDataData(),64,0,commons-compress
+1674,lexp + rexp,3,3,3,6,6,6,100.00%,True,ODL lexp,ODL rexp,AORB %,,AORB /,AORB *,ODL lexp,ODL rexp,commons-compress
+1675,lexp + rexp,3,3,3,7,7,7,100.00%,True,AORB %,ODL lexp,ODL rexp,,CDL lexp,AORB *,AORB -,ODL rexp,commons-compress
+1681,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.zip.AsiExtraField,parseFromLocalFileData(byte,int,int),commons-compress
+1682,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.zip.AsiExtraField,getLocalFileDataData(),64,0,commons-compress
+1691,lexp + rexp,3,3,3,8,8,8,100.00%,True,ODL lexp,AORB %,ODL rexp,,AORB -,ODL rexp,VDL rexp,AORB /,commons-compress
+1696,lexp + rexp,2,2,2,2,2,2,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,ODL lexp,,org.apache.commons.compress.archivers.zip.AsiExtraField,parseFromLocalFileData(byte,commons-compress
+1726,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.zip.BitStream,nextBits(int),commons-compress
+1727,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.zip.BitStream,nextBits(int),34,0,commons-compress
+1730,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.zip.BitStream,nextByte(),40,0,commons-compress
+1976,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,CDL lexp,ODL lexp,ODL rexp,,org.apache.commons.compress.archivers.zip.ScatterStatistics,commons-compress
+1977,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,ODL lexp,VDL lexp,,org.apache.commons.compress.archivers.zip.ScatterStatistics,commons-compress
+1988,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.zip.UnparseableExtraFieldData,parseFromCentralDirectoryData(byte,int,int),commons-compress
+1989,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.compress.archivers.zip.UnparseableExtraFieldData,getCentralDirectoryLength(),31,commons-compress
+1990,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.compress.archivers.zip.UnparseableExtraFieldData,getLocalFileDataLength(),26,commons-compress
+2003,lexp + rexp,3,3,3,8,8,8,100.00%,True,ODL rexp,AORB %,ODL lexp,,AORB -,ODL lexp,ODL rexp,AORB %,commons-compress
+2004,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.compress.archivers.zip.UnparseableExtraFieldData,getCentralDirectoryData(),41,commons-compress
+2005,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.zip.UnrecognizedExtraField,getCentralDirectoryData(),commons-compress
+2009,lexp + rexp,3,3,3,8,8,8,100.00%,True,AORB %,ODL lexp,ODL rexp,,AORB -,ODL rexp,AORB /,AORB *,commons-compress
+2017,lexp + rexp,3,3,3,8,8,8,100.00%,True,ODL rexp,AORB %,ODL lexp,,AORB -,ODL lexp,ODL rexp,AORB %,commons-compress
+2018,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,ROR ==,COI !(),,org.apache.commons.compress.archivers.zip.UnrecognizedExtraField,getCentralDirectoryData(),59,commons-compress
+2019,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,COI !(),ROR ==,,org.apache.commons.compress.archivers.zip.UnrecognizedExtraField,getCentralDirectoryLength(),51,commons-compress
+2020,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,ROR ==,COI !(),,org.apache.commons.compress.archivers.zip.UnrecognizedExtraField,getLocalFileDataLength(),34,commons-compress
+2024,exp,3,3,3,3,3,3,100.00%,True,AOIS exp++,AOIS exp--,LOI ~exp,,AOIS exp++,AOIS exp--,LOI ~exp,,commons-compress
+2027,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.compress.archivers.zip.UnshrinkingInputStream,decompressNextSymbol(),97,0,commons-compress
+2028,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.compress.archivers.zip.UnshrinkingInputStream,addEntry(int,byte),45,commons-compress
+2029,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.zip.UnshrinkingInputStream,,32,0,commons-compress
+2037,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.zip.UnshrinkingInputStream,decompressNextSymbol(),104,0,commons-compress
+2044,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.zip.UnshrinkingInputStream,addEntry(int,byte),48,commons-compress
+2045,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.compress.archivers.zip.UnshrinkingInputStream,decompressNextSymbol(),101,0,commons-compress
+2047,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.zip.UnshrinkingInputStream,,32,0,commons-compress
+2057,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.compress.archivers.zip.UnshrinkingInputStream,,30,0,commons-compress
+2060,lexp + rexp,3,3,3,7,7,7,100.00%,True,AORB %,ODL rexp,ODL lexp,,ODL rexp,AORB -,ODL lexp,AORB /,commons-compress
+2064,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.zip.UnshrinkingInputStream,decompressNextSymbol(),commons-compress
+2074,lexp == rexp,3,3,3,8,8,8,100.00%,True,ROR false,ROR >=,ROR <=,,ROR >=,ROR <=,ROR <,ROR false,commons-compress
+2097,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.zip.UnshrinkingInputStream,decompressNextSymbol(),99,0,commons-compress
+2102,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.zip.UnshrinkingInputStream,decompressNextSymbol(),92,0,commons-compress
+2105,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.zip.UnshrinkingInputStream,decompressNextSymbol(),103,0,commons-compress
+2106,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.zip.UnshrinkingInputStream,decompressNextSymbol(),72,0,commons-compress
+2302,lhs += rhs,3,3,3,5,5,5,100.00%,True,ASRS -=,ASRS %=,ODL lexp = rexp,,ASRS %=,ASRS /=,ASRS *=,ODL lexp = rexp,commons-compress
+2312,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.compress.archivers.zip.ZipSplitOutputStream,createNewSplitSegmentFile(java.lang.Integer),147,commons-compress
+2317,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.zip.ZipSplitOutputStream,,44,0,commons-compress
+2319,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.zip.ZipSplitOutputStream,,44,0,commons-compress
+2323,exp,6,6,6,6,6,6,100.00%,True,AOIU -exp,AOIS ++exp,LOI ~exp,AOIS exp--,AOIS exp++,AOIS --exp,,AOIS exp--,commons-compress
+2324,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.zip.ZipSplitOutputStream,openNewSplitSegment(),127,0,commons-compress
+2330,lexp + rexp,2,2,2,4,4,4,100.00%,True,ODL lexp,ODL rexp,,CDL lexp,ODL rexp,VDL rexp,ODL lexp,,commons-compress
+2331,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.zip.ZipSplitOutputStream,openNewSplitSegment(),134,0,commons-compress
+2333,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,CDL lexp,ODL rexp,,org.apache.commons.compress.archivers.zip.ZipSplitOutputStream,commons-compress
+2339,exp,4,4,4,4,4,4,100.00%,True,AOIS exp--,AOIU -exp,LOI ~exp,AOIS exp++,,AOIS exp--,AOIS exp++,AOIU -exp,commons-compress
+2340,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.zip.ZipSplitOutputStream,close(),100,0,commons-compress
+0,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.MemoryLimitException,getMemoryNeededInKb(),36,0,commons-compress
