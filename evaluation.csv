@@ -5295,3 +5295,101 @@ id,target,mutants_in_minimal,test_suites,assertions,mutants,killed_mutants,not_e
 2339,exp,4,4,4,4,4,4,100.00%,True,AOIS exp--,AOIU -exp,LOI ~exp,AOIS exp++,,AOIS exp--,AOIS exp++,AOIU -exp,commons-compress
 2340,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.zip.ZipSplitOutputStream,close(),100,0,commons-compress
 0,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.MemoryLimitException,getMemoryNeededInKb(),36,0,commons-compress
+0,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,VDL lexp,ODL rexp,,org.apache.commons.daemon.DaemonInitException,commons-daemon
+1,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.daemon.DaemonInitException,getMessageWithCause(),30,0,commons-daemon
+2,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.daemon.DaemonInitException,getMessageWithCause(),28,commons-daemon
+26,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,COI !(),ROR ==,,org.apache.commons.daemon.support.DaemonConfiguration,load(java.lang.String),53,commons-daemon
+38,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.daemon.support.DaemonConfiguration,load(java.lang.String),59,0,commons-daemon
+49,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.daemon.support.DaemonConfiguration,expandProperty(java.lang.String),68,commons-daemon
+65,return_stm,1,1,1,1,0,1,100.00%,True,SDL,SDL,,,org.apache.commons.daemon.support.DaemonConfiguration,expandProperty(java.lang.String),70,0,commons-daemon
+70,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.daemon.support.DaemonConfiguration,load(java.lang.String),41,commons-daemon
+150,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.daemon.support.DaemonWrapper,validate(),203,0,commons-daemon
+165,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.daemon.support.DaemonWrapper,validate(),212,commons-daemon
+169,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.daemon.support.DaemonWrapper,addArguments(java.lang.String[]),179,0,commons-daemon
+171,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.daemon.support.DaemonWrapper,validate(),205,commons-daemon
+179,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.daemon.support.DaemonWrapper,validate(),221,0,commons-daemon
+181,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.daemon.support.DaemonWrapper,setMethodName(java.lang.String),167,0,commons-daemon
+192,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.daemon.support.DaemonWrapper,setMethodName(java.lang.String),164,commons-daemon
+194,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.daemon.support.DaemonWrapper,validate(),218,commons-daemon
+195,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.daemon.support.DaemonWrapper,validate(),200,commons-daemon
+196,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,ROR ==,COI !(),,org.apache.commons.daemon.support.DaemonWrapper,addArguments(java.lang.String[]),173,commons-daemon
+197,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.daemon.support.DaemonWrapper,setClassName(java.lang.String),157,commons-daemon
+229,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.daemon.support.DaemonWrapper,invoke(),195,0,commons-daemon
+230,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.daemon.support.DaemonWrapper,validate(),221,0,commons-daemon
+233,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.daemon.support.DaemonWrapper,validate(),203,0,commons-daemon
+240,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,COI !(),ROR ==,,org.apache.commons.daemon.support.DaemonWrapper,addArguments(java.lang.String[]),171,commons-daemon
+247,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.daemon.support.DaemonWrapper,setClassName(java.lang.String),160,0,commons-daemon
+255,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.daemon.support.DaemonWrapper,validate(),208,commons-daemon
+0,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,VDL lexp,ODL rexp,,org.apache.commons.daemon.DaemonInitException,commons-daemon
+7,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,CDL lexp,ODL lexp,,org.apache.commons.dbcp2.DriverConnectionFactory,commons-dbcp
+9,lexp + rexp,2,2,2,2,2,2,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,ODL rexp,,org.apache.commons.dbcp2.DriverConnectionFactory,toString(),commons-dbcp
+12,lexp + rexp,2,2,2,2,2,2,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,ODL lexp,,org.apache.commons.dbcp2.DriverConnectionFactory,toString(),commons-dbcp
+13,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,ODL lexp,CDL lexp,,org.apache.commons.dbcp2.DriverConnectionFactory,commons-dbcp
+14,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.dbcp2.SQLExceptionList,,20,commons-dbcp
+22,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,ROR ==,COI !(),,org.apache.commons.dbcp2.datasources.PoolKey,equals(java.lang.Object),33,commons-dbcp
+24,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.dbcp2.datasources.PoolKey,equals(java.lang.Object),37,commons-dbcp
+29,!exp,1,1,1,2,2,2,100.00%,True,COD exp,,ODL exp,COD exp,,org.apache.commons.dbcp2.datasources.PoolKey,equals(java.lang.Object),51,commons-dbcp
+30,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.dbcp2.datasources.PoolKey,equals(java.lang.Object),45,0,commons-dbcp
+32,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.dbcp2.datasources.PoolKey,equals(java.lang.Object),commons-dbcp
+33,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.dbcp2.datasources.PoolKey,equals(java.lang.Object),30,commons-dbcp
+34,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.dbcp2.datasources.PoolKey,equals(java.lang.Object),41,0,commons-dbcp
+36,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.dbcp2.datasources.PoolKey,toString(),73,0,commons-dbcp
+38,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.dbcp2.datasources.PoolKey,equals(java.lang.Object),27,commons-dbcp
+39,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.dbcp2.datasources.PoolKey,equals(java.lang.Object),46,commons-dbcp
+42,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.dbcp2.datasources.PoolKey,equals(java.lang.Object),49,0,commons-dbcp
+43,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.dbcp2.datasources.PoolKey,equals(java.lang.Object),50,0,commons-dbcp
+46,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.dbcp2.datasources.PoolKey,equals(java.lang.Object),commons-dbcp
+47,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.dbcp2.datasources.PoolKey,equals(java.lang.Object),35,0,commons-dbcp
+50,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.dbcp2.datasources.PoolKey,hashCode(),63,commons-dbcp
+52,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.dbcp2.datasources.PoolKey,equals(java.lang.Object),commons-dbcp
+54,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.dbcp2.datasources.PoolKey,equals(java.lang.Object),56,0,commons-dbcp
+56,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.dbcp2.datasources.PoolKey,toString(),73,0,commons-dbcp
+7,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,CDL lexp,ODL lexp,,org.apache.commons.dbcp2.DriverConnectionFactory,commons-dbcp
+3,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,ROR ==,COI !(),,org.apache.commons.mail.ByteArrayDataSource,,39,commons-email
+8,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.mail.ByteArrayDataSource,getOutputStream(),128,0,commons-email
+14,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.mail.ByteArrayDataSource,getName(),123,0,commons-email
+17,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.mail.ByteArrayDataSource,getInputStream(),109,commons-email
+18,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.mail.ByteArrayDataSource,getContentType(),103,commons-email
+16,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.mail.EmailAttachment,getDisposition(),50,0,commons-email
+17,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.mail.EmailAttachment,getPath(),40,0,commons-email
+20,!exp,1,1,1,2,2,2,100.00%,True,COD exp,,COD exp,ODL exp,,org.apache.commons.mail.resolver.DataSourceClassPathResolver,resolve(java.lang.String,boolean),commons-email
+21,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.mail.resolver.DataSourceClassPathResolver,resolve(java.lang.String,boolean),70,commons-email
+22,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.mail.resolver.DataSourceClassPathResolver,resolve(java.lang.String,boolean),65,commons-email
+26,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,COI !(),ROR ==,,org.apache.commons.mail.resolver.DataSourceClassPathResolver,resolve(java.lang.String,boolean),commons-email
+27,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.mail.resolver.DataSourceClassPathResolver,,31,0,commons-email
+28,lexp + rexp,2,2,2,4,4,4,100.00%,True,ODL lexp,ODL rexp,,VDL lexp,CDL rexp,ODL rexp,ODL lexp,,commons-email
+31,lexp + rexp,2,2,2,4,4,4,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,ODL lexp,CDL lexp,VDL rexp,,commons-email
+32,lexp + rexp,2,2,2,4,4,4,100.00%,True,ODL lexp,ODL rexp,,VDL rexp,ODL lexp,ODL rexp,CDL lexp,,commons-email
+33,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.mail.resolver.DataSourceClassPathResolver,resolve(java.lang.String,boolean),73,commons-email
+35,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL lexp,VDL lexp,ODL rexp,,org.apache.commons.mail.resolver.DataSourceClassPathResolver,commons-email
+36,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.mail.resolver.DataSourceClassPathResolver,getClassPathBase(),38,0,commons-email
+39,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.mail.resolver.DataSourceCompositeResolver,resolve(java.lang.String),commons-email
+41,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.mail.resolver.DataSourceCompositeResolver,getDataSourceResolvers(),34,0,commons-email
+3,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,ROR ==,COI !(),,org.apache.commons.mail.ByteArrayDataSource,,39,commons-email
+0,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.exec.CommandLine,translateCommandline(java.lang.String),224,0,commons-exec
+7,exp,4,4,4,4,4,4,100.00%,True,LOI ~exp,AOIS exp++,AOIU -exp,AOIS exp--,,LOI ~exp,AOIS exp++,AOIU -exp,commons-exec
+9,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL rexp,ODL lexp,CDL lexp,,org.apache.commons.exec.CommandLine,commons-exec
+10,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.exec.CommandLine,toCleanExecutable(java.lang.String),246,commons-exec
+11,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.exec.CommandLine,translateCommandline(java.lang.String),180,commons-exec
+12,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.exec.CommandLine,expandArgument(java.lang.String),176,0,commons-exec
+15,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.exec.CommandLine,translateCommandline(java.lang.String),227,0,commons-exec
+16,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.exec.CommandLine,addArgument(java.lang.String,boolean),133,commons-exec
+19,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.exec.CommandLine,toStrings(),164,0,commons-exec
+20,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.exec.CommandLine,parse(java.lang.String,java.util.Map),49,commons-exec
+21,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,ROR ==,COI !(),,org.apache.commons.exec.CommandLine,addArguments(java.lang.String,boolean),commons-exec
+22,lexp + rexp,3,3,3,7,7,7,100.00%,True,ODL lexp,AORB %,ODL rexp,,CDL lexp,ODL lexp,ODL rexp,AORB /,commons-exec
+23,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,COI !(),ROR ==,,org.apache.commons.exec.CommandLine,addArguments(java.lang.String[],boolean),commons-exec
+24,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.exec.CommandLine,,77,0,commons-exec
+30,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.exec.CommandLine,toString(),170,0,commons-exec
+32,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.exec.CommandLine,translateCommandline(java.lang.String),commons-exec
+34,lexp - rexp,3,3,3,7,7,7,100.00%,True,ODL rexp,AORB %,ODL lexp,,AORB +,AORB /,AORB %,ODL rexp,commons-exec
+35,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.exec.CommandLine,translateCommandline(java.lang.String),commons-exec
+36,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.exec.CommandLine,addArgument(java.lang.String,boolean),commons-exec
+37,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.exec.CommandLine,parse(java.lang.String,java.util.Map),47,commons-exec
+186,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,VDL lexp,ODL rexp,ODL lexp,,org.apache.commons.exec.ExecuteException,commons-exec
+187,lexp + rexp,2,2,2,4,4,4,100.00%,True,ODL lexp,ODL rexp,,CDL lexp,ODL lexp,VDL rexp,ODL rexp,,commons-exec
+189,lexp + rexp,2,2,2,4,4,4,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,VDL rexp,CDL lexp,ODL rexp,,commons-exec
+191,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,CDL lexp,ODL lexp,ODL rexp,,org.apache.commons.exec.ExecuteException,commons-exec
+194,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.exec.ExecuteException,getExitValue(),41,0,commons-exec
+195,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,CDL lexp,ODL lexp,,org.apache.commons.exec.ExecuteException,commons-exec
+0,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.exec.CommandLine,translateCommandline(java.lang.String),224,0,commons-exec
