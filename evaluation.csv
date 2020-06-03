@@ -5393,3 +5393,526 @@ id,target,mutants_in_minimal,test_suites,assertions,mutants,killed_mutants,not_e
 194,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.exec.ExecuteException,getExitValue(),41,0,commons-exec
 195,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,CDL lexp,ODL lexp,,org.apache.commons.exec.ExecuteException,commons-exec
 0,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.exec.CommandLine,translateCommandline(java.lang.String),224,0,commons-exec
+5,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.imaging.ColorTools,deriveColorModel(java.awt.image.BufferedImage,java.awt.color.ColorSpace,boolean),commons-imaging
+7,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.ColorTools,convertBetweenColorSpacesX2(java.awt.image.BufferedImage,java.awt.color.ColorSpace,java.awt.color.ColorSpace),commons-imaging
+43,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.imaging.ImageDump,dumpBIProps(java.lang.String,java.awt.image.BufferedImage),commons-imaging
+77,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.ImageFormats,getName(),35,0,commons-imaging
+78,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.ImageFormats,getExtension(),40,0,commons-imaging
+84,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.ImageWriteException,getType(java.lang.Object),64,0,commons-imaging
+86,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.ImageWriteException,getType(java.lang.Object),66,0,commons-imaging
+88,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL lexp,VDL lexp,ODL rexp,,org.apache.commons.imaging.ImageWriteException,commons-imaging
+90,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.ImageWriteException,getType(java.lang.Object),70,0,commons-imaging
+91,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.ImageWriteException,getType(java.lang.Object),63,0,commons-imaging
+93,lexp + rexp,2,2,2,2,2,2,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,ODL rexp,,org.apache.commons.imaging.ImageWriteException,,commons-imaging
+102,lexp + rexp,2,2,2,4,4,4,100.00%,True,ODL lexp,ODL rexp,,CDL lexp,VDL rexp,ODL lexp,ODL rexp,,commons-imaging
+106,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.ImageWriteException,getType(java.lang.Object),65,0,commons-imaging
+114,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.ImageWriteException,getType(java.lang.Object),67,0,commons-imaging
+116,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.ImageWriteException,getType(java.lang.Object),68,0,commons-imaging
+118,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL rexp,CDL lexp,ODL lexp,,org.apache.commons.imaging.ImageWriteException,commons-imaging
+119,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.ImageWriteException,getType(java.lang.Object),61,0,commons-imaging
+120,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.ImageWriteException,getType(java.lang.Object),69,0,commons-imaging
+123,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.ImageWriteException,getType(java.lang.Object),62,0,commons-imaging
+128,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.imaging.ImageWriteException,getType(java.lang.Object),29,commons-imaging
+129,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.ImageWriteException,getType(java.lang.Object),60,0,commons-imaging
+133,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.PixelDensity,horizontalDensityInches(),87,0,commons-imaging
+146,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.PixelDensity,verticalDensityMetres(),115,0,commons-imaging
+149,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.PixelDensity,verticalDensityCentimetres(),133,0,commons-imaging
+161,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.PixelDensity,verticalDensityInches(),94,0,commons-imaging
+166,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.PixelDensity,verticalDensityCentimetres(),132,0,commons-imaging
+168,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.PixelDensity,horizontalDensityCentimetres(),124,0,commons-imaging
+178,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.PixelDensity,verticalDensityMetres(),112,0,commons-imaging
+195,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.PixelDensity,verticalDensityCentimetres(),130,0,commons-imaging
+198,lexp / rexp,2,2,2,7,7,7,100.00%,True,AORB *,AORB %,,AORB +,ODL rexp,AORB *,AORB -,VDL lexp,commons-imaging
+200,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.PixelDensity,horizontalDensityCentimetres(),121,0,commons-imaging
+201,lexp / rexp,2,2,2,7,7,7,100.00%,True,AORB *,AORB %,,ODL lexp,AORB +,AORB %,VDL lexp,ODL rexp,commons-imaging
+206,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.PixelDensity,verticalDensityInches(),97,0,commons-imaging
+220,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.PixelDensity,verticalDensityInches(),96,0,commons-imaging
+225,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.common.BasicCParser,preprocess(java.io.InputStream,java.lang.StringBuilder,java.util.Map),commons-imaging
+246,lexp == rexp,3,3,3,8,8,8,100.00%,True,ROR >=,ROR <=,ROR false,,ROR !=,COI !(),ROR true,ROR false,commons-imaging
+254,exp,5,5,5,5,5,5,100.00%,True,AOIS exp++,AOIS ++exp,AOIS exp--,AOIS --exp,LOI ~exp,,AOIS exp++,AOIS ++exp,commons-imaging
+256,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.imaging.common.BasicCParser,preprocess(java.io.InputStream,java.lang.StringBuilder,java.util.Map),commons-imaging
+261,lexp == rexp,3,3,3,8,8,8,100.00%,True,ROR >=,ROR false,ROR <=,,ROR false,ROR >,ROR true,ROR <,commons-imaging
+262,lexp == rexp,3,3,3,8,8,8,100.00%,True,ROR >=,ROR <=,ROR false,,ROR >,ROR false,ROR >=,ROR !=,commons-imaging
+263,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,ROR ==,COI !(),,org.apache.commons.imaging.common.BasicCParser,tokenizeRow(java.lang.String),288,commons-imaging
+266,lexp == rexp,3,3,3,8,8,8,100.00%,True,ROR >=,ROR false,ROR <=,,COI !(),ROR !=,ROR false,ROR >,commons-imaging
+268,lexp + rexp,2,2,2,4,4,4,100.00%,True,ODL lexp,ODL rexp,,CDL lexp,ODL rexp,CDL rexp,ODL lexp,,commons-imaging
+276,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.imaging.common.BasicCParser,preprocess(java.io.InputStream,java.lang.StringBuilder,java.util.Map),commons-imaging
+304,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.imaging.common.BasicCParser,preprocess(java.io.InputStream,java.lang.StringBuilder,java.util.Map),commons-imaging
+305,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.common.BasicCParser,nextToken(),73,0,commons-imaging
+320,exp,5,5,5,5,5,5,100.00%,True,AOIS --exp,AOIS exp++,AOIS exp--,AOIS ++exp,LOI ~exp,,AOIS --exp,AOIS exp++,commons-imaging
+331,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.common.BasicCParser,nextToken(),69,0,commons-imaging
+338,exp,5,5,5,5,5,5,100.00%,True,AOIS exp++,AOIS --exp,LOI ~exp,AOIS ++exp,AOIS exp--,,LOI ~exp,AOIS ++exp,commons-imaging
+345,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.common.BasicCParser,nextToken(),60,0,commons-imaging
+350,exp,5,5,5,5,5,5,100.00%,True,AOIS --exp,LOI ~exp,AOIS exp--,AOIS exp++,AOIS ++exp,,AOIS --exp,LOI ~exp,commons-imaging
+354,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.imaging.common.BasicCParser,preprocess(java.io.InputStream,java.lang.StringBuilder,java.util.Map),commons-imaging
+371,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.common.BasicCParser,nextToken(),81,0,commons-imaging
+379,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.imaging.common.BasicCParser,nextToken(),88,0,commons-imaging
+382,lexp == rexp,3,3,3,8,8,8,100.00%,True,ROR <=,ROR >=,ROR false,,ROR >=,ROR false,ROR true,ROR >,commons-imaging
+389,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.common.BasicCParser,preprocess(java.io.InputStream,java.lang.StringBuilder,java.util.Map),commons-imaging
+409,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.common.BasicCParser,preprocess(java.io.InputStream,java.lang.StringBuilder,java.util.Map),commons-imaging
+421,lexp == rexp,3,3,3,8,8,8,100.00%,True,ROR false,ROR >=,ROR <=,,ROR <,ROR >,ROR >=,ROR !=,commons-imaging
+425,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.common.BasicCParser,nextToken(),44,0,commons-imaging
+427,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.common.BasicCParser,preprocess(java.io.InputStream,java.lang.StringBuilder,java.util.Map),commons-imaging
+431,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.common.BasicCParser,preprocess(java.io.InputStream,java.lang.StringBuilder,java.util.Map),commons-imaging
+437,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.common.BasicCParser,nextToken(),79,0,commons-imaging
+441,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.common.BasicCParser,nextToken(),80,0,commons-imaging
+458,lexp == rexp,3,3,3,8,8,8,100.00%,True,ROR false,ROR <=,ROR >=,,ROR true,ROR >,ROR false,ROR <,commons-imaging
+474,lexp == rexp,3,3,3,8,8,8,100.00%,True,ROR >=,ROR false,ROR <=,,ROR false,ROR !=,ROR <=,ROR true,commons-imaging
+475,lexp == rexp,3,3,3,8,8,8,100.00%,True,ROR false,ROR <=,ROR >=,,ROR >,ROR <,ROR >=,ROR <=,commons-imaging
+485,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.imaging.common.BasicCParser,tokenizeRow(java.lang.String),296,0,commons-imaging
+486,lexp == rexp,3,3,3,8,8,8,100.00%,True,ROR false,ROR <=,ROR >=,,ROR !=,COI !(),ROR true,ROR >,commons-imaging
+489,lexp == rexp,3,3,3,8,8,8,100.00%,True,ROR >=,ROR <=,ROR false,,COI !(),ROR true,ROR >,ROR false,commons-imaging
+493,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.common.BasicCParser,nextToken(),74,0,commons-imaging
+495,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.imaging.common.BasicCParser,preprocess(java.io.InputStream,java.lang.StringBuilder,java.util.Map),commons-imaging
+498,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.imaging.common.BasicCParser,preprocess(java.io.InputStream,commons-imaging
+504,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.common.BasicCParser,preprocess(java.io.InputStream,java.lang.StringBuilder,java.util.Map),commons-imaging
+505,exp,6,6,6,6,6,6,100.00%,True,AOIS exp++,AOIS --exp,AOIS ++exp,LOI ~exp,AOIU -exp,AOIS exp--,,AOIU -exp,commons-imaging
+518,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.common.BasicCParser,nextToken(),83,0,commons-imaging
+529,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.common.BasicCParser,preprocess(java.io.InputStream,java.lang.StringBuilder,java.util.Map),commons-imaging
+534,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.common.BasicCParser,nextToken(),61,0,commons-imaging
+535,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.common.BasicCParser,nextToken(),82,0,commons-imaging
+543,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.common.BasicCParser,preprocess(java.io.InputStream,java.lang.StringBuilder,java.util.Map),commons-imaging
+549,lexp + rexp,2,2,2,4,4,4,100.00%,True,ODL rexp,ODL lexp,,ODL lexp,ODL rexp,CDL rexp,CDL lexp,,commons-imaging
+554,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.imaging.common.BasicCParser,nextToken(),55,0,commons-imaging
+555,exp,5,5,5,5,5,5,100.00%,True,AOIS exp--,AOIS exp++,AOIS --exp,AOIS ++exp,LOI ~exp,,AOIS exp--,AOIS ++exp,commons-imaging
+570,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.common.BasicCParser,tokenizeRow(java.lang.String),298,0,commons-imaging
+589,exp,6,6,6,6,6,6,100.00%,True,AOIS exp++,LOI ~exp,AOIS ++exp,AOIS exp--,AOIU -exp,AOIS --exp,,AOIS exp++,commons-imaging
+594,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.common.BasicCParser,nextToken(),62,0,commons-imaging
+598,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.imaging.common.BasicCParser,preprocess(java.io.InputStream,java.lang.StringBuilder,java.util.Map),commons-imaging
+604,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.common.BasicCParser,preprocess(java.io.InputStream,java.lang.StringBuilder,java.util.Map),commons-imaging
+611,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL lexp,CDL lexp,ODL rexp,,org.apache.commons.imaging.common.BasicCParser,commons-imaging
+613,exp,5,5,5,5,5,5,100.00%,True,AOIS ++exp,AOIS exp++,AOIS exp--,AOIS --exp,LOI ~exp,,AOIS ++exp,AOIS exp++,commons-imaging
+624,exp,5,5,5,5,5,5,100.00%,True,AOIS exp--,AOIS exp++,AOIS ++exp,LOI ~exp,AOIS --exp,,AOIS exp--,AOIS exp++,commons-imaging
+634,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,CDL rexp,ODL lexp,ODL rexp,,org.apache.commons.imaging.common.BasicCParser,commons-imaging
+673,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.imaging.common.FastByteArrayOutputStream,write(int),29,0,commons-imaging
+802,lexp / rexp,2,2,2,6,6,6,100.00%,True,AORB *,AORB %,,ODL rexp,AORB %,ODL lexp,AORB -,AORB +,commons-imaging
+809,lexp > rexp,2,2,2,8,7,8,87.50%,True,ROR >=,ROR !=,ROR false,COI !(),ROR <=,ROR ==,ROR !=,ROR >=,commons-imaging
+812,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.imaging.common.RationalNumber,valueOf(double),131,0,commons-imaging
+817,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.common.RationalNumber,toDisplayString(),94,0,commons-imaging
+819,lexp == rexp,3,3,3,8,8,8,100.00%,True,ROR <=,ROR >=,ROR false,,ROR !=,ROR true,ROR false,ROR <,commons-imaging
+827,lexp % rexp,3,3,3,8,8,8,100.00%,True,AORB -,AORB /,AORB +,,VDL rexp,AORB *,ODL rexp,AORB +,commons-imaging
+829,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.common.RationalNumber,valueOf(double),133,0,commons-imaging
+842,lexp + rexp,3,3,3,8,8,8,100.00%,True,AORB %,ODL lexp,ODL rexp,,AORB -,ODL rexp,VDL rexp,CDL lexp,commons-imaging
+845,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.common.RationalNumber,valueOf(double),163,0,commons-imaging
+846,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.common.RationalNumber,toString(),88,0,commons-imaging
+847,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.common.RationalNumber,valueOf(double),162,0,commons-imaging
+848,lexp == rexp,3,3,3,8,8,8,100.00%,True,ROR <=,ROR false,ROR >=,,ROR >,ROR <,ROR >=,ROR <=,commons-imaging
+854,lexp + rexp,3,3,3,6,6,6,100.00%,True,AORB %,ODL rexp,ODL lexp,,ODL lexp,AORB -,AORB *,ODL rexp,commons-imaging
+865,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,VDL lexp,ODL lexp,,org.apache.commons.imaging.common.RationalNumber,commons-imaging
+881,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL lexp,CDL lexp,ODL rexp,,org.apache.commons.imaging.common.RationalNumber,commons-imaging
+883,lexp / rexp,2,2,2,8,8,8,100.00%,True,AORB %,AORB *,,ODL rexp,VDL lexp,VDL rexp,AORB +,AORB %,commons-imaging
+894,lexp == rexp,3,3,3,8,8,8,100.00%,True,ROR false,ROR <=,ROR >=,,COI !(),ROR true,ROR >,ROR false,commons-imaging
+895,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.common.RationalNumber,longValue(),76,0,commons-imaging
+903,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL lexp,ODL rexp,CDL lexp,,org.apache.commons.imaging.common.RationalNumber,commons-imaging
+910,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.imaging.common.RationalNumber,valueOf(double),186,0,commons-imaging
+915,lexp % rexp,3,3,3,8,8,8,100.00%,True,AORB -,AORB /,AORB +,,ODL lexp,AORB /,ODL rexp,VDL rexp,commons-imaging
+920,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.imaging.common.RationalNumber,toString(),commons-imaging
+930,lexp + rexp,2,2,2,2,2,2,100.00%,True,ODL lexp,ODL rexp,,ODL rexp,ODL lexp,,org.apache.commons.imaging.common.RationalNumber,toString(),commons-imaging
+936,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,VDL lexp,ODL rexp,ODL lexp,,org.apache.commons.imaging.common.RationalNumber,commons-imaging
+942,lexp == rexp,3,3,3,8,8,8,100.00%,True,ROR false,ROR <=,ROR >=,,ROR false,ROR !=,ROR <=,ROR true,commons-imaging
+947,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,ODL lexp,CDL lexp,,org.apache.commons.imaging.common.RationalNumber,commons-imaging
+948,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.common.RationalNumber,gcd(long,long),51,commons-imaging
+949,-exp,2,2,2,3,3,3,100.00%,True,LOI ~exp,AODU exp,,LOI ~exp,ODL exp,AODU exp,,org.apache.commons.imaging.common.RationalNumber,commons-imaging
+952,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.common.RationalNumber,toString(),86,0,commons-imaging
+957,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.common.RationalNumber,gcd(long,long),48,commons-imaging
+967,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.common.RationalNumber,toString(),82,0,commons-imaging
+969,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.imaging.common.RationalNumber,negate(),55,0,commons-imaging
+973,lexp / rexp,2,2,2,7,7,7,100.00%,True,AORB *,AORB %,,AORB -,ODL lexp,AORB +,ODL rexp,AORB *,commons-imaging
+978,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.common.RationalNumber,toDisplayString(),98,0,commons-imaging
+981,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.common.RationalNumber,valueOf(double),137,0,commons-imaging
+985,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.common.RationalNumber,gcd(long,long),50,commons-imaging
+996,lexp + rexp,2,2,2,4,4,4,100.00%,True,ODL lexp,ODL rexp,,VDL rexp,ODL lexp,CDL lexp,ODL rexp,,commons-imaging
+998,lexp + rexp,2,2,2,4,4,4,100.00%,True,ODL rexp,ODL lexp,,ODL lexp,VDL lexp,ODL rexp,CDL rexp,,commons-imaging
+1045,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,ODL lexp,CDL lexp,,org.apache.commons.imaging.common.bytesource.ByteSourceArray,commons-imaging
+1048,lexp + rexp,3,3,3,8,8,8,100.00%,True,ODL lexp,AORB %,ODL rexp,,AORB %,VDL lexp,VDL rexp,AORB *,commons-imaging
+1049,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.common.bytesource.ByteSourceArray,getLength(),48,0,commons-imaging
+1051,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL rexp,ODL lexp,CDL lexp,,org.apache.commons.imaging.common.bytesource.ByteSourceArray,commons-imaging
+1054,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.common.bytesource.ByteSourceArray,getDescription(),59,0,commons-imaging
+1059,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,CDL lexp,ODL lexp,,org.apache.commons.imaging.common.bytesource.ByteSourceArray,commons-imaging
+1063,lexp + rexp,2,2,2,2,2,2,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,ODL lexp,,org.apache.commons.imaging.common.bytesource.ByteSourceArray,getBlock(long,commons-imaging
+1070,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.imaging.common.bytesource.ByteSourceArray,getBlock(long,commons-imaging
+1073,lexp + rexp,2,2,2,4,4,4,100.00%,True,ODL lexp,ODL rexp,,CDL rexp,ODL lexp,ODL rexp,VDL lexp,,commons-imaging
+1366,-exp,1,1,1,2,2,2,100.00%,True,AODU exp,,ODL exp,AODU exp,,org.apache.commons.imaging.common.mylzw.MyLzwDecompressor,decompress(java.io.InputStream,int),commons-imaging
+1367,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,ODL rexp,CDL lexp,,org.apache.commons.imaging.common.mylzw.MyLzwDecompressor,commons-imaging
+1373,exp,5,5,5,5,5,5,100.00%,True,AOIS exp++,AOIS ++exp,AOIS exp--,AOIS --exp,LOI ~exp,,AOIS ++exp,LOI ~exp,commons-imaging
+1389,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,ODL rexp,CDL lexp,,org.apache.commons.imaging.common.mylzw.MyLzwDecompressor,commons-imaging
+1402,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.imaging.common.mylzw.MyLzwDecompressor,decompress(java.io.InputStream,commons-imaging
+1404,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.common.mylzw.MyLzwDecompressor,decompress(java.io.InputStream,int),169,commons-imaging
+1416,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.imaging.common.mylzw.MyLzwDecompressor,decompress(java.io.InputStream,int),148,commons-imaging
+1418,lexp < rexp,2,2,2,7,6,7,85.70%,True,ROR !=,ROR <=,ROR ==,ROR true,ROR >=,ROR <=,ROR >,COI !(),commons-imaging
+1421,exp,4,4,4,4,4,4,100.00%,True,LOI ~exp,AOIU -exp,AOIS exp++,AOIS exp--,,LOI ~exp,AOIU -exp,AOIS exp++,commons-imaging
+1425,lexp << rexp,6,6,6,6,6,6,100.00%,True,ODL lexp,SOR >>,ODL rexp,CDL rexp,VDL lexp,SOR >>>,,SOR >>,commons-imaging
+1426,lexp << rexp,5,5,5,5,5,5,100.00%,True,CDL rexp,SOR >>,SOR >>>,ODL rexp,ODL lexp,,SOR >>,CDL rexp,commons-imaging
+1447,lexp + rexp,3,3,3,7,7,7,100.00%,True,ODL rexp,AORB %,ODL lexp,,AORB /,CDL lexp,ODL lexp,AORB %,commons-imaging
+1456,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,CDL lexp,ODL lexp,,org.apache.commons.imaging.common.mylzw.MyLzwDecompressor,commons-imaging
+1485,exp,6,6,6,6,6,6,100.00%,True,AOIS ++exp,AOIS exp--,LOI ~exp,AOIS exp++,AOIS --exp,AOIU -exp,,AOIS --exp,commons-imaging
+1488,lexp && rexp,4,4,4,10,10,10,100.00%,True,COR false,ODL lexp,ODL rexp,COR ==,,ODL rexp,COI !(),VDL rexp,commons-imaging
+1491,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.imaging.formats.gif.GenericGifBlock,appendSubBlocks(boolean),commons-imaging
+1493,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.imaging.formats.gif.GenericGifBlock,appendSubBlocks(boolean),35,0,commons-imaging
+1498,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.formats.gif.GifImageMetadataItem,toString(java.lang.String),59,0,commons-imaging
+1500,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.formats.gif.GifImageMetadataItem,toString(java.lang.String),59,0,commons-imaging
+1501,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.formats.gif.GifImageMetadataItem,getTopPosition(),44,0,commons-imaging
+1502,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.formats.gif.GifImageMetadataItem,toString(java.lang.String),59,0,commons-imaging
+1507,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.formats.gif.GifImageMetadataItem,toString(java.lang.String),59,0,commons-imaging
+1508,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.formats.gif.GifImageMetadataItem,getDelay(),34,0,commons-imaging
+1512,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.formats.gif.GifImageMetadataItem,getLeftPosition(),39,0,commons-imaging
+1514,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.formats.gif.GifImageMetadataItem,toString(java.lang.String),60,0,commons-imaging
+1515,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.formats.gif.GifImageMetadataItem,toString(java.lang.String),59,0,commons-imaging
+1516,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.imaging.formats.gif.GifImageMetadataItem,toString(java.lang.String),53,commons-imaging
+1535,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.imaging.formats.jpeg.JpegPhotoshopMetadata,,30,0,commons-imaging
+1539,lexp * rexp,3,3,3,8,8,8,100.00%,True,AORB /,ODL lexp,ODL rexp,,AORB -,AORB +,ODL rexp,ODL lexp,commons-imaging
+1571,lexp + rexp,3,3,3,7,7,7,100.00%,True,ODL rexp,ODL lexp,AORB %,,ODL rexp,VDL lexp,AORB -,ODL lexp,commons-imaging
+1595,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.imaging.formats.jpeg.decoder.Dct,forwardDCT8x8(float),161,0,commons-imaging
+1599,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.imaging.formats.jpeg.decoder.Dct,forwardDCT8x8(float),157,0,commons-imaging
+1608,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.imaging.formats.jpeg.decoder.Dct,forwardDCT8x8(float),154,0,commons-imaging
+1646,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.imaging.formats.jpeg.decoder.Dct,forwardDCT8x8(float),156,0,commons-imaging
+1664,exp,5,5,5,5,5,5,100.00%,True,LOI ~exp,AOIS --exp,AOIS exp--,AOIS exp++,AOIS ++exp,,AOIS --exp,LOI ~exp,commons-imaging
+1722,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.imaging.formats.jpeg.decoder.Dct,inverseDCT8x8(float),285,0,commons-imaging
+1735,exp,6,6,6,6,6,6,100.00%,True,AOIS ++exp,LOI ~exp,AOIS exp--,AOIS exp++,AOIS --exp,AOIU -exp,,AOIS ++exp,commons-imaging
+1753,exp,5,5,5,5,5,5,100.00%,True,AOIS ++exp,LOI ~exp,AOIS --exp,AOIS exp--,AOIS exp++,,AOIS ++exp,AOIS exp++,commons-imaging
+1783,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.imaging.formats.jpeg.decoder.Dct,inverseDCT8x8(float),290,0,commons-imaging
+1787,exp,5,5,5,5,5,5,100.00%,True,AOIS exp--,AOIS exp++,AOIS --exp,AOIS ++exp,LOI ~exp,,AOIS exp--,AOIS ++exp,commons-imaging
+1793,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.imaging.formats.jpeg.decoder.Dct,scaleDequantizationVector(float),48,0,commons-imaging
+1801,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.imaging.formats.jpeg.decoder.Dct,scaleDequantizationMatrix(float),65,0,commons-imaging
+1809,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.imaging.formats.jpeg.decoder.Dct,inverseDCT8x8(float),291,0,commons-imaging
+1814,exp,6,6,6,6,6,6,100.00%,True,LOI ~exp,AOIS --exp,AOIS ++exp,AOIS exp--,AOIU -exp,AOIS exp++,,LOI ~exp,commons-imaging
+1856,exp,5,5,5,5,5,5,100.00%,True,AOIS exp--,AOIS ++exp,LOI ~exp,AOIS exp++,AOIS --exp,,AOIS exp--,AOIS ++exp,commons-imaging
+1863,exp,6,6,6,6,6,6,100.00%,True,AOIU -exp,AOIS ++exp,AOIS exp--,AOIS exp++,LOI ~exp,AOIS --exp,,AOIU -exp,commons-imaging
+1865,exp,6,6,6,6,6,6,100.00%,True,AOIS exp--,AOIU -exp,LOI ~exp,AOIS exp++,AOIS ++exp,AOIS --exp,,AOIS exp--,commons-imaging
+1885,exp,5,5,5,5,5,5,100.00%,True,LOI ~exp,AOIS --exp,AOIS exp++,AOIS ++exp,AOIS exp--,,LOI ~exp,AOIS --exp,commons-imaging
+1895,exp,5,5,5,5,5,5,100.00%,True,AOIS exp--,AOIS exp++,AOIS --exp,AOIS ++exp,LOI ~exp,,AOIS exp++,AOIS --exp,commons-imaging
+1896,exp,5,5,5,5,5,5,100.00%,True,AOIS exp--,AOIS ++exp,AOIS --exp,AOIS exp++,LOI ~exp,,AOIS exp--,AOIS ++exp,commons-imaging
+1899,lexp + rexp,3,3,3,7,7,7,100.00%,True,ODL lexp,AORB %,ODL rexp,,VDL lexp,AORB *,AORB %,ODL rexp,commons-imaging
+1936,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.imaging.formats.jpeg.decoder.Dct,forwardDCT8x8(float),159,0,commons-imaging
+1957,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.imaging.formats.jpeg.decoder.Dct,scaleDequantizationMatrix(float),65,0,commons-imaging
+1989,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.imaging.formats.jpeg.decoder.Dct,inverseDCT8x8(float),286,0,commons-imaging
+2024,exp,5,5,5,5,5,5,100.00%,True,AOIS ++exp,AOIS --exp,LOI ~exp,AOIS exp--,AOIS exp++,,AOIS ++exp,AOIS --exp,commons-imaging
+2034,lexp + rexp,3,3,3,7,7,7,100.00%,True,ODL rexp,AORB %,ODL lexp,,ODL rexp,ODL lexp,AORB /,CDL lexp,commons-imaging
+2043,lexp * rexp,3,3,3,8,8,8,100.00%,True,AORB /,ODL rexp,ODL lexp,,AORB /,CDL rexp,AORB %,ODL lexp,commons-imaging
+2063,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.imaging.formats.jpeg.decoder.Dct,scaleQuantizationMatrix(float),56,0,commons-imaging
+2154,exp,5,5,5,5,5,5,100.00%,True,AOIS exp++,AOIS exp--,AOIS --exp,LOI ~exp,AOIS ++exp,,AOIS exp++,AOIS exp--,commons-imaging
+2163,exp,5,5,5,5,5,5,100.00%,True,AOIS exp++,LOI ~exp,AOIS --exp,AOIS ++exp,AOIS exp--,,AOIS exp++,LOI ~exp,commons-imaging
+2202,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.imaging.formats.jpeg.decoder.Dct,forwardDCT8x8(float),155,0,commons-imaging
+2207,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.imaging.formats.jpeg.decoder.Dct,scaleQuantizationVector(float),41,0,commons-imaging
+2213,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.imaging.formats.jpeg.decoder.Dct,scaleQuantizationMatrix(float),56,0,commons-imaging
+2218,exp,6,6,6,6,6,6,100.00%,True,AOIS exp++,AOIU -exp,LOI ~exp,AOIS --exp,AOIS exp--,AOIS ++exp,,AOIU -exp,commons-imaging
+2226,lexp + rexp,3,3,3,7,7,7,100.00%,True,AORB %,ODL lexp,ODL rexp,,ODL rexp,AORB -,AORB *,AORB %,commons-imaging
+2270,exp,5,5,5,5,5,5,100.00%,True,AOIS ++exp,AOIS --exp,AOIS exp++,LOI ~exp,AOIS exp--,,AOIS ++exp,AOIS --exp,commons-imaging
+2326,lexp * rexp,3,3,3,8,8,8,100.00%,True,AORB /,ODL lexp,ODL rexp,,AORB %,AORB +,ODL rexp,AORB -,commons-imaging
+2330,exp,5,5,5,5,5,5,100.00%,True,AOIS ++exp,AOIS exp--,LOI ~exp,AOIS --exp,AOIS exp++,,AOIS ++exp,AOIS exp++,commons-imaging
+2342,exp,6,6,6,6,6,6,100.00%,True,LOI ~exp,AOIS exp--,AOIS --exp,AOIU -exp,AOIS exp++,AOIS ++exp,,LOI ~exp,commons-imaging
+2351,exp,5,5,5,5,5,5,100.00%,True,LOI ~exp,AOIS ++exp,AOIS exp++,AOIS exp--,AOIS --exp,,LOI ~exp,AOIS --exp,commons-imaging
+2352,lexp * rexp,3,3,3,8,8,8,100.00%,True,ODL lexp,AORB /,ODL rexp,,ODL lexp,AORB +,AORB -,AORB %,commons-imaging
+2362,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.imaging.formats.jpeg.decoder.Dct,inverseDCT8x8(float),292,0,commons-imaging
+2375,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.imaging.formats.jpeg.decoder.Dct,inverseDCT8x8(float),288,0,commons-imaging
+2383,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.imaging.formats.jpeg.decoder.Dct,inverseDCT8x8(float),287,0,commons-imaging
+2388,exp,6,6,6,6,6,6,100.00%,True,LOI ~exp,AOIS --exp,AOIS exp++,AOIU -exp,AOIS exp--,AOIS ++exp,,AOIS exp++,commons-imaging
+2398,exp,5,5,5,5,5,5,100.00%,True,AOIS --exp,AOIS exp++,AOIS ++exp,AOIS exp--,LOI ~exp,,AOIS --exp,AOIS exp--,commons-imaging
+5,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.imaging.ColorTools,deriveColorModel(java.awt.image.BufferedImage,java.awt.color.ColorSpace,boolean),commons-imaging
+6,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.JexlInfo,toString(),85,0,commons-jexl
+9,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.JexlInfo,toString(),86,0,commons-jexl
+14,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.JexlInfo,,57,0,commons-jexl
+15,lexp > rexp,2,2,2,8,7,8,87.50%,True,ROR >=,ROR !=,ROR false,ROR >=,ROR <=,ROR !=,ROR <,ROR true,commons-jexl
+20,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.JexlInfo,toString(),84,0,commons-jexl
+29,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,ROR ==,COI !(),,org.apache.commons.jexl3.JexlInfo,toString(),88,commons-jexl
+35,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.JexlInfo,toString(),85,0,commons-jexl
+49,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,ROR ==,COI !(),,org.apache.commons.jexl3.JexlInfo,toString(),78,commons-jexl
+56,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.JexlInfo,getName(),103,0,commons-jexl
+60,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.JexlInfo,toString(),98,0,commons-jexl
+57,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.JexlOperator,getOperatorSymbol(),73,0,commons-jexl
+60,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.JexlOperator,getMethodName(),78,0,commons-jexl
+59,return_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.jexl3.MapContext,has(java.lang.String),commons-jexl
+60,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.jexl3.MapContext,,23,commons-jexl
+73,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.jexl3.ObjectContext,resolveNamespace(java.lang.String),75,commons-jexl
+85,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.internal.Debugger,visit(org.apache.commons.jexl3.parser.ASTArguments,java.lang.Object),714,commons-jexl
+120,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.internal.Debugger,visit(org.apache.commons.jexl3.parser.ASTReturnStatement,java.lang.Object),784,commons-jexl
+121,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.internal.Debugger,visit(org.apache.commons.jexl3.parser.ASTConstructorNode,java.lang.Object),672,commons-jexl
+127,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,COI !(),ROR ==,,org.apache.commons.jexl3.internal.Debugger,check(org.apache.commons.jexl3.parser.JexlNode,java.lang.String,commons-jexl
+129,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.internal.Debugger,additiveNode(org.apache.commons.jexl3.parser.JexlNode,java.lang.String,java.lang.Object),commons-jexl
+134,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.jexl3.internal.Debugger,infixChildren(org.apache.commons.jexl3.parser.JexlNode,java.lang.String,boolean,commons-jexl
+147,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.jexl3.internal.Debugger,infixChildren(org.apache.commons.jexl3.parser.JexlNode,java.lang.String,boolean,commons-jexl
+149,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.internal.Debugger,visit(org.apache.commons.jexl3.parser.ASTDoWhileStatement,java.lang.Object),877,commons-jexl
+155,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.internal.Debugger,data(org.apache.commons.jexl3.parser.JexlNode),177,0,commons-jexl
+166,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.jexl3.internal.Debugger,check(org.apache.commons.jexl3.parser.JexlNode,java.lang.String,commons-jexl
+175,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.jexl3.internal.Debugger,visit(org.apache.commons.jexl3.parser.ASTOrNode,java.lang.Object),753,commons-jexl
+213,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.internal.Debugger,visit(org.apache.commons.jexl3.parser.ASTSizeFunction,java.lang.Object),791,commons-jexl
+227,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.jexl3.internal.Debugger,visit(org.apache.commons.jexl3.parser.ASTJexlScript,commons-jexl
+230,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.internal.Debugger,visit(org.apache.commons.jexl3.parser.ASTArguments,java.lang.Object),714,commons-jexl
+234,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.internal.Debugger,visit(org.apache.commons.jexl3.parser.ASTNotNode,java.lang.Object),741,commons-jexl
+261,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.jexl3.internal.Debugger,check(org.apache.commons.jexl3.parser.JexlNode,java.lang.String,commons-jexl
+262,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.internal.Debugger,visit(org.apache.commons.jexl3.parser.ASTConstructorNode,java.lang.Object),672,commons-jexl
+299,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.internal.Debugger,visit(org.apache.commons.jexl3.parser.ASTVar,java.lang.Object),849,commons-jexl
+306,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.internal.Debugger,toString(),167,0,commons-jexl
+336,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.internal.Debugger,visit(org.apache.commons.jexl3.parser.ASTBlock,java.lang.Object),420,commons-jexl
+341,return_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.jexl3.internal.Debugger,debug(org.apache.commons.jexl3.parser.JexlNode),commons-jexl
+342,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.internal.Debugger,visit(org.apache.commons.jexl3.parser.ASTNullLiteral,java.lang.Object),747,commons-jexl
+352,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.jexl3.internal.Debugger,data(org.apache.commons.jexl3.parser.JexlNode),commons-jexl
+365,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.jexl3.internal.Debugger,infixChildren(org.apache.commons.jexl3.parser.JexlNode,commons-jexl
+405,return_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.jexl3.internal.Debugger,debug(org.apache.commons.jexl3.parser.JexlNode,commons-jexl
+410,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,ROR ==,COI !(),,org.apache.commons.jexl3.internal.Debugger,debug(org.apache.commons.jexl3.parser.JexlNode,boolean),commons-jexl
+446,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.jexl3.internal.Debugger,visit(org.apache.commons.jexl3.parser.ASTBitwiseOrNode,java.lang.Object),388,commons-jexl
+448,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.internal.Debugger,visit(org.apache.commons.jexl3.parser.ASTBlock,java.lang.Object),420,commons-jexl
+463,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.internal.Debugger,visit(org.apache.commons.jexl3.parser.ASTFunctionNode,java.lang.Object),688,commons-jexl
+468,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.internal.Debugger,visit(org.apache.commons.jexl3.parser.ASTEmptyFunction,java.lang.Object),432,commons-jexl
+472,exp,4,4,4,4,4,4,100.00%,True,LOI ~exp,AOIS exp--,AOIU -exp,AOIS exp++,,AOIU -exp,LOI ~exp,AOIS exp--,commons-jexl
+475,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.jexl3.internal.Frame,assign(java.lang.Object),commons-jexl
+476,lexp < rexp,2,2,2,8,7,8,87.50%,True,ROR !=,ROR <=,ROR false,ROR true,ROR <=,ROR >,ROR >=,COI !(),commons-jexl
+477,lexp && rexp,4,4,4,9,9,9,100.00%,True,COR ==,COR false,ODL lexp,ODL rexp,,COI !(),COR true,COR ==,commons-jexl
+478,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.internal.Frame,assign(java.lang.Object),79,0,commons-jexl
+480,lexp && rexp,4,4,4,9,9,9,100.00%,True,ODL lexp,ODL rexp,COR ==,COR false,,ODL lexp,COR ^,COR true,commons-jexl
+481,exp,6,6,6,6,6,6,100.00%,True,LOI ~exp,AOIS exp++,AOIS exp--,AOIS ++exp,AOIU -exp,AOIS --exp,,AOIS exp++,commons-jexl
+484,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,COI !(),ROR ==,,org.apache.commons.jexl3.internal.Frame,assign(java.lang.Object),74,commons-jexl
+485,return_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.jexl3.internal.Frame,has(int),commons-jexl
+488,exp,5,5,5,5,5,5,100.00%,True,AOIS exp--,AOIS ++exp,LOI ~exp,AOIS exp++,AOIS --exp,,LOI ~exp,AOIS ++exp,commons-jexl
+489,exp,5,5,5,5,5,5,100.00%,True,AOIS exp--,AOIS --exp,AOIS ++exp,AOIS exp++,LOI ~exp,,AOIS exp--,LOI ~exp,commons-jexl
+491,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,ROR ==,COI !(),,org.apache.commons.jexl3.internal.Frame,has(int),60,commons-jexl
+492,lexp >= rexp,2,2,2,8,7,8,87.50%,True,ROR >,ROR ==,ROR true,ROR !=,ROR >,ROR <,COI !(),ROR ==,commons-jexl
+496,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.jexl3.internal.Frame,set(int,java.lang.Object),65,commons-jexl
+497,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.internal.Frame,equals(java.lang.Object),45,0,commons-jexl
+505,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.internal.Frame,equals(java.lang.Object),48,0,commons-jexl
+510,exp,4,4,4,4,4,4,100.00%,True,LOI ~exp,AOIS exp--,AOIS exp++,AOIU -exp,,LOI ~exp,AOIS exp--,AOIS exp++,commons-jexl
+512,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,ROR ==,COI !(),,org.apache.commons.jexl3.internal.Frame,assign(java.lang.Object),70,commons-jexl
+513,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.internal.Frame,hashCode(),39,0,commons-jexl
+513,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.jexl3.internal.LexicalFrame,defineSymbol(int,commons-jexl
+514,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.jexl3.internal.LexicalFrame,pop(),commons-jexl
+519,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.internal.LexicalFrame,pop(),91,0,commons-jexl
+522,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.jexl3.internal.LexicalFrame,pop(),commons-jexl
+532,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.jexl3.internal.LexicalFrame,defineSymbol(int,boolean),commons-jexl
+535,exp,4,4,4,4,4,4,100.00%,True,LOI ~exp,AOIS exp++,AOIU -exp,AOIS exp--,,LOI ~exp,AOIS exp++,AOIU -exp,commons-jexl
+536,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.jexl3.internal.LexicalFrame,defineSymbol(int,boolean),48,commons-jexl
+538,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,COI !(),ROR ==,,org.apache.commons.jexl3.internal.LexicalFrame,pop(),71,commons-jexl
+539,exp,4,4,4,4,4,4,100.00%,True,LOI ~exp,AOIS exp--,AOIS exp++,AOIU -exp,,LOI ~exp,AOIS exp--,AOIS exp++,commons-jexl
+543,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,COI !(),ROR ==,,org.apache.commons.jexl3.internal.LexicalFrame,pop(),77,commons-jexl
+544,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.jexl3.internal.LexicalFrame,defineSymbol(int,boolean),59,commons-jexl
+550,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.jexl3.internal.LexicalFrame,defineArgs(),commons-jexl
+560,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.internal.LexicalFrame,,23,0,commons-jexl
+562,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,ROR ==,COI !(),,org.apache.commons.jexl3.internal.LexicalFrame,,31,commons-jexl
+565,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.jexl3.internal.LexicalFrame,defineSymbol(int,boolean),48,commons-jexl
+566,lexp && rexp,4,4,4,11,11,11,100.00%,True,COR ==,COR false,ODL lexp,ODL rexp,,COR true,COR ^,COR false,commons-jexl
+568,return_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.jexl3.internal.LexicalFrame,defineSymbol(int,commons-jexl
+567,exp,5,5,5,5,5,5,100.00%,True,LOI ~exp,AOIS ++exp,AOIS exp--,AOIS exp++,AOIS --exp,,LOI ~exp,AOIS ++exp,commons-jexl
+569,lexp != rexp,3,3,3,8,8,8,100.00%,True,ROR <,ROR true,ROR >,,COI !(),ROR <,ROR >,ROR <=,commons-jexl
+571,lexp - rexp,3,3,3,8,8,8,100.00%,True,ODL lexp,ODL rexp,AORB %,,AORB +,AORB /,ODL lexp,VDL rexp,commons-jexl
+572,lexp - rexp,3,3,3,8,8,8,100.00%,True,ODL rexp,AORB %,ODL lexp,,VDL rexp,AORB /,AORB %,ODL rexp,commons-jexl
+574,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.internal.LexicalScope,addSymbol(int),62,0,commons-jexl
+575,exp,4,4,4,4,4,4,100.00%,True,AOIU -exp,LOI ~exp,AOIS exp--,AOIS exp++,,AOIS exp++,LOI ~exp,AOIS exp--,commons-jexl
+577,lexp & rexp,2,2,2,5,5,5,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,LOR |,LOR ^,VDL rexp,ODL rexp,commons-jexl
+580,lexp << rexp,6,6,6,6,6,6,100.00%,True,VDL lexp,ODL rexp,SOR >>>,SOR >>,ODL lexp,CDL rexp,,ODL lexp,commons-jexl
+582,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.jexl3.internal.LexicalScope,addSymbol(int),commons-jexl
+583,return_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.jexl3.internal.LexicalScope,hasSymbol(int),commons-jexl
+584,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.jexl3.internal.LexicalScope,getSymbolCount(),66,commons-jexl
+585,lexp & rexp,2,2,2,5,5,5,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,ODL lexp,LOR ^,VDL rexp,LOR |,commons-jexl
+587,exp,6,6,6,6,6,6,100.00%,True,AOIS ++exp,AOIS exp++,AOIS exp--,AOIS --exp,AOIU -exp,LOI ~exp,,AOIS ++exp,commons-jexl
+588,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.jexl3.internal.LexicalScope,moreSymbols(),commons-jexl
+591,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,ROR ==,COI !(),,org.apache.commons.jexl3.internal.LexicalScope,hasSymbol(int),42,commons-jexl
+593,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.internal.LexicalScope,addSymbol(int),51,0,commons-jexl
+594,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,ROR ==,COI !(),,org.apache.commons.jexl3.internal.LexicalScope,,26,commons-jexl
+600,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.internal.LexicalScope,addSymbol(int),58,0,commons-jexl
+601,lexp < rexp,2,2,2,8,7,8,87.50%,True,ROR <=,ROR !=,ROR false,ROR >=,ROR true,ROR ==,ROR >,ROR !=,commons-jexl
+603,lexp < rexp,2,2,2,8,7,8,87.50%,True,ROR <=,ROR !=,ROR false,ROR !=,ROR >,ROR >=,COI !(),ROR true,commons-jexl
+605,lexp && rexp,4,4,4,9,9,9,100.00%,True,COR ==,ODL rexp,COR false,ODL lexp,,COR true,COR false,COR ==,commons-jexl
+608,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.internal.LexicalScope,hasSymbol(int),44,0,commons-jexl
+610,lexp << rexp,6,6,6,6,6,6,100.00%,True,CDL rexp,SOR >>,VDL lexp,SOR >>>,ODL lexp,ODL rexp,,SOR >>,commons-jexl
+611,lexp != rexp,3,3,3,8,8,8,100.00%,True,ROR <,ROR true,ROR >,,ROR true,ROR <=,ROR <,ROR >,commons-jexl
+613,return_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.jexl3.internal.LexicalScope,hasSymbol(int),commons-jexl
+619,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.internal.Source,,27,0,commons-jexl
+621,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.internal.Source,equals(java.lang.Object),54,0,commons-jexl
+625,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.jexl3.internal.Source,equals(java.lang.Object),commons-jexl
+626,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.jexl3.internal.Source,equals(java.lang.Object),42,commons-jexl
+627,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.internal.Source,length(),33,0,commons-jexl
+629,!exp,1,1,1,2,2,2,100.00%,True,COD exp,,COD exp,ODL exp,,org.apache.commons.jexl3.internal.Source,equals(java.lang.Object),52,commons-jexl
+630,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.internal.Source,equals(java.lang.Object),50,0,commons-jexl
+631,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.jexl3.internal.Source,equals(java.lang.Object),commons-jexl
+633,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,ROR ==,COI !(),,org.apache.commons.jexl3.internal.Source,equals(java.lang.Object),48,commons-jexl
+634,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.jexl3.internal.Source,equals(java.lang.Object),commons-jexl
+635,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.internal.Source,equals(java.lang.Object),59,0,commons-jexl
+637,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.jexl3.internal.Source,equals(java.lang.Object),commons-jexl
+641,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.internal.Source,equals(java.lang.Object),57,0,commons-jexl
+642,lexp + rexp,3,3,3,6,5,6,83.33%,True,AORB %,ODL rexp,ODL lexp,AORB -,AORB *,ODL rexp,AORB %,ODL lexp,commons-jexl
+643,!exp,1,1,1,2,2,2,100.00%,True,COD exp,,COD exp,ODL exp,,org.apache.commons.jexl3.internal.Source,equals(java.lang.Object),55,commons-jexl
+644,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.internal.Source,hashCode(),38,0,commons-jexl
+646,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.internal.Source,equals(java.lang.Object),47,0,commons-jexl
+647,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.jexl3.internal.Source,equals(java.lang.Object),45,commons-jexl
+648,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.internal.Source,,27,0,commons-jexl
+660,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.internal.introspection.ArrayIterator,,36,0,commons-jexl
+661,!exp,1,1,1,2,2,2,100.00%,True,COD exp,,COD exp,ODL exp,,org.apache.commons.jexl3.internal.introspection.ArrayIterator,,28,commons-jexl
+664,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,ODL rexp,CDL lexp,,org.apache.commons.jexl3.internal.introspection.ArrayIterator,commons-jexl
+666,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.jexl3.internal.introspection.ArrayIterator,,23,commons-jexl
+1054,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.jexl3.parser.NumberParser,toString(),25,commons-jexl
+1060,lexp - rexp,3,3,3,7,7,7,100.00%,True,ODL rexp,ODL lexp,AORB %,,ODL lexp,AORB +,AORB /,CDL lexp,commons-jexl
+1066,lexp - rexp,3,3,3,7,7,7,100.00%,True,ODL lexp,ODL rexp,AORB %,,ODL rexp,AORB /,AORB %,ODL lexp,commons-jexl
+1069,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.parser.NumberParser,parseDouble(java.lang.String),79,0,commons-jexl
+1072,return_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.jexl3.parser.NumberParser,isInteger(),commons-jexl
+1073,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.parser.NumberParser,parseInteger(java.lang.String),72,0,commons-jexl
+1076,lexp && rexp,4,4,4,9,9,9,100.00%,True,COR false,ODL rexp,COR ==,ODL lexp,,COR false,ODL rexp,COI !(),commons-jexl
+1082,lexp == rexp,3,3,3,8,8,8,100.00%,True,ROR <=,ROR false,ROR >=,,ROR >,ROR <,ROR false,ROR !=,commons-jexl
+1087,exp,4,4,4,4,4,4,100.00%,True,LOI ~exp,AOIU -exp,AOIS exp++,AOIS exp--,,AOIS exp--,LOI ~exp,AOIU -exp,commons-jexl
+1089,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.parser.ParseException,,24,0,commons-jexl
+1092,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.parser.ParseException,getColumn(),45,0,commons-jexl
+1098,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.parser.StringParser,escapeIdentifier(java.lang.String),218,0,commons-jexl
+1107,lexp <= rexp,2,2,2,8,7,8,87.50%,True,ROR <,ROR ==,ROR true,ROR <,ROR >,ROR >=,ROR !=,COI !(),commons-jexl
+1110,lexp - rexp,3,3,3,6,6,6,100.00%,True,ODL lexp,AORB %,ODL rexp,,AORB +,AORB /,ODL lexp,ODL rexp,commons-jexl
+1111,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.parser.StringParser,escapeString(java.lang.String,char),158,commons-jexl
+1113,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.parser.StringParser,escapeIdentifier(java.lang.String),224,0,commons-jexl
+1122,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.parser.StringParser,unescapeIdentifier(java.lang.String),184,0,commons-jexl
+1123,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.parser.StringParser,unescapeIdentifier(java.lang.String),189,0,commons-jexl
+1127,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.jexl3.parser.StringParser,buildString(java.lang.CharSequence,boolean),19,commons-jexl
+1131,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,ROR ==,COI !(),,org.apache.commons.jexl3.parser.StringParser,unescapeIdentifier(java.lang.String),170,commons-jexl
+1146,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.jexl3.parser.StringParser,unescapeIdentifier(java.lang.String),188,commons-jexl
+1148,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.parser.StringParser,buildString(java.lang.CharSequence,boolean),21,commons-jexl
+1155,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.parser.StringParser,read(java.lang.StringBuilder,java.lang.CharSequence,int,commons-jexl
+1157,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.jexl3.parser.StringParser,unescapeIdentifier(java.lang.String),commons-jexl
+1160,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.parser.StringParser,readString(java.lang.StringBuilder,java.lang.CharSequence,int,commons-jexl
+8,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.DefaultSocketFactory,createSocket(java.lang.String,int,java.net.InetAddress,commons-net
+20,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,ROR ==,COI !(),,org.apache.commons.net.DefaultSocketFactory,createSocket(java.net.InetAddress,int),commons-net
+23,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.net.DefaultSocketFactory,createSocket(),commons-net
+26,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,ROR ==,COI !(),,org.apache.commons.net.DefaultSocketFactory,createSocket(java.net.InetAddress,int,commons-net
+31,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.DefaultSocketFactory,createSocket(java.net.InetAddress,int,java.net.InetAddress,commons-net
+37,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.net.PrintCommandListener,,34,0,commons-net
+47,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.net.PrintCommandListener,getPrintableString(java.lang.String),commons-net
+60,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.net.PrintCommandListener,,29,0,commons-net
+72,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.PrintCommandListener,protocolCommandSent(org.apache.commons.net.ProtocolCommandEvent),85,0,commons-net
+76,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ProtocolCommandEvent,getReplyCode(),49,0,commons-net
+79,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.net.ProtocolCommandEvent,isCommand(),53,0,commons-net
+80,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ProtocolCommandEvent,getCommand(),44,0,commons-net
+84,return_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.net.ProtocolCommandEvent,isReply(),commons-net
+89,return_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.net.ProtocolCommandEvent,isCommand(),commons-net
+101,exp,5,5,5,5,5,5,100.00%,True,AOIS --exp,LOI ~exp,AOIS ++exp,AOIS exp++,AOIS exp--,,AOIS --exp,LOI ~exp,commons-net
+116,exp,5,5,5,5,5,5,100.00%,True,AOIS ++exp,AOIS exp++,LOI ~exp,AOIS exp--,AOIS --exp,,AOIS ++exp,AOIS --exp,commons-net
+117,exp,5,5,5,5,5,5,100.00%,True,AOIS ++exp,AOIS exp++,LOI ~exp,AOIS exp--,AOIS --exp,,AOIS ++exp,AOIS exp++,commons-net
+119,exp,5,5,5,5,5,5,100.00%,True,AOIS --exp,AOIS exp--,AOIS exp++,LOI ~exp,AOIS ++exp,,AOIS --exp,AOIS exp--,commons-net
+150,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.net.bsd.RExecClient,setRemoteVerificationEnabled(boolean),114,0,commons-net
+154,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.net.bsd.RExecClient,rexec(java.lang.String,java.lang.String,java.lang.String,commons-net
+159,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,COI !(),ROR ==,,org.apache.commons.net.bsd.RExecClient,disconnect(),105,commons-net
+169,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.net.bsd.RExecClient,disconnect(),commons-net
+187,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.net.bsd.RExecClient,isRemoteVerificationEnabled(),119,0,commons-net
+199,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.chargen.CharGenUDPClient,send(java.net.InetAddress,int),44,commons-net
+202,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.chargen.CharGenUDPClient,receive(),61,0,commons-net
+206,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.chargen.CharGenUDPClient,send(java.net.InetAddress,int),44,commons-net
+217,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.daytime.DaytimeUDPClient,getTime(java.net.InetAddress,int),31,commons-net
+218,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.daytime.DaytimeUDPClient,getTime(java.net.InetAddress),38,0,commons-net
+224,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.daytime.DaytimeUDPClient,getTime(java.net.InetAddress,int),31,commons-net
+225,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.discard.DiscardUDPClient,send(byte,int,java.net.InetAddress,commons-net
+227,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.discard.DiscardUDPClient,send(byte,int,java.net.InetAddress,commons-net
+228,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.discard.DiscardUDPClient,send(byte,int,java.net.InetAddress,commons-net
+230,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.discard.DiscardUDPClient,send(byte,int,java.net.InetAddress,commons-net
+237,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.echo.EchoUDPClient,receive(byte,int),38,commons-net
+238,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.echo.EchoUDPClient,receive(byte,int),38,commons-net
+241,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.echo.EchoUDPClient,receive(byte,int),38,commons-net
+245,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.echo.EchoUDPClient,receive(byte),45,0,commons-net
+252,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.examples.ftp.TFTPExample,receive(int,java.lang.String,java.lang.String,commons-net
+254,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.net.examples.ftp.TFTPExample,receive(int,commons-net
+259,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.examples.ftp.TFTPExample,receive(int,java.lang.String,java.lang.String,commons-net
+271,lexp == rexp,3,3,3,8,8,8,100.00%,True,ROR <=,ROR >=,ROR false,,ROR <,ROR >,ROR <=,ROR >=,commons-net
+277,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.net.examples.ftp.TFTPExample,receive(int,commons-net
+293,lexp + rexp,2,2,2,4,4,4,100.00%,True,ODL lexp,ODL rexp,,CDL rexp,VDL lexp,ODL lexp,ODL rexp,,commons-net
+301,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.net.examples.mail.IMAPUtils,imapLogin(java.net.URI,int,commons-net
+301,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.examples.mail.Utils,getPassword(java.lang.String,java.lang.String),46,commons-net
+302,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.examples.mail.Utils,getPassword(java.lang.String,java.lang.String),44,commons-net
+303,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,ROR ==,COI !(),,org.apache.commons.net.examples.mail.Utils,getPassword(java.lang.String,java.lang.String),commons-net
+304,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.examples.mail.Utils,getPassword(java.lang.String,java.lang.String),36,commons-net
+307,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.net.examples.mail.Utils,getPassword(java.lang.String,commons-net
+310,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.examples.mail.Utils,getPassword(java.lang.String,java.lang.String),43,commons-net
+312,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,COI !(),ROR ==,,org.apache.commons.net.examples.ntp.SimpleNTPServer,stop(),127,commons-net
+313,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.examples.ntp.SimpleNTPServer,stop(),131,0,commons-net
+316,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.examples.ntp.SimpleNTPServer,start(),75,0,commons-net
+327,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.net.examples.ntp.SimpleNTPServer,start(),70,commons-net
+333,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.net.examples.ntp.SimpleNTPServer,,commons-net
+345,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.examples.ntp.SimpleNTPServer,handlePacket(java.net.DatagramPacket,long),121,commons-net
+353,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.examples.ntp.SimpleNTPServer,connect(),63,0,commons-net
+356,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.examples.ntp.SimpleNTPServer,getPort(),43,0,commons-net
+370,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.examples.ntp.TimeClient,timeUDP(java.lang.String),37,0,commons-net
+372,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.examples.ntp.TimeClient,timeUDP(java.lang.String),37,0,commons-net
+412,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.net.examples.unix.chargen,chargenUDP(java.lang.String),51,0,commons-net
+415,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.examples.unix.chargen,chargenUDP(java.lang.String),65,0,commons-net
+419,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.examples.unix.daytime,daytimeUDP(java.lang.String),33,0,commons-net
+420,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.examples.unix.daytime,daytimeUDP(java.lang.String),33,0,commons-net
+436,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.examples.unix.echo,echoUDP(java.lang.String),67,0,commons-net
+450,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.examples.unix.echo,echoUDP(java.lang.String),81,0,commons-net
+453,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,COI !(),ROR ==,,org.apache.commons.net.examples.unix.echo,echoUDP(java.lang.String),62,commons-net
+451,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.examples.unix.rdate,timeUDP(java.lang.String),33,0,commons-net
+452,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.examples.unix.rdate,timeUDP(java.lang.String),33,0,commons-net
+468,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.finger.FingerClient,getInputStream(boolean,java.lang.String,java.lang.String),commons-net
+471,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.finger.FingerClient,query(boolean),57,0,commons-net
+477,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ftp.FTPCmd,getCommand(),122,0,commons-net
+481,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ftp.FTPCommand,checkArray(),172,0,commons-net
+482,lexp + rexp,3,3,3,8,8,8,100.00%,True,ODL lexp,AORB %,ODL rexp,,ODL lexp,AORB *,AORB /,AORB %,commons-net
+484,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ftp.FTPCommand,getCommand(int),177,0,commons-net
+492,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.net.ftp.FTPFile,toFormattedString(java.lang.String),commons-net
+497,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.net.ftp.FTPFile,hasPermission(int,commons-net
+498,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ftp.FTPFile,toFormattedString(java.lang.String),265,0,commons-net
+499,return_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.net.ftp.FTPFile,hasPermission(int,commons-net
+502,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ftp.FTPFile,,68,0,commons-net
+503,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ftp.FTPFile,,68,0,commons-net
+504,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.net.ftp.FTPFile,permissionToString(int),commons-net
+506,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ftp.FTPFile,toFormattedString(java.lang.String),257,0,commons-net
+508,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.net.ftp.FTPFile,toFormattedString(java.lang.String),commons-net
+510,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ftp.FTPFile,toFormattedString(java.lang.String),260,0,commons-net
+516,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.net.ftp.FTPFile,permissionToString(int),commons-net
+518,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ftp.FTPFile,getHardLinkCount(),157,0,commons-net
+520,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.net.ftp.FTPFile,setPermission(int,int,boolean),commons-net
+524,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.net.ftp.FTPFile,toFormattedString(java.lang.String),commons-net
+527,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ftp.FTPFile,toFormattedString(java.lang.String),265,0,commons-net
+529,-exp,1,1,1,2,2,2,100.00%,True,AODU exp,,AODU exp,ODL exp,,org.apache.commons.net.ftp.FTPFile,,77,commons-net
+532,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ftp.FTPFile,,68,0,commons-net
+533,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.net.ftp.FTPFile,permissionToString(int),commons-net
+538,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ftp.FTPFile,hasPermission(int,int),208,commons-net
+544,return_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.net.ftp.FTPFile,isValid(),commons-net
+545,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ftp.FTPFile,formatType(),276,0,commons-net
+546,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ftp.FTPFile,toFormattedString(java.lang.String),265,0,commons-net
+549,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ftp.FTPFile,toFormattedString(),220,0,commons-net
+550,!exp,1,1,1,2,2,2,100.00%,True,COD exp,,COD exp,ODL exp,,org.apache.commons.net.ftp.FTPFile,toFormattedString(java.lang.String),224,commons-net
+551,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ftp.FTPFile,getName(),137,0,commons-net
+552,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.net.ftp.FTPFile,hasPermission(int,int),commons-net
+563,!exp,1,1,1,2,2,2,100.00%,True,COD exp,,ODL exp,COD exp,,org.apache.commons.net.ftp.FTPFile,toFormattedString(java.lang.String),240,commons-net
+565,exp,4,4,4,4,4,4,100.00%,True,AOIU -exp,AOIS exp++,LOI ~exp,AOIS exp--,,AOIU -exp,AOIS exp++,LOI ~exp,commons-net
+567,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ftp.FTPFile,toFormattedString(java.lang.String),257,0,commons-net
+570,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ftp.FTPFile,toFormattedString(java.lang.String),265,0,commons-net
+575,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ftp.FTPFile,toFormattedString(java.lang.String),256,0,commons-net
+578,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.net.ftp.FTPFile,setPermission(int,int,boolean),commons-net
+579,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ftp.FTPFile,toFormattedString(java.lang.String),265,0,commons-net
+580,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ftp.FTPFile,formatType(),282,0,commons-net
+582,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,ROR ==,COI !(),,org.apache.commons.net.ftp.FTPFile,toFormattedString(java.lang.String),237,commons-net
+583,exp,4,4,4,4,4,4,100.00%,True,AOIU -exp,LOI ~exp,AOIS exp++,AOIS exp--,,AOIU -exp,AOIS exp--,AOIS exp++,commons-net
+584,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ftp.FTPFile,toFormattedString(java.lang.String),246,0,commons-net
+585,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ftp.FTPFile,toFormattedString(java.lang.String),265,0,commons-net
+587,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ftp.FTPFile,getUser(),177,0,commons-net
+590,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ftp.FTPFile,permissionToString(int),305,0,commons-net
+595,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ftp.FTPFile,toFormattedString(java.lang.String),226,0,commons-net
+596,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.net.ftp.FTPFile,setPermission(int,int,boolean),commons-net
+597,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ftp.FTPFile,toFormattedString(java.lang.String),259,0,commons-net
+599,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ftp.FTPFile,toFormattedString(java.lang.String),265,0,commons-net
+602,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ftp.FTPFile,toFormattedString(java.lang.String),265,0,commons-net
+604,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ftp.FTPFile,toFormattedString(java.lang.String),265,0,commons-net
+606,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,ROR ==,COI !(),,org.apache.commons.net.ftp.FTPFile,toFormattedString(java.lang.String),238,commons-net
+629,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,COI !(),ROR ==,,org.apache.commons.net.ftp.FTPListParseEngine,readStream(java.io.InputStream,java.lang.String),commons-net
+635,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ftp.FTPListParseEngine,readServerList(java.io.InputStream,java.lang.String),51,commons-net
+639,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,ROR ==,COI !(),,org.apache.commons.net.ftp.FTPListParseEngine,,38,commons-net
+651,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ftp.FTPListParseEngine,,43,0,commons-net
+650,return_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.net.ftp.FTPReply,isPositiveIntermediate(int),commons-net
+652,exp,5,5,5,5,5,5,100.00%,True,AOIS --exp,AOIS exp--,LOI ~exp,AOIS exp++,AOIS ++exp,,AOIS ++exp,LOI ~exp,commons-net
+653,return_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.net.ftp.FTPReply,isPositiveCompletion(int),commons-net
+656,exp,5,5,5,5,5,5,100.00%,True,AOIS --exp,AOIS ++exp,LOI ~exp,AOIS exp--,AOIS exp++,,AOIS --exp,AOIS exp++,commons-net
+659,lexp >= rexp,2,2,2,8,7,8,87.50%,True,ROR >,ROR ==,ROR true,ROR ==,ROR <=,ROR false,ROR >,ROR !=,commons-net
+661,lexp >= rexp,2,2,2,8,7,8,87.50%,True,ROR ==,ROR >,ROR true,ROR <,ROR <=,ROR >,ROR false,ROR ==,commons-net
+662,lexp < rexp,2,2,2,8,7,8,87.50%,True,ROR !=,ROR <=,ROR false,ROR <=,COI !(),ROR ==,ROR true,ROR !=,commons-net
+663,exp,5,5,5,5,5,5,100.00%,True,LOI ~exp,AOIS ++exp,AOIS --exp,AOIS exp++,AOIS exp--,,LOI ~exp,AOIS ++exp,commons-net
+664,lexp < rexp,2,2,2,8,7,8,87.50%,True,ROR !=,ROR <=,ROR false,ROR !=,COI !(),ROR >,ROR <=,ROR true,commons-net
+665,lexp < rexp,2,2,2,8,7,8,87.50%,True,ROR <=,ROR !=,ROR false,ROR <=,ROR >,ROR ==,ROR >=,ROR true,commons-net
+666,exp,5,5,5,5,5,5,100.00%,True,AOIS exp--,AOIS ++exp,AOIS exp++,AOIS --exp,LOI ~exp,,AOIS exp--,LOI ~exp,commons-net
+668,return_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.net.ftp.FTPReply,isProtectedReplyCode(int),commons-net
+671,lexp >= rexp,2,2,2,8,7,8,87.50%,True,ROR ==,ROR >,ROR true,ROR !=,ROR false,ROR <=,ROR ==,COI !(),commons-net
+672,return_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.net.ftp.FTPReply,isPositivePreliminary(int),commons-net
+674,lexp >= rexp,2,2,2,8,7,8,87.50%,True,ROR >,ROR ==,ROR true,ROR false,ROR <=,ROR >,ROR ==,ROR !=,commons-net
+675,lexp < rexp,2,2,2,8,7,8,87.50%,True,ROR <=,ROR !=,ROR false,ROR ==,ROR true,ROR !=,ROR >=,ROR <=,commons-net
+676,return_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.net.ftp.FTPReply,isNegativeTransient(int),commons-net
+677,return_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.net.ftp.FTPReply,isNegativePermanent(int),commons-net
+678,exp,5,5,5,5,5,5,100.00%,True,AOIS exp--,AOIS exp++,AOIS ++exp,LOI ~exp,AOIS --exp,,LOI ~exp,AOIS exp--,commons-net
+681,lexp >= rexp,2,2,2,8,7,8,87.50%,True,ROR >,ROR ==,ROR true,ROR >,ROR ==,ROR <,COI !(),ROR !=,commons-net
+682,lexp < rexp,2,2,2,8,7,8,87.50%,True,ROR !=,ROR <=,ROR false,ROR <=,COI !(),ROR true,ROR ==,ROR >=,commons-net
+683,exp,5,5,5,5,5,5,100.00%,True,AOIS --exp,AOIS exp--,AOIS ++exp,AOIS exp++,LOI ~exp,,AOIS --exp,AOIS exp--,commons-net
+684,lexp >= rexp,2,2,2,8,7,8,87.50%,True,ROR >,ROR ==,ROR true,COI !(),ROR >,ROR !=,ROR <=,ROR <,commons-net
+685,lexp < rexp,2,2,2,8,7,8,87.50%,True,ROR !=,ROR <=,ROR false,ROR >,ROR ==,ROR true,ROR !=,COI !(),commons-net
+686,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ftp.FTPSCommand,getCommand(int),35,0,commons-net
+693,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ftp.FTPSServerSocketFactory,init(java.net.ServerSocket),52,0,commons-net
+703,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ftp.FTPSSocketFactory,init(java.net.ServerSocket),77,0,commons-net
