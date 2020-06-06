@@ -5916,3 +5916,394 @@ id,target,mutants_in_minimal,test_suites,assertions,mutants,killed_mutants,not_e
 686,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ftp.FTPSCommand,getCommand(int),35,0,commons-net
 693,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ftp.FTPSServerSocketFactory,init(java.net.ServerSocket),52,0,commons-net
 703,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ftp.FTPSSocketFactory,init(java.net.ServerSocket),77,0,commons-net
+1,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.CompositeFormat,reformat(java.lang.String),52,0,commons-text
+4,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.FormattableUtils,append(java.lang.CharSequence,java.util.Formatter,int,commons-text
+7,lexp == rexp,1,1,1,1,1,1,100.00%,True,ROR !=,,ROR !=,,org.apache.commons.text.FormattableUtils,append(java.lang.CharSequence,java.util.Formatter,int,commons-text
+12,!exp,1,1,1,2,2,2,100.00%,True,COD exp,,ODL exp,COD exp,,org.apache.commons.text.FormattableUtils,append(java.lang.CharSequence,java.util.Formatter,commons-text
+15,lexp || rexp,4,4,4,8,8,8,100.00%,True,ODL lexp,COR true,COR !=,ODL rexp,,ODL lexp,COR !=,COR true,commons-text
+16,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.FormattableUtils,toString(java.util.Formattable),25,0,commons-text
+18,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.FormattableUtils,append(java.lang.CharSequence,java.util.Formatter,int,commons-text
+21,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.FormattableUtils,append(java.lang.CharSequence,java.util.Formatter,int,commons-text
+28,lexp <= rexp,2,2,2,7,6,7,85.71%,True,ROR ==,ROR <,ROR true,ROR false,ROR >,ROR !=,ROR >=,ROR <,commons-text
+33,lexp - rexp,3,3,3,7,7,7,100.00%,True,AORB %,ODL rexp,ODL lexp,,ODL rexp,AORB /,ODL lexp,VDL rexp,commons-text
+34,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.text.FormattableUtils,append(java.lang.CharSequence,java.util.Formatter,commons-text
+36,lexp < rexp,2,2,2,7,6,7,85.71%,True,ROR <=,ROR !=,ROR false,ROR >,ROR !=,ROR <=,ROR true,ROR ==,commons-text
+38,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.text.FormattableUtils,append(java.lang.CharSequence,commons-text
+46,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.lookup.DateStringLookup,lookup(java.lang.String),42,0,commons-text
+54,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.lookup.DnsStringLookup,lookup(java.lang.String),41,0,commons-text
+57,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.lookup.DnsStringLookup,lookup(java.lang.String),38,0,commons-text
+58,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.text.lookup.DnsStringLookup,lookup(java.lang.String),23,commons-text
+60,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.lookup.DnsStringLookup,lookup(java.lang.String),35,0,commons-text
+61,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.text.lookup.DnsStringLookup,lookup(java.lang.String),commons-text
+63,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.lookup.DnsStringLookup,lookup(java.lang.String),44,0,commons-text
+64,lexp < rexp,2,2,2,8,8,8,100.00%,True,ROR <=,ROR !=,,ROR >,ROR !=,ROR false,ROR <=,ROR true,commons-text
+64,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,COI !(),ROR ==,,org.apache.commons.text.lookup.EnvironmentVariableStringLookup,lookup(java.lang.String),21,commons-text
+66,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.text.lookup.FileStringLookup,lookup(java.lang.String),23,commons-text
+69,lexp < rexp,2,2,2,8,7,8,87.50%,True,ROR <=,ROR !=,ROR false,ROR >,ROR !=,ROR <=,ROR true,COI !(),commons-text
+71,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.text.lookup.FileStringLookup,lookup(java.lang.String),commons-text
+73,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.text.lookup.FileStringLookup,lookup(java.lang.String),commons-text
+74,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.lookup.FileStringLookup,lookup(java.lang.String),35,0,commons-text
+75,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.lookup.JavaPlatformStringLookup,lookup(java.lang.String),100,0,commons-text
+77,lexp + rexp,2,2,2,2,2,2,100.00%,True,ODL lexp,ODL rexp,,ODL rexp,ODL lexp,,org.apache.commons.text.lookup.JavaPlatformStringLookup,getRuntime(),commons-text
+78,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.lookup.JavaPlatformStringLookup,getSystemProperty(java.lang.String),67,0,commons-text
+79,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.text.lookup.JavaPlatformStringLookup,lookup(java.lang.String),commons-text
+80,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,CDL lexp,ODL lexp,,org.apache.commons.text.lookup.JavaPlatformStringLookup,commons-text
+83,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.lookup.JavaPlatformStringLookup,getRuntime(),62,0,commons-text
+84,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.lookup.JavaPlatformStringLookup,lookup(java.lang.String),106,0,commons-text
+85,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.lookup.JavaPlatformStringLookup,lookup(java.lang.String),97,0,commons-text
+86,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,ODL lexp,CDL lexp,,org.apache.commons.text.lookup.JavaPlatformStringLookup,commons-text
+92,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.text.lookup.JavaPlatformStringLookup,lookup(java.lang.String),85,commons-text
+93,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,ODL rexp,CDL lexp,,org.apache.commons.text.lookup.JavaPlatformStringLookup,commons-text
+94,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.lookup.JavaPlatformStringLookup,lookup(java.lang.String),94,0,commons-text
+95,lexp + rexp,2,2,2,2,2,2,100.00%,True,ODL lexp,ODL rexp,,ODL rexp,ODL lexp,,org.apache.commons.text.lookup.JavaPlatformStringLookup,getRuntime(),commons-text
+97,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.lookup.JavaPlatformStringLookup,lookup(java.lang.String),91,0,commons-text
+99,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.text.lookup.JavaPlatformStringLookup,getSystemProperty(java.lang.String,commons-text
+101,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.lookup.JavaPlatformStringLookup,getVirtualMachine(),81,0,commons-text
+103,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,CDL lexp,ODL lexp,,org.apache.commons.text.lookup.JavaPlatformStringLookup,commons-text
+104,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,CDL lexp,ODL lexp,ODL rexp,,org.apache.commons.text.lookup.JavaPlatformStringLookup,commons-text
+105,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.lookup.JavaPlatformStringLookup,getOperatingSystem(),57,0,commons-text
+106,lexp + rexp,2,2,2,2,2,2,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,ODL lexp,,org.apache.commons.text.lookup.JavaPlatformStringLookup,getLocale(),commons-text
+107,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.lookup.JavaPlatformStringLookup,lookup(java.lang.String),103,0,commons-text
+108,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL rexp,ODL lexp,CDL rexp,,org.apache.commons.text.lookup.JavaPlatformStringLookup,commons-text
+113,lexp + rexp,2,2,2,2,2,2,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,ODL rexp,,org.apache.commons.text.lookup.JavaPlatformStringLookup,getVirtualMachine(),commons-text
+119,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.text.lookup.LocalHostStringLookup,lookup(java.lang.String),22,commons-text
+120,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.lookup.LocalHostStringLookup,lookup(java.lang.String),29,0,commons-text
+123,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.text.lookup.LocalHostStringLookup,lookup(java.lang.String),commons-text
+124,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.lookup.LocalHostStringLookup,lookup(java.lang.String),35,0,commons-text
+126,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.lookup.LocalHostStringLookup,lookup(java.lang.String),32,0,commons-text
+127,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.text.lookup.ResourceBundleStringLookup,lookup(java.lang.String),44,0,commons-text
+133,lexp != rexp,3,3,3,8,8,8,100.00%,True,ROR true,ROR >,ROR <,,ROR ==,COI !(),ROR false,ROR <,commons-text
+135,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.text.lookup.ResourceBundleStringLookup,lookup(java.lang.String),36,0,commons-text
+141,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.lookup.ResourceBundleStringLookup,lookup(java.lang.String),42,0,commons-text
+144,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.text.lookup.ResourceBundleStringLookup,lookup(java.lang.String),30,commons-text
+145,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.text.lookup.ResourceBundleStringLookup,lookup(java.lang.String),commons-text
+148,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.text.lookup.ResourceBundleStringLookup,lookup(java.lang.String),commons-text
+153,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.text.lookup.ScriptStringLookup,lookup(java.lang.String),24,commons-text
+158,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.text.lookup.ScriptStringLookup,lookup(java.lang.String),commons-text
+159,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.text.lookup.ScriptStringLookup,lookup(java.lang.String),commons-text
+160,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.lookup.StringLookupFactory,addDefaultStringLookups(java.util.Map),65,0,commons-text
+162,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.lookup.StringLookupFactory,addDefaultStringLookups(java.util.Map),67,0,commons-text
+165,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.text.lookup.UrlDecoderStringLookup,lookup(java.lang.String),commons-text
+167,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.text.lookup.UrlEncoderStringLookup,lookup(java.lang.String),23,commons-text
+170,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.text.lookup.XmlStringLookup,lookup(java.lang.String),24,commons-text
+172,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.lookup.XmlStringLookup,lookup(java.lang.String),36,0,commons-text
+174,lexp != rexp,3,3,3,8,8,8,100.00%,True,ROR >,ROR <,ROR true,,ROR >,ROR ==,ROR false,ROR <,commons-text
+175,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.text.lookup.XmlStringLookup,lookup(java.lang.String),commons-text
+177,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.text.lookup.XmlStringLookup,lookup(java.lang.String),commons-text
+178,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.text.matcher.StringMatcherFactory,charSetMatcher(char),commons-text
+188,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.text.matcher.StringMatcherFactory,charSetMatcher(java.lang.String),52,commons-text
+190,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.text.matcher.StringMatcherFactory,charSetMatcher(java.lang.String),commons-text
+191,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.text.matcher.StringMatcherFactory,stringMatcher(java.lang.String),98,commons-text
+192,lexp || rexp,4,4,4,9,9,9,100.00%,True,ODL rexp,COR true,ODL lexp,COR !=,,ODL lexp,COR &&,COR !=,commons-text
+197,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.EditDistanceFrom,,21,0,commons-text
+254,lexp < rexp,2,2,2,8,7,8,87.50%,True,ROR !=,ROR <=,ROR false,ROR !=,ROR >,ROR <=,ROR ==,ROR >=,commons-text
+255,lexp == rexp,3,3,3,8,8,8,100.00%,True,ROR >=,ROR <=,ROR false,,COI !(),ROR <,ROR >,ROR false,commons-text
+256,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,CDL lexp,ODL rexp,ODL lexp,,org.apache.commons.text.similarity.IntersectionResult,commons-text
+258,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.IntersectionResult,equals(java.lang.Object),57,0,commons-text
+261,lexp < rexp,2,2,2,8,7,8,87.50%,True,ROR <=,ROR !=,ROR false,ROR >,ROR >=,ROR true,COI !(),ROR <=,commons-text
+266,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.text.similarity.IntersectionResult,,commons-text
+271,lexp < rexp,2,2,2,8,7,8,87.50%,True,ROR <=,ROR !=,ROR false,COI !(),ROR >=,ROR true,ROR ==,ROR >,commons-text
+273,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.IntersectionResult,getSizeA(),38,0,commons-text
+278,lexp || rexp,4,4,4,9,9,9,100.00%,True,ODL lexp,COR true,COR !=,ODL rexp,,COR !=,COR true,COR ^,commons-text
+279,lexp > rexp,2,2,2,8,7,8,87.50%,True,ROR >=,ROR !=,ROR false,ROR >=,COI !(),ROR <=,ROR <,ROR ==,commons-text
+280,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.text.similarity.IntersectionResult,equals(java.lang.Object),52,commons-text
+282,lexp + rexp,2,2,2,4,4,4,100.00%,True,ODL rexp,ODL lexp,,VDL lexp,ODL rexp,ODL lexp,CDL rexp,,commons-text
+303,return_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.text.similarity.IntersectionResult,equals(java.lang.Object),commons-text
+304,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,VDL lexp,ODL rexp,,org.apache.commons.text.similarity.IntersectionResult,commons-text
+310,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.text.similarity.JaccardDistance,apply(java.lang.CharSequence,java.lang.CharSequence),commons-text
+311,lexp || rexp,4,4,4,9,9,9,100.00%,True,ODL lexp,COR true,COR !=,ODL rexp,,COR &&,COR false,COR ^,commons-text
+312,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.text.similarity.JaccardDistance,apply(java.lang.CharSequence,commons-text
+313,lexp - rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL rexp,CDL rexp,ODL lexp,,org.apache.commons.text.similarity.JaccardDistance,commons-text
+314,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.text.similarity.JaccardDistance,apply(java.lang.CharSequence,java.lang.CharSequence),commons-text
+316,exp,6,6,6,6,6,6,100.00%,True,AOIS exp++,AOIS --exp,AOIS exp--,AOIS ++exp,LOI ~exp,AOIU -exp,,AOIS --exp,commons-text
+317,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.JaroWinklerDistance,matches(java.lang.CharSequence,java.lang.CharSequence),86,commons-text
+325,lexp * rexp,3,3,3,6,6,6,100.00%,True,AORB /,ODL rexp,ODL lexp,,ODL lexp,AORB -,AORB +,AORB %,commons-text
+327,lexp + rexp,3,3,3,7,7,7,100.00%,True,ODL rexp,AORB %,ODL lexp,,AORB -,AORB /,AORB %,ODL lexp,commons-text
+328,exp,6,6,6,6,6,6,100.00%,True,AOIS exp--,AOIU -exp,LOI ~exp,AOIS exp++,AOIS --exp,AOIS ++exp,,LOI ~exp,commons-text
+330,lexp / rexp,2,2,2,7,7,7,100.00%,True,AORB *,AORB %,,AORB %,ODL lexp,VDL rexp,AORB *,ODL rexp,commons-text
+335,exp,6,6,6,6,6,6,100.00%,True,AOIS --exp,AOIS exp++,LOI ~exp,AOIU -exp,AOIS exp--,AOIS ++exp,,AOIS exp++,commons-text
+339,-exp,1,1,1,2,2,2,100.00%,True,AODU exp,,AODU exp,ODL exp,,org.apache.commons.text.similarity.JaroWinklerDistance,matches(java.lang.CharSequence,java.lang.CharSequence),commons-text
+340,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.similarity.JaroWinklerDistance,matches(java.lang.CharSequence,java.lang.CharSequence),62,commons-text
+341,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.JaroWinklerDistance,matches(java.lang.CharSequence,java.lang.CharSequence),54,commons-text
+350,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.JaroWinklerDistance,matches(java.lang.CharSequence,java.lang.CharSequence),54,commons-text
+355,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.JaroWinklerDistance,matches(java.lang.CharSequence,java.lang.CharSequence),77,commons-text
+358,lexp / rexp,2,2,2,7,7,7,100.00%,True,AORB *,AORB %,,ODL rexp,ODL lexp,VDL lexp,AORB +,AORB %,commons-text
+359,lexp + rexp,3,3,3,6,6,6,100.00%,True,AORB %,ODL lexp,ODL rexp,,ODL rexp,AORB /,ODL lexp,AORB %,commons-text
+360,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.text.similarity.JaroWinklerDistance,apply(java.lang.CharSequence,commons-text
+363,exp,6,6,6,6,6,6,100.00%,True,AOIS --exp,LOI ~exp,AOIU -exp,AOIS exp--,AOIS exp++,AOIS ++exp,,LOI ~exp,commons-text
+364,lexp + rexp,3,3,3,6,6,6,100.00%,True,ODL lexp,AORB %,ODL rexp,,AORB %,AORB -,ODL rexp,ODL lexp,commons-text
+369,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.similarity.JaroWinklerDistance,matches(java.lang.CharSequence,java.lang.CharSequence),50,commons-text
+372,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.similarity.JaroWinklerDistance,matches(java.lang.CharSequence,java.lang.CharSequence),51,commons-text
+376,lexp == rexp,3,3,3,8,8,8,100.00%,True,ROR >=,ROR <=,ROR false,,ROR true,ROR <,ROR <=,ROR false,commons-text
+378,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.similarity.JaroWinklerDistance,matches(java.lang.CharSequence,java.lang.CharSequence),52,commons-text
+382,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.text.similarity.JaroWinklerDistance,apply(java.lang.CharSequence,java.lang.CharSequence),commons-text
+386,exp,4,4,4,4,4,4,100.00%,True,LOI ~exp,AOIS exp++,AOIS exp--,AOIU -exp,,LOI ~exp,AOIS exp++,AOIS exp--,commons-text
+393,exp,4,4,4,4,4,4,100.00%,True,AOIS exp++,AOIS exp--,LOI ~exp,AOIU -exp,,AOIS exp++,AOIS exp--,LOI ~exp,commons-text
+394,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.JaroWinklerDistance,matches(java.lang.CharSequence,java.lang.CharSequence),71,commons-text
+397,exp,6,6,6,6,6,6,100.00%,True,LOI ~exp,AOIS exp++,AOIS ++exp,AOIS exp--,AOIU -exp,AOIS --exp,,LOI ~exp,commons-text
+398,exp,4,4,4,4,4,4,100.00%,True,AOIS exp--,AOIU -exp,AOIS exp++,LOI ~exp,,AOIS exp--,LOI ~exp,AOIS exp++,commons-text
+402,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.text.similarity.JaroWinklerDistance,apply(java.lang.CharSequence,commons-text
+404,exp,6,6,6,6,6,6,100.00%,True,AOIS ++exp,LOI ~exp,AOIU -exp,AOIS exp--,AOIS exp++,AOIS --exp,,AOIS ++exp,commons-text
+406,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.JaroWinklerDistance,matches(java.lang.CharSequence,java.lang.CharSequence),65,commons-text
+408,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.JaroWinklerDistance,matches(java.lang.CharSequence,java.lang.CharSequence),63,commons-text
+409,!exp,1,1,1,2,2,2,100.00%,True,COD exp,,COD exp,ODL exp,,org.apache.commons.text.similarity.JaroWinklerDistance,matches(java.lang.CharSequence,java.lang.CharSequence),commons-text
+414,exp,6,6,6,6,6,6,100.00%,True,AOIS exp++,LOI ~exp,AOIU -exp,AOIS ++exp,AOIS --exp,AOIS exp--,,LOI ~exp,commons-text
+417,exp,4,4,4,4,4,4,100.00%,True,LOI ~exp,AOIU -exp,AOIS exp--,AOIS exp++,,LOI ~exp,AOIU -exp,AOIS exp--,commons-text
+420,lexp / rexp,2,2,2,7,7,7,100.00%,True,AORB %,AORB *,,AORB +,ODL rexp,VDL rexp,AORB -,ODL lexp,commons-text
+424,lexp / rexp,2,2,2,7,7,7,100.00%,True,AORB *,AORB %,,AORB *,AORB -,ODL lexp,AORB +,CDL lexp,commons-text
+427,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.text.similarity.JaroWinklerDistance,apply(java.lang.CharSequence,java.lang.CharSequence),commons-text
+428,exp,6,6,6,6,6,6,100.00%,True,AOIU -exp,AOIS --exp,LOI ~exp,AOIS exp++,AOIS ++exp,AOIS exp--,,AOIS exp++,commons-text
+432,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.similarity.JaroWinklerDistance,matches(java.lang.CharSequence,java.lang.CharSequence),68,commons-text
+433,lexp || rexp,4,4,4,9,9,9,100.00%,True,ODL lexp,COR true,ODL rexp,COR !=,,COR &&,COR false,COR ^,commons-text
+434,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.JaroWinklerDistance,matches(java.lang.CharSequence,java.lang.CharSequence),69,commons-text
+438,exp,6,6,6,6,6,6,100.00%,True,AOIS exp--,AOIS --exp,AOIU -exp,LOI ~exp,AOIS ++exp,AOIS exp++,,AOIS exp--,commons-text
+430,exp,5,5,5,5,5,5,100.00%,True,AOIS exp++,AOIS exp--,AOIS --exp,LOI ~exp,AOIS ++exp,,AOIS ++exp,AOIS exp--,commons-text
+431,exp,4,4,4,4,4,4,100.00%,True,LOI ~exp,AOIU -exp,AOIS exp--,AOIS exp++,,LOI ~exp,AOIU -exp,AOIS exp--,commons-text
+432,-exp,1,1,1,2,2,2,100.00%,True,AODU exp,,AODU exp,ODL exp,,org.apache.commons.text.similarity.JaroWinklerSimilarity,matches(java.lang.CharSequence,java.lang.CharSequence),commons-text
+442,exp,4,4,4,4,4,4,100.00%,True,AOIS exp--,AOIU -exp,AOIS exp++,LOI ~exp,,AOIS exp--,LOI ~exp,AOIS exp++,commons-text
+444,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.text.similarity.JaroWinklerSimilarity,apply(java.lang.CharSequence,java.lang.CharSequence),commons-text
+450,exp,6,6,6,6,6,6,100.00%,True,AOIS exp--,AOIU -exp,LOI ~exp,AOIS exp++,AOIS --exp,AOIS ++exp,,LOI ~exp,commons-text
+456,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.JaroWinklerSimilarity,matches(java.lang.CharSequence,java.lang.CharSequence),88,commons-text
+461,exp,6,6,6,6,6,6,100.00%,True,AOIS --exp,AOIS exp++,LOI ~exp,AOIU -exp,AOIS exp--,AOIS ++exp,,AOIS exp++,commons-text
+464,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.similarity.JaroWinklerSimilarity,matches(java.lang.CharSequence,java.lang.CharSequence),54,commons-text
+467,lexp || rexp,4,4,4,9,9,9,100.00%,True,ODL lexp,COR true,ODL rexp,COR !=,,COR &&,COR false,COR ^,commons-text
+476,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.similarity.JaroWinklerSimilarity,matches(java.lang.CharSequence,java.lang.CharSequence),52,commons-text
+480,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.similarity.JaroWinklerSimilarity,matches(java.lang.CharSequence,java.lang.CharSequence),53,commons-text
+486,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.JaroWinklerSimilarity,matches(java.lang.CharSequence,java.lang.CharSequence),73,commons-text
+491,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.text.similarity.JaroWinklerSimilarity,apply(java.lang.CharSequence,commons-text
+495,exp,6,6,6,6,6,6,100.00%,True,AOIS exp++,LOI ~exp,AOIU -exp,AOIS ++exp,AOIS --exp,AOIS exp--,,LOI ~exp,commons-text
+503,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.similarity.JaroWinklerSimilarity,matches(java.lang.CharSequence,java.lang.CharSequence),64,commons-text
+512,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.text.similarity.JaroWinklerSimilarity,apply(java.lang.CharSequence,commons-text
+514,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.JaroWinklerSimilarity,matches(java.lang.CharSequence,java.lang.CharSequence),67,commons-text
+535,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.similarity.JaroWinklerSimilarity,matches(java.lang.CharSequence,java.lang.CharSequence),70,commons-text
+540,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.text.similarity.JaroWinklerSimilarity,apply(java.lang.CharSequence,java.lang.CharSequence),commons-text
+533,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.text.similarity.LevenshteinDetailedDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,commons-text
+538,exp,6,6,6,6,6,6,100.00%,True,LOI ~exp,AOIU -exp,AOIS exp--,AOIS --exp,AOIS ++exp,AOIS exp++,,LOI ~exp,commons-text
+539,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,int),commons-text
+540,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,findDetailedResults(java.lang.CharSequence,java.lang.CharSequence,int,commons-text
+544,exp,6,6,6,6,6,6,100.00%,True,AOIS exp++,AOIU -exp,AOIS ++exp,AOIS exp--,LOI ~exp,AOIS --exp,,AOIS exp++,commons-text
+553,!exp,1,1,1,2,2,2,100.00%,True,COD exp,,COD exp,ODL exp,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,findDetailedResults(java.lang.CharSequence,java.lang.CharSequence,commons-text
+556,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,int),commons-text
+558,lexp - rexp,3,3,3,8,8,8,100.00%,True,ODL rexp,AORB %,ODL lexp,,AORB %,VDL rexp,ODL rexp,AORB *,commons-text
+559,!exp,1,1,1,2,2,2,100.00%,True,COD exp,,COD exp,ODL exp,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,findDetailedResults(java.lang.CharSequence,java.lang.CharSequence,commons-text
+565,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,ROR ==,COI !(),,org.apache.commons.text.similarity.LevenshteinDetailedDistance,apply(java.lang.CharSequence,java.lang.CharSequence),commons-text
+575,-exp,1,1,1,2,2,2,100.00%,True,AODU exp,,AODU exp,ODL exp,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,commons-text
+578,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,int),commons-text
+581,lexp <= rexp,2,2,2,6,6,6,100.00%,True,ROR <,ROR ==,,ROR >,ROR <,ROR >=,ROR !=,COI !(),commons-text
+582,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,findDetailedResults(java.lang.CharSequence,java.lang.CharSequence,int,commons-text
+586,-exp,1,1,1,2,2,2,100.00%,True,AODU exp,,AODU exp,ODL exp,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,commons-text
+587,lexp + rexp,3,3,3,8,8,8,100.00%,True,AORB %,ODL rexp,ODL lexp,,AORB -,ODL rexp,VDL rexp,AORB *,commons-text
+588,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,int),commons-text
+591,lexp - rexp,3,3,3,8,8,8,100.00%,True,ODL lexp,AORB %,ODL rexp,,AORB *,AORB %,AORB /,ODL lexp,commons-text
+600,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,unlimitedCompare(java.lang.CharSequence,java.lang.CharSequence),140,commons-text
+602,lexp + rexp,3,3,3,8,8,8,100.00%,True,AORB %,ODL lexp,ODL rexp,,AORB *,ODL rexp,AORB -,AORB %,commons-text
+605,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,findDetailedResults(java.lang.CharSequence,java.lang.CharSequence,int,commons-text
+607,lexp - rexp,3,3,3,8,8,8,100.00%,True,AORB %,ODL rexp,ODL lexp,,AORB /,AORB %,VDL rexp,CDL lexp,commons-text
+612,exp,5,5,5,5,5,5,100.00%,True,AOIS exp--,LOI ~exp,AOIS exp++,AOIS --exp,AOIS ++exp,,AOIS exp--,LOI ~exp,commons-text
+614,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,int),commons-text
+616,exp,6,6,6,6,6,6,100.00%,True,LOI ~exp,AOIS ++exp,AOIS --exp,AOIS exp--,AOIS exp++,AOIU -exp,,LOI ~exp,commons-text
+623,exp,5,5,5,5,5,5,100.00%,True,AOIS ++exp,AOIS exp++,AOIS --exp,AOIS exp--,LOI ~exp,,AOIS ++exp,AOIS exp++,commons-text
+630,exp,6,6,6,6,6,6,100.00%,True,AOIS exp++,AOIS ++exp,AOIS --exp,AOIS exp--,LOI ~exp,AOIU -exp,,AOIS --exp,commons-text
+631,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,int),commons-text
+638,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,COI !(),ROR ==,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,,24,commons-text
+639,exp,4,4,4,4,4,4,100.00%,True,AOIS exp--,AOIU -exp,AOIS exp++,LOI ~exp,,AOIS exp--,AOIU -exp,AOIS exp++,commons-text
+643,exp,6,6,6,6,6,6,100.00%,True,AOIS --exp,AOIS exp--,LOI ~exp,AOIS exp++,AOIU -exp,AOIS ++exp,,AOIS exp++,commons-text
+650,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,limitedCompare(java.lang.CharSequence,commons-text
+653,exp,5,5,5,5,5,5,100.00%,True,AOIS exp--,AOIS exp++,LOI ~exp,AOIS --exp,AOIS ++exp,,AOIS exp--,LOI ~exp,commons-text
+654,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,unlimitedCompare(java.lang.CharSequence,java.lang.CharSequence),157,commons-text
+667,lexp + rexp,3,3,3,8,8,8,100.00%,True,AORB %,ODL rexp,ODL lexp,,AORB /,VDL rexp,ODL lexp,CDL lexp,commons-text
+673,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,findDetailedResults(java.lang.CharSequence,java.lang.CharSequence,int,commons-text
+678,lexp + rexp,3,3,3,8,8,8,100.00%,True,AORB %,ODL lexp,ODL rexp,,AORB -,ODL rexp,CDL lexp,AORB /,commons-text
+683,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,findDetailedResults(java.lang.CharSequence,java.lang.CharSequence,int,commons-text
+685,lexp < rexp,2,2,2,8,7,8,87.50%,True,ROR !=,ROR <=,ROR false,ROR >=,ROR ==,ROR !=,COI !(),ROR <=,commons-text
+693,exp,5,5,5,5,5,5,100.00%,True,AOIS exp--,AOIS exp++,LOI ~exp,AOIS ++exp,AOIS --exp,,AOIS exp--,AOIS exp++,commons-text
+694,exp,4,4,4,4,4,4,100.00%,True,AOIS exp++,LOI ~exp,AOIU -exp,AOIS exp--,,AOIS exp++,LOI ~exp,AOIU -exp,commons-text
+698,exp,6,6,6,6,6,6,100.00%,True,AOIS exp++,AOIU -exp,LOI ~exp,AOIS ++exp,AOIS --exp,AOIS exp--,,LOI ~exp,commons-text
+700,lexp + rexp,3,3,3,8,8,8,100.00%,True,ODL lexp,AORB %,ODL rexp,,AORB /,VDL rexp,AORB %,AORB *,commons-text
+704,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,findDetailedResults(java.lang.CharSequence,commons-text
+710,lexp <= rexp,2,2,2,8,7,8,87.50%,True,ROR ==,ROR <,ROR true,COI !(),ROR ==,ROR false,ROR <,ROR !=,commons-text
+716,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,int),commons-text
+717,exp,6,6,6,6,6,6,100.00%,True,LOI ~exp,AOIS exp++,AOIS --exp,AOIS exp--,AOIS ++exp,AOIU -exp,,LOI ~exp,commons-text
+718,lexp + rexp,3,3,3,8,8,8,100.00%,True,AORB %,ODL rexp,ODL lexp,,ODL rexp,AORB %,AORB -,ODL lexp,commons-text
+724,lexp > rexp,2,2,2,8,7,8,87.50%,True,ROR !=,ROR >=,ROR false,ROR !=,COI !(),ROR <,ROR >=,ROR <=,commons-text
+733,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,unlimitedCompare(java.lang.CharSequence,java.lang.CharSequence),150,commons-text
+734,exp,5,5,5,5,5,5,100.00%,True,AOIS exp++,AOIS exp--,LOI ~exp,AOIS --exp,AOIS ++exp,,AOIS exp++,AOIS --exp,commons-text
+741,lexp && rexp,4,4,4,9,9,9,100.00%,True,COR ==,COR false,ODL lexp,ODL rexp,,COR ^,COR false,COR ||,commons-text
+746,exp,4,4,4,4,4,4,100.00%,True,AOIU -exp,AOIS exp--,AOIS exp++,LOI ~exp,,LOI ~exp,AOIU -exp,AOIS exp--,commons-text
+747,exp,6,6,6,6,6,6,100.00%,True,AOIS exp++,AOIS --exp,AOIU -exp,AOIS ++exp,AOIS exp--,LOI ~exp,,AOIS exp++,commons-text
+748,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,int),commons-text
+752,exp,6,6,6,6,6,6,100.00%,True,AOIS --exp,LOI ~exp,AOIU -exp,AOIS ++exp,AOIS exp++,AOIS exp--,,AOIS exp++,commons-text
+753,lexp <= rexp,2,2,2,6,6,6,100.00%,True,ROR ==,ROR <,,ROR <,ROR >,ROR !=,ROR >=,ROR ==,commons-text
+757,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,int),commons-text
+761,lexp + rexp,3,3,3,8,8,8,100.00%,True,AORB %,ODL rexp,ODL lexp,,ODL lexp,AORB *,ODL rexp,AORB -,commons-text
+763,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,unlimitedCompare(java.lang.CharSequence,java.lang.CharSequence),169,commons-text
+764,exp,6,6,6,6,6,6,100.00%,True,AOIS ++exp,AOIU -exp,LOI ~exp,AOIS exp++,AOIS exp--,AOIS --exp,,AOIU -exp,commons-text
+768,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,int),commons-text
+773,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,,commons-text
+780,-exp,1,1,1,2,2,2,100.00%,True,AODU exp,,AODU exp,ODL exp,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,findDetailedResults(java.lang.CharSequence,java.lang.CharSequence,commons-text
+781,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,unlimitedCompare(java.lang.CharSequence,java.lang.CharSequence),147,commons-text
+784,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,int),commons-text
+786,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,unlimitedCompare(java.lang.CharSequence,java.lang.CharSequence),165,commons-text
+794,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,commons-text
+797,lexp - rexp,3,3,3,8,8,8,100.00%,True,ODL rexp,ODL lexp,AORB %,,AORB +,AORB /,AORB %,CDL lexp,commons-text
+803,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,findDetailedResults(java.lang.CharSequence,java.lang.CharSequence,int,commons-text
+812,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,unlimitedCompare(java.lang.CharSequence,java.lang.CharSequence),commons-text
+813,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,int),commons-text
+814,exp,6,6,6,6,6,6,100.00%,True,LOI ~exp,AOIS exp--,AOIS ++exp,AOIU -exp,AOIS --exp,AOIS exp++,,LOI ~exp,commons-text
+825,exp,6,6,6,6,6,6,100.00%,True,AOIS exp++,LOI ~exp,AOIU -exp,AOIS ++exp,AOIS --exp,AOIS exp--,,AOIS --exp,commons-text
+829,exp,6,6,6,6,6,6,100.00%,True,AOIS exp--,AOIS ++exp,LOI ~exp,AOIS exp++,AOIU -exp,AOIS --exp,,LOI ~exp,commons-text
+835,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,unlimitedCompare(java.lang.CharSequence,java.lang.CharSequence),140,commons-text
+836,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,int),commons-text
+840,exp,6,6,6,6,6,6,100.00%,True,AOIS exp--,AOIS exp++,AOIS ++exp,AOIU -exp,LOI ~exp,AOIS --exp,,AOIS exp--,commons-text
+841,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,unlimitedCompare(java.lang.CharSequence,java.lang.CharSequence),171,commons-text
+844,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.text.similarity.LevenshteinDetailedDistance,unlimitedCompare(java.lang.CharSequence,java.lang.CharSequence),commons-text
+845,lexp - rexp,3,3,3,8,8,8,100.00%,True,ODL lexp,AORB %,ODL rexp,,AORB /,AORB +,VDL rexp,AORB %,commons-text
+848,lexp - rexp,3,3,3,8,8,8,100.00%,True,ODL rexp,AORB %,ODL lexp,,CDL lexp,VDL rexp,AORB %,AORB /,commons-text
+849,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,unlimitedCompare(java.lang.CharSequence,java.lang.CharSequence),140,commons-text
+850,exp,5,5,5,5,5,5,100.00%,True,AOIS exp++,LOI ~exp,AOIS --exp,AOIS exp--,AOIS ++exp,,AOIS exp++,LOI ~exp,commons-text
+852,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,int),commons-text
+853,exp,6,6,6,6,6,6,100.00%,True,AOIS --exp,LOI ~exp,AOIU -exp,AOIS ++exp,AOIS exp--,AOIS exp++,,AOIS --exp,commons-text
+857,exp,6,6,6,6,6,6,100.00%,True,LOI ~exp,AOIS --exp,AOIS exp++,AOIS ++exp,AOIU -exp,AOIS exp--,,LOI ~exp,commons-text
+863,exp,5,5,5,5,5,5,100.00%,True,AOIS exp++,AOIS exp--,AOIS --exp,AOIS ++exp,LOI ~exp,,AOIS exp++,AOIS exp--,commons-text
+864,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,unlimitedCompare(java.lang.CharSequence,java.lang.CharSequence),164,commons-text
+870,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,int),commons-text
+872,lexp <= rexp,2,2,2,8,7,8,87.50%,True,ROR <,ROR ==,ROR true,ROR >,COI !(),ROR ==,ROR false,ROR !=,commons-text
+874,exp,6,6,6,6,6,6,100.00%,True,AOIS exp++,AOIS ++exp,LOI ~exp,AOIU -exp,AOIS --exp,AOIS exp--,,AOIS ++exp,commons-text
+876,exp,6,6,6,6,6,6,100.00%,True,AOIU -exp,AOIS exp++,LOI ~exp,AOIS exp--,AOIS ++exp,AOIS --exp,,AOIS exp--,commons-text
+883,lexp + rexp,3,3,3,8,8,8,100.00%,True,AORB %,ODL rexp,ODL lexp,,AORB *,ODL rexp,AORB /,AORB %,commons-text
+889,exp,6,6,6,6,6,6,100.00%,True,AOIU -exp,LOI ~exp,AOIS ++exp,AOIS --exp,AOIS exp++,AOIS exp--,,AOIU -exp,commons-text
+897,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,unlimitedCompare(java.lang.CharSequence,java.lang.CharSequence),132,commons-text
+901,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,unlimitedCompare(java.lang.CharSequence,java.lang.CharSequence),140,commons-text
+911,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,unlimitedCompare(java.lang.CharSequence,java.lang.CharSequence),169,commons-text
+913,lexp - rexp,3,3,3,8,8,8,100.00%,True,ODL rexp,AORB %,ODL lexp,,ODL lexp,CDL lexp,AORB /,AORB *,commons-text
+914,-exp,1,1,1,2,2,2,100.00%,True,AODU exp,,AODU exp,ODL exp,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,findDetailedResults(java.lang.CharSequence,java.lang.CharSequence,commons-text
+918,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,unlimitedCompare(java.lang.CharSequence,java.lang.CharSequence),165,commons-text
+887,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,int),commons-text
+888,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.text.similarity.LevenshteinDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,commons-text
+892,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,int),commons-text
+893,lexp - rexp,3,3,3,8,8,8,100.00%,True,AORB %,ODL lexp,ODL rexp,,AORB +,AORB /,ODL lexp,VDL rexp,commons-text
+894,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,int),commons-text
+895,lexp == rexp,3,3,3,8,8,8,100.00%,True,ROR false,ROR >=,ROR <=,,ROR false,ROR >,ROR <,ROR >=,commons-text
+896,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.text.similarity.LevenshteinDistance,unlimitedCompare(java.lang.CharSequence,commons-text
+897,exp,6,6,6,6,6,6,100.00%,True,AOIS --exp,AOIU -exp,LOI ~exp,AOIS exp++,AOIS exp--,AOIS ++exp,,AOIU -exp,commons-text
+901,lexp == rexp,3,3,3,8,8,8,100.00%,True,ROR >=,ROR <=,ROR false,,ROR <=,ROR false,ROR >,ROR >=,commons-text
+902,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,int),commons-text
+908,lexp <= rexp,2,2,2,6,6,6,100.00%,True,ROR ==,ROR <,,ROR !=,ROR >=,ROR >,ROR <,ROR ==,commons-text
+916,lexp - rexp,3,3,3,8,8,8,100.00%,True,AORB %,ODL rexp,ODL lexp,,AORB /,AORB +,AORB *,CDL lexp,commons-text
+921,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDistance,unlimitedCompare(java.lang.CharSequence,java.lang.CharSequence),128,commons-text
+922,exp,6,6,6,6,6,6,100.00%,True,AOIS exp--,AOIU -exp,LOI ~exp,AOIS --exp,AOIS ++exp,AOIS exp++,,AOIU -exp,commons-text
+927,exp,3,3,3,3,3,3,100.00%,True,AOIS exp++,LOI ~exp,AOIS exp--,,AOIS exp++,LOI ~exp,AOIS exp--,,commons-text
+928,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDistance,unlimitedCompare(java.lang.CharSequence,java.lang.CharSequence),128,commons-text
+929,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDistance,unlimitedCompare(java.lang.CharSequence,java.lang.CharSequence),149,commons-text
+930,lexp <= rexp,2,2,2,6,6,6,100.00%,True,ROR ==,ROR <,,ROR !=,ROR <,ROR >=,ROR ==,COI !(),commons-text
+938,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.similarity.LevenshteinDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,int),commons-text
+940,exp,6,6,6,6,6,6,100.00%,True,LOI ~exp,AOIU -exp,AOIS ++exp,AOIS exp++,AOIS --exp,AOIS exp--,,AOIS --exp,commons-text
+945,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,int),commons-text
+947,lexp <= rexp,2,2,2,7,7,7,100.00%,True,ROR ==,ROR <,,ROR <,ROR >,COI !(),ROR true,ROR ==,commons-text
+950,exp,4,4,4,4,4,4,100.00%,True,AOIS exp--,AOIS exp++,AOIU -exp,LOI ~exp,,AOIS exp++,AOIS exp--,AOIU -exp,commons-text
+952,lexp + rexp,3,3,3,8,8,8,100.00%,True,ODL rexp,ODL lexp,AORB %,,ODL rexp,CDL lexp,AORB *,AORB /,commons-text
+953,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,int),commons-text
+954,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.text.similarity.LevenshteinDistance,,commons-text
+955,exp,6,6,6,6,6,6,100.00%,True,AOIS ++exp,AOIS exp--,AOIU -exp,AOIS exp++,LOI ~exp,AOIS --exp,,AOIS ++exp,commons-text
+958,lexp - rexp,3,3,3,8,7,8,87.50%,True,ODL rexp,AORB %,ODL lexp,AORB /,ODL lexp,ODL rexp,AORB %,AORB +,commons-text
+959,lexp + rexp,3,3,3,8,8,8,100.00%,True,AORB %,ODL rexp,ODL lexp,,VDL rexp,AORB *,ODL rexp,AORB /,commons-text
+961,lexp + rexp,3,3,3,8,8,8,100.00%,True,AORB %,ODL rexp,ODL lexp,,AORB %,AORB -,ODL rexp,CDL lexp,commons-text
+962,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,ROR ==,COI !(),,org.apache.commons.text.similarity.LevenshteinDistance,apply(java.lang.CharSequence,java.lang.CharSequence),commons-text
+965,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.text.similarity.LevenshteinDistance,limitedCompare(java.lang.CharSequence,commons-text
+966,exp,6,6,6,6,6,6,100.00%,True,AOIS exp++,AOIS ++exp,LOI ~exp,AOIS exp--,AOIU -exp,AOIS --exp,,AOIS ++exp,commons-text
+967,exp,6,6,6,6,6,6,100.00%,True,AOIS ++exp,AOIS exp--,AOIU -exp,AOIS exp++,LOI ~exp,AOIS --exp,,AOIS exp++,commons-text
+970,exp,6,6,6,6,6,6,100.00%,True,AOIU -exp,AOIS ++exp,AOIS exp++,AOIS exp--,AOIS --exp,LOI ~exp,,AOIU -exp,commons-text
+973,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.text.similarity.LevenshteinDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,commons-text
+975,lexp - rexp,3,3,3,8,8,8,100.00%,True,AORB %,ODL rexp,ODL lexp,,ODL lexp,AORB *,ODL rexp,AORB +,commons-text
+977,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDistance,unlimitedCompare(java.lang.CharSequence,java.lang.CharSequence),118,commons-text
+980,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.similarity.LevenshteinDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,int),commons-text
+981,exp,4,4,4,4,4,4,100.00%,True,AOIS exp--,AOIU -exp,AOIS exp++,LOI ~exp,,AOIS exp--,AOIU -exp,AOIS exp++,commons-text
+983,exp,6,6,6,6,6,6,100.00%,True,LOI ~exp,AOIS exp--,AOIS exp++,AOIS ++exp,AOIS --exp,AOIU -exp,,LOI ~exp,commons-text
+990,lexp + rexp,3,3,3,7,7,7,100.00%,True,AORB %,ODL lexp,ODL rexp,,AORB /,CDL rexp,AORB *,ODL lexp,commons-text
+996,exp,6,6,6,6,6,6,100.00%,True,AOIS ++exp,AOIS --exp,AOIU -exp,AOIS exp++,AOIS exp--,LOI ~exp,,LOI ~exp,commons-text
+998,lexp && rexp,4,4,4,9,9,9,100.00%,True,ODL lexp,COR false,ODL rexp,COR ==,,COR ^,COR false,COR ||,commons-text
+999,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,COI !(),ROR ==,,org.apache.commons.text.similarity.LevenshteinDistance,,24,commons-text
+1000,exp,5,5,5,5,5,5,100.00%,True,LOI ~exp,AOIS exp--,AOIS ++exp,AOIS exp++,AOIS --exp,,LOI ~exp,AOIS exp--,commons-text
+1002,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDistance,unlimitedCompare(java.lang.CharSequence,java.lang.CharSequence),148,commons-text
+1003,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.text.similarity.LevenshteinDistance,unlimitedCompare(java.lang.CharSequence,java.lang.CharSequence),commons-text
+1005,exp,6,6,6,6,6,6,100.00%,True,AOIS exp--,LOI ~exp,AOIS --exp,AOIU -exp,AOIS exp++,AOIS ++exp,,LOI ~exp,commons-text
+1011,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDistance,unlimitedCompare(java.lang.CharSequence,java.lang.CharSequence),152,commons-text
+1013,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,int),commons-text
+1014,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.text.similarity.LevenshteinDistance,unlimitedCompare(java.lang.CharSequence,java.lang.CharSequence),commons-text
+1015,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,int),commons-text
+1019,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.similarity.LevenshteinDistance,unlimitedCompare(java.lang.CharSequence,java.lang.CharSequence),147,commons-text
+1023,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.similarity.LevenshteinDistance,unlimitedCompare(java.lang.CharSequence,java.lang.CharSequence),138,commons-text
+1024,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,int),commons-text
+1026,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.text.similarity.LevenshteinDistance,limitedCompare(java.lang.CharSequence,commons-text
+1031,exp,6,6,6,6,6,6,100.00%,True,AOIS ++exp,AOIU -exp,AOIS exp++,LOI ~exp,AOIS --exp,AOIS exp--,,AOIS ++exp,commons-text
+1035,exp,6,6,6,6,6,6,100.00%,True,AOIS ++exp,AOIS --exp,AOIU -exp,AOIS exp--,LOI ~exp,AOIS exp++,,AOIS --exp,commons-text
+1038,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDistance,unlimitedCompare(java.lang.CharSequence,java.lang.CharSequence),121,commons-text
+1039,exp,6,6,6,6,6,6,100.00%,True,AOIU -exp,AOIS exp--,LOI ~exp,AOIS ++exp,AOIS --exp,AOIS exp++,,AOIS --exp,commons-text
+1040,-exp,1,1,1,2,2,2,100.00%,True,AODU exp,,ODL exp,AODU exp,,org.apache.commons.text.similarity.LevenshteinDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,commons-text
+1046,exp,6,6,6,6,6,6,100.00%,True,AOIS exp++,AOIU -exp,AOIS exp--,AOIS ++exp,AOIS --exp,LOI ~exp,,AOIS --exp,commons-text
+1047,lexp - rexp,3,3,3,8,8,8,100.00%,True,ODL rexp,AORB %,ODL lexp,,AORB +,ODL rexp,AORB %,AORB /,commons-text
+1049,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDistance,unlimitedCompare(java.lang.CharSequence,java.lang.CharSequence),128,commons-text
+1050,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,int),commons-text
+1051,lexp <= rexp,2,2,2,8,7,8,87.50%,True,ROR <,ROR ==,ROR true,ROR >,COI !(),ROR ==,ROR !=,ROR false,commons-text
+1052,lexp <= rexp,2,2,2,8,7,8,87.50%,True,ROR ==,ROR <,ROR true,ROR <,ROR false,COI !(),ROR >,ROR !=,commons-text
+1058,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.similarity.LevenshteinDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,int),commons-text
+1060,lexp < rexp,2,2,2,8,7,8,87.50%,True,ROR !=,ROR <=,ROR false,ROR >=,ROR ==,ROR !=,COI !(),ROR <=,commons-text
+1061,exp,6,6,6,6,6,6,100.00%,True,AOIU -exp,LOI ~exp,AOIS exp++,AOIS --exp,AOIS exp--,AOIS ++exp,,AOIS ++exp,commons-text
+1063,lexp <= rexp,2,2,2,6,6,6,100.00%,True,ROR <,ROR ==,,ROR <,ROR ==,COI !(),ROR >=,ROR >,commons-text
+1067,lexp - rexp,3,3,3,8,8,8,100.00%,True,ODL rexp,AORB %,ODL lexp,,AORB /,ODL lexp,VDL rexp,AORB +,commons-text
+1068,exp,6,6,6,6,6,6,100.00%,True,AOIS exp++,LOI ~exp,AOIS --exp,AOIU -exp,AOIS ++exp,AOIS exp--,,AOIS exp++,commons-text
+1070,lexp + rexp,3,3,3,8,8,8,100.00%,True,ODL lexp,AORB %,ODL rexp,,AORB /,AORB -,ODL lexp,ODL rexp,commons-text
+1076,exp,6,6,6,6,6,6,100.00%,True,AOIS ++exp,LOI ~exp,AOIS exp++,AOIS exp--,AOIS --exp,AOIU -exp,,AOIS exp++,commons-text
+1078,lexp + rexp,3,3,3,8,8,8,100.00%,True,ODL rexp,AORB %,ODL lexp,,AORB %,VDL lexp,ODL lexp,VDL rexp,commons-text
+1079,lexp + rexp,3,3,3,8,8,8,100.00%,True,ODL lexp,AORB %,ODL rexp,,AORB /,ODL lexp,VDL rexp,ODL rexp,commons-text
+1081,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.similarity.LevenshteinDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,int),commons-text
+1085,-exp,1,1,1,2,2,2,100.00%,True,AODU exp,,AODU exp,ODL exp,,org.apache.commons.text.similarity.LevenshteinDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,commons-text
+1076,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL lexp,VDL lexp,ODL rexp,,org.apache.commons.text.similarity.LevenshteinResults,commons-text
+1077,return_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.text.similarity.LevenshteinResults,equals(java.lang.Object),commons-text
+1079,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinResults,toString(),69,0,commons-text
+1080,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,ROR ==,COI !(),,org.apache.commons.text.similarity.LevenshteinResults,equals(java.lang.Object),54,commons-text
+1081,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,ODL rexp,CDL lexp,,org.apache.commons.text.similarity.LevenshteinResults,commons-text
+1082,lexp && rexp,4,4,4,9,9,9,100.00%,True,ODL rexp,COR false,ODL lexp,COR ==,,COR ||,COI !(),COR !=,commons-text
+1083,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.text.similarity.LevenshteinResults,equals(java.lang.Object),commons-text
+1084,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinResults,hashCode(),64,0,commons-text
+1085,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinResults,equals(java.lang.Object),56,0,commons-text
+1086,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.text.similarity.LevenshteinResults,equals(java.lang.Object),54,commons-text
+1091,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.text.similarity.LevenshteinResults,equals(java.lang.Object),51,commons-text
+1092,lexp && rexp,4,4,4,9,9,9,100.00%,True,ODL lexp,COR false,ODL rexp,COR ==,,COR ^,ODL lexp,ODL rexp,commons-text
+1093,lexp + rexp,2,2,2,4,4,4,100.00%,True,ODL lexp,ODL rexp,,ODL rexp,ODL lexp,CDL rexp,VDL lexp,,commons-text
+1095,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL lexp,ODL rexp,CDL lexp,,org.apache.commons.text.similarity.LevenshteinResults,commons-text
+1096,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL rexp,ODL lexp,CDL lexp,,org.apache.commons.text.similarity.LevenshteinResults,commons-text
+1098,lexp || rexp,4,4,4,9,9,9,100.00%,True,ODL lexp,COR !=,COR true,ODL rexp,,COR ^,COR &&,COR false,commons-text
+1096,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.similarity.LongestCommonSubsequence,longestCommonSubstringLengthArray(java.lang.CharSequence,java.lang.CharSequence),64,commons-text
+1100,exp,6,6,6,6,6,6,100.00%,True,AOIS exp++,AOIS exp--,LOI ~exp,AOIS --exp,AOIS ++exp,AOIU -exp,,AOIS exp--,commons-text
+1102,exp,6,6,6,6,6,6,100.00%,True,AOIU -exp,LOI ~exp,AOIS exp++,AOIS ++exp,AOIS exp--,AOIS --exp,,AOIU -exp,commons-text
+1104,lexp + rexp,3,3,3,7,7,7,100.00%,True,ODL rexp,AORB %,ODL lexp,,AORB -,AORB /,AORB %,CDL lexp,commons-text
+1105,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LongestCommonSubsequence,longestCommonSubsequence(java.lang.CharSequence,java.lang.CharSequence),38,commons-text
+1106,exp,6,6,6,6,6,6,100.00%,True,AOIU -exp,AOIS exp--,AOIS --exp,LOI ~exp,AOIS exp++,AOIS ++exp,,AOIU -exp,commons-text
+1107,lexp + rexp,3,3,3,8,8,8,100.00%,True,ODL lexp,ODL rexp,AORB %,,VDL rexp,AORB *,AORB -,CDL lexp,commons-text
+1109,exp,6,6,6,6,6,6,100.00%,True,AOIS --exp,AOIU -exp,AOIS exp++,AOIS exp--,LOI ~exp,AOIS ++exp,,AOIS --exp,commons-text
+1111,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.similarity.LongestCommonSubsequence,longestCommonSubstringLengthArray(java.lang.CharSequence,java.lang.CharSequence),56,commons-text
+1113,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LongestCommonSubsequence,longestCommonSubsequence(java.lang.CharSequence,java.lang.CharSequence),38,commons-text
+1116,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.text.similarity.LongestCommonSubsequence,apply(java.lang.CharSequence,java.lang.CharSequence),commons-text
+1117,lexp == rexp,3,3,3,8,8,8,100.00%,True,ROR false,ROR >=,ROR <=,,ROR <=,ROR true,ROR >=,ROR false,commons-text
+1118,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LongestCommonSubsequence,longestCommonSubstringLengthArray(java.lang.CharSequence,java.lang.CharSequence),66,commons-text
+1119,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.similarity.LongestCommonSubsequence,longestCommonSubstringLengthArray(java.lang.CharSequence,java.lang.CharSequence),56,commons-text
+1120,lexp == rexp,3,3,3,8,8,8,100.00%,True,ROR >=,ROR <=,ROR false,,ROR <,ROR <=,ROR false,ROR >,commons-text
+1121,lexp + rexp,3,3,3,7,7,7,100.00%,True,AORB %,ODL rexp,ODL lexp,,AORB /,CDL lexp,AORB %,ODL lexp,commons-text
+1122,lexp + rexp,3,3,3,8,8,8,100.00%,True,ODL rexp,ODL lexp,AORB %,,CDL lexp,ODL rexp,AORB *,AORB /,commons-text
+1123,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.similarity.LongestCommonSubsequence,longestCommonSubstringLengthArray(java.lang.CharSequence,java.lang.CharSequence),64,commons-text
+1124,lexp - rexp,3,3,3,7,7,7,100.00%,True,AORB %,ODL rexp,ODL lexp,,AORB /,ODL lexp,ODL rexp,CDL lexp,commons-text
+1128,exp,6,6,6,6,6,6,100.00%,True,AOIS exp++,AOIS ++exp,LOI ~exp,AOIS --exp,AOIU -exp,AOIS exp--,,AOIS ++exp,commons-text
+1129,exp,6,6,6,6,6,6,100.00%,True,AOIS exp--,AOIS ++exp,LOI ~exp,AOIS --exp,AOIS exp++,AOIU -exp,,AOIS exp++,commons-text
+1131,lexp + rexp,3,3,3,8,8,8,100.00%,True,AORB %,ODL rexp,ODL lexp,,AORB -,AORB /,ODL lexp,AORB *,commons-text
+1133,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.text.similarity.LongestCommonSubsequence,apply(java.lang.CharSequence,java.lang.CharSequence),commons-text
+1137,lexp + rexp,3,3,3,8,8,8,100.00%,True,AORB %,ODL lexp,ODL rexp,,AORB /,CDL lexp,VDL rexp,ODL lexp,commons-text
+1139,lexp - rexp,3,3,3,8,8,8,100.00%,True,ODL rexp,AORB %,ODL lexp,,CDL lexp,AORB %,AORB /,VDL rexp,commons-text
+1140,exp,6,6,6,6,6,6,100.00%,True,AOIU -exp,AOIS exp++,LOI ~exp,AOIS ++exp,AOIS --exp,AOIS exp--,,AOIS --exp,commons-text
+1142,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.similarity.LongestCommonSubsequence,longestCommonSubstringLengthArray(java.lang.CharSequence,java.lang.CharSequence),62,commons-text
+1143,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.similarity.LongestCommonSubsequence,longestCommonSubstringLengthArray(java.lang.CharSequence,java.lang.CharSequence),62,commons-text
+1145,lexp - rexp,3,3,3,8,8,8,100.00%,True,ODL lexp,AORB %,ODL rexp,,ODL lexp,AORB /,VDL rexp,ODL rexp,commons-text
+1147,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.similarity.LongestCommonSubsequence,longestCommonSubstringLengthArray(java.lang.CharSequence,java.lang.CharSequence),59,commons-text
+1151,exp,4,4,4,4,4,4,100.00%,True,AOIS exp--,AOIU -exp,LOI ~exp,AOIS exp++,,AOIS exp--,AOIU -exp,LOI ~exp,commons-text
+1153,lexp >= rexp,2,2,2,6,6,6,100.00%,True,ROR ==,ROR >,,ROR <,ROR ==,ROR !=,ROR <=,ROR >,commons-text
+1155,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.text.similarity.LongestCommonSubsequence,longestCommonSubsequence(java.lang.CharSequence,commons-text
