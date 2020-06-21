@@ -4716,7 +4716,6 @@ id,target,mutants_in_minimal,test_suites,assertions,mutants,killed_mutants,not_e
 1178,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.classfile.Field,hashCode(),115,0,commons-bcel
 1193,return_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.bcel.classfile.Field,equals(java.lang.Object),commons-bcel
 1205,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,VDL lexp,ODL rexp,ODL lexp,,org.apache.bcel.classfile.InnerClass,commons-bcel
-1227,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,ODL rexp,VDL lexp,,org.apache.bcel.classfile.InnerClass,commons-bcel
 1240,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,CDL lexp,ODL lexp,,org.apache.bcel.classfile.InnerClass,commons-bcel
 1301,lexp & rexp,2,2,2,6,6,6,100.00%,True,ODL lexp,ODL rexp,,VDL lexp,CDL rexp,ODL lexp,ODL rexp,LOR |,commons-bcel
 1302,exp,5,5,5,5,5,5,100.00%,True,AOIS ++exp,AOIS --exp,LOI ~exp,AOIS exp++,AOIS exp--,,AOIS ++exp,AOIS --exp,commons-bcel
@@ -5081,21 +5080,21 @@ id,target,mutants_in_minimal,test_suites,assertions,mutants,killed_mutants,not_e
 868,exp,4,4,4,4,4,4,100.00%,True,AOIS exp++,AOIS exp--,AOIU -exp,LOI ~exp,,AOIS exp++,LOI ~exp,AOIU -exp,commons-compress
 871,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,setRemoteDevice(long),398,0,commons-compress
 872,lexp > rexp,2,2,2,8,7,8,87.50%,True,ROR !=,ROR >=,ROR false,ROR >=,ROR !=,ROR <=,COI !(),ROR ==,commons-compress
-873,lexp || rexp,4,4,4,9,9,9,,True,ODL lexp,COR !=,ODL rexp,COR true,,COI !(),COR &&,COR ==,commons-compress
-879,lexp * rexp,3,3,3,7,7,7,,True,AORB /,ODL lexp,ODL rexp,,CDL rexp,AORB -,ODL lexp,AORB /,commons-compress
-882,exp,4,4,4,4,4,4,,True,AOIU -exp,AOIS exp++,LOI ~exp,AOIS exp--,,AOIU -exp,AOIS exp++,LOI ~exp,commons-compress
-884,lexp & rexp,2,2,2,5,5,5,,True,ODL rexp,ODL lexp,,ODL lexp,LOR ^,ODL rexp,LOR |,VDL lexp,commons-compress
-887,stm_list,1,1,1,1,1,1,,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,setDeviceMaj(long),337,0,commons-compress
-888,return_stm,1,1,1,1,1,1,,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,getDeviceMaj(),151,0,commons-compress
-877,lexp > rexp,2,2,2,8,7,8,875,True,ROR !=,ROR >=,ROR false,ROR >=,ROR <=,ROR <,ROR true,ROR !=,commons-compress
-880,stm_list,1,1,1,1,1,1,,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,getNextCPIOEntry(),140,0,commons-compress
-897,stm_list,2,2,2,2,2,2,,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,read(byte,commons-compress
-914,-exp,1,1,1,2,2,2,,True,AODU exp,,ODL exp,AODU exp,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,read(byte,int,commons-compress
-915,return_stm,1,1,1,1,1,1,,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,matches(byte,int),390,commons-compress
-943,if_stm,2,2,2,2,2,2,,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,matches(byte,commons-compress
-944,stm_list,1,1,1,1,1,1,,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,close(),89,0,commons-compress
-956,return_stm,1,1,1,1,1,1,,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,read(byte,int,int),commons-compress
-962,lexp < rexp,2,2,2,8,7,8,875,True,ROR !=,ROR <=,ROR false,ROR <=,COI !(),ROR ==,ROR true,ROR !=,commons-compress
+873,lexp || rexp,4,4,4,9,9,9,100.00%,True,ODL lexp,COR !=,ODL rexp,COR true,,COI !(),COR &&,COR ==,commons-compress
+879,lexp * rexp,3,3,3,7,7,7,100.00%,True,AORB /,ODL lexp,ODL rexp,,CDL rexp,AORB -,ODL lexp,AORB /,commons-compress
+882,exp,4,4,4,4,4,4,100.00%,True,AOIU -exp,AOIS exp++,LOI ~exp,AOIS exp--,,AOIU -exp,AOIS exp++,LOI ~exp,commons-compress
+884,lexp & rexp,2,2,2,5,5,5,100.00%,True,ODL rexp,ODL lexp,,ODL lexp,LOR ^,ODL rexp,LOR |,VDL lexp,commons-compress
+887,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,setDeviceMaj(long),337,0,commons-compress
+888,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,getDeviceMaj(),151,0,commons-compress
+877,lexp > rexp,2,2,2,8,7,8,87.50%,True,ROR !=,ROR >=,ROR false,ROR >=,ROR <=,ROR <,ROR true,ROR !=,commons-compress
+880,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,getNextCPIOEntry(),140,0,commons-compress
+897,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,read(byte,commons-compress
+914,-exp,1,1,1,2,2,2,100.00%,True,AODU exp,,ODL exp,AODU exp,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,read(byte,int,commons-compress
+915,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,matches(byte,int),390,commons-compress
+943,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,matches(byte,commons-compress
+944,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,close(),89,0,commons-compress
+956,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,read(byte,int,int),commons-compress
+962,lexp < rexp,2,2,2,8,7,8,87.50%,True,ROR !=,ROR <=,ROR false,ROR <=,COI !(),ROR ==,ROR true,ROR !=,commons-compress
 965,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,skip(long),361,0,commons-compress
 967,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,getNextCPIOEntry(),151,0,commons-compress
 981,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,available(),78,0,commons-compress
@@ -5696,10 +5695,8 @@ id,target,mutants_in_minimal,test_suites,assertions,mutants,killed_mutants,not_e
 572,lexp - rexp,3,3,3,8,8,8,100.00%,True,ODL rexp,AORB %,ODL lexp,,VDL rexp,AORB /,AORB %,ODL rexp,commons-jexl
 574,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.jexl3.internal.LexicalScope,addSymbol(int),62,0,commons-jexl
 575,exp,4,4,4,4,4,4,100.00%,True,AOIU -exp,LOI ~exp,AOIS exp--,AOIS exp++,,AOIS exp++,LOI ~exp,AOIS exp--,commons-jexl
-577,lexp & rexp,2,2,2,5,5,5,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,LOR |,LOR ^,VDL rexp,ODL rexp,commons-jexl
 580,lexp << rexp,6,6,6,6,6,6,100.00%,True,VDL lexp,ODL rexp,SOR >>>,SOR >>,ODL lexp,CDL rexp,,ODL lexp,commons-jexl
 582,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.jexl3.internal.LexicalScope,addSymbol(int),commons-jexl
-583,return_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.jexl3.internal.LexicalScope,hasSymbol(int),commons-jexl
 584,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.jexl3.internal.LexicalScope,getSymbolCount(),66,commons-jexl
 585,lexp & rexp,2,2,2,5,5,5,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,ODL lexp,LOR ^,VDL rexp,LOR |,commons-jexl
 587,exp,6,6,6,6,6,6,100.00%,True,AOIS ++exp,AOIS exp++,AOIS exp--,AOIS --exp,AOIU -exp,LOI ~exp,,AOIS ++exp,commons-jexl
