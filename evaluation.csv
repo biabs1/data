@@ -5083,7 +5083,6 @@ id,target,mutants_in_minimal,test_suites,assertions,mutants,killed_mutants,not_e
 873,lexp || rexp,4,4,4,9,9,9,100.00%,True,ODL lexp,COR !=,ODL rexp,COR true,,COI !(),COR &&,COR ==,commons-compress
 879,lexp * rexp,3,3,3,7,7,7,100.00%,True,AORB /,ODL lexp,ODL rexp,,CDL rexp,AORB -,ODL lexp,AORB /,commons-compress
 882,exp,4,4,4,4,4,4,100.00%,True,AOIU -exp,AOIS exp++,LOI ~exp,AOIS exp--,,AOIU -exp,AOIS exp++,LOI ~exp,commons-compress
-884,lexp & rexp,2,2,2,5,5,5,100.00%,True,ODL rexp,ODL lexp,,ODL lexp,LOR ^,ODL rexp,LOR |,VDL lexp,commons-compress
 887,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,setDeviceMaj(long),337,0,commons-compress
 888,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,getDeviceMaj(),151,0,commons-compress
 877,lexp > rexp,2,2,2,8,7,8,87.50%,True,ROR !=,ROR >=,ROR false,ROR >=,ROR <=,ROR <,ROR true,ROR !=,commons-compress
@@ -5129,7 +5128,6 @@ id,target,mutants_in_minimal,test_suites,assertions,mutants,killed_mutants,not_e
 1234,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.compress.archivers.cpio.CpioUtil,byteArray2long(byte,boolean),28,commons-compress
 1236,lexp >= rexp,2,2,2,6,6,6,100.00%,True,ROR >,ROR ==,,COI !(),ROR !=,ROR <=,ROR ==,ROR <,commons-compress
 1238,lexp & rexp,2,2,2,5,5,5,100.00%,True,ODL lexp,ODL rexp,,LOR ^,LOR |,ODL lexp,VDL rexp,ODL rexp,commons-compress
-1241,lexp & rexp,2,2,2,6,6,6,100.00%,True,ODL rexp,ODL lexp,,ODL lexp,LOR ^,LOR |,ODL rexp,VDL rexp,commons-compress
 1242,++exp,2,2,2,3,3,3,100.00%,True,AODS exp,LOI ~exp,,ODL exp,AODS exp,LOI ~exp,,org.apache.commons.compress.archivers.cpio.CpioUtil,commons-compress
 1243,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioUtil,byteArray2long(byte,boolean),38,commons-compress
 1245,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioUtil,byteArray2long(byte,boolean),37,commons-compress
@@ -5698,7 +5696,6 @@ id,target,mutants_in_minimal,test_suites,assertions,mutants,killed_mutants,not_e
 580,lexp << rexp,6,6,6,6,6,6,100.00%,True,VDL lexp,ODL rexp,SOR >>>,SOR >>,ODL lexp,CDL rexp,,ODL lexp,commons-jexl
 582,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.jexl3.internal.LexicalScope,addSymbol(int),commons-jexl
 584,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.jexl3.internal.LexicalScope,getSymbolCount(),66,commons-jexl
-585,lexp & rexp,2,2,2,5,5,5,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,ODL lexp,LOR ^,VDL rexp,LOR |,commons-jexl
 587,exp,6,6,6,6,6,6,100.00%,True,AOIS ++exp,AOIS exp++,AOIS exp--,AOIS --exp,AOIU -exp,LOI ~exp,,AOIS ++exp,commons-jexl
 588,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.jexl3.internal.LexicalScope,moreSymbols(),commons-jexl
 591,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,ROR ==,COI !(),,org.apache.commons.jexl3.internal.LexicalScope,hasSymbol(int),42,commons-jexl
