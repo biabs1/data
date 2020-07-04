@@ -4141,7 +4141,6 @@ id,target,mutants_in_minimal,test_suites,assertions,mutants,killed_mutants,not_e
 4,lexp && rexp,4,4,4,9,9,9,100.00%,True,COR false,ODL rexp,ODL lexp,COR ==,,COR false,COR ==,COR !=,commons-collections
 5,lexp - rexp,3,3,3,8,8,8,100.00%,True,ODL rexp,AORB %,ODL lexp,,ODL lexp,CDL lexp,AORB *,AORB +,commons-collections
 7,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.collections4.ArrayStack,pop(),commons-collections
-11,-exp,1,1,1,2,2,2,100.00%,True,AODU exp,,ODL exp,AODU exp,,org.apache.commons.collections4.ArrayStack,search(java.lang.Object),79,commons-collections
 13,lexp >= rexp,2,2,2,6,6,6,100.00%,True,ROR ==,ROR >,,ROR >,ROR ==,ROR <=,ROR !=,ROR <,commons-collections
 14,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.collections4.ArrayStack,peek(),commons-collections
 15,return_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.collections4.ArrayStack,empty(),commons-collections
@@ -4245,7 +4244,6 @@ id,target,mutants_in_minimal,test_suites,assertions,mutants,killed_mutants,not_e
 270,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.collections4.comparators.BooleanComparator,,44,0,commons-collections
 271,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.collections4.comparators.BooleanComparator,hashCode(),58,0,commons-collections
 273,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.collections4.comparators.BooleanComparator,compare(java.lang.Boolean,java.lang.Boolean),52,commons-collections
-275,-exp,1,1,1,2,2,2,100.00%,True,AODU exp,,ODL exp,AODU exp,,org.apache.commons.collections4.comparators.BooleanComparator,compare(java.lang.Boolean,java.lang.Boolean),commons-collections
 276,lexp ^ rexp,2,2,2,11,10,11,90.90%,True,COR false,COR ||,COR !=,COR false,COR ==,ODL lexp,COR &&,COI !(),commons-collections
 277,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.collections4.comparators.BooleanComparator,equals(java.lang.Object),62,0,commons-collections
 281,lexp ^ rexp,2,2,2,11,10,11,90.90%,True,COR false,COR ||,COR !=,COR true,VDL lexp,COI !(),ODL rexp,ODL lexp,commons-collections
