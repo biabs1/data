@@ -4267,14 +4267,12 @@ id,target,mutants_in_minimal,test_suites,assertions,mutants,killed_mutants,not_e
 314,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.collections4.comparators.NullComparator,equals(java.lang.Object),64,commons-collections
 316,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.collections4.comparators.NullComparator,equals(java.lang.Object),72,0,commons-collections
 317,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.collections4.comparators.NullComparator,equals(java.lang.Object),66,0,commons-collections
-319,-exp,1,1,1,2,2,2,100.00%,True,AODU exp,,ODL exp,AODU exp,,org.apache.commons.collections4.comparators.NullComparator,compare(E,E),commons-collections
 321,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.collections4.comparators.NullComparator,compare(E,E),52,commons-collections
 324,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.collections4.comparators.NullComparator,equals(java.lang.Object),commons-collections
 325,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.collections4.comparators.NullComparator,compare(E,E),53,commons-collections
 326,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.collections4.comparators.NullComparator,equals(java.lang.Object),67,commons-collections
 327,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.collections4.comparators.NullComparator,compare(E,E),commons-collections
 328,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.collections4.comparators.NullComparator,equals(java.lang.Object),69,0,commons-collections
-329,-exp,1,1,1,2,2,2,100.00%,True,AODU exp,,ODL exp,AODU exp,,org.apache.commons.collections4.comparators.NullComparator,compare(E,E),commons-collections
 331,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.collections4.comparators.NullComparator,compare(E,commons-collections
 332,lexp * rexp,2,2,2,2,2,2,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,ODL rexp,,org.apache.commons.collections4.comparators.NullComparator,hashCode(),commons-collections
 334,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.collections4.comparators.NullComparator,equals(java.lang.Object),74,0,commons-collections
@@ -4561,8 +4559,6 @@ id,target,mutants_in_minimal,test_suites,assertions,mutants,killed_mutants,not_e
 54,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.Const,getItemName(int),862,0,commons-bcel
 67,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.Const,getNoOfOperands(int),737,0,commons-bcel
 76,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.Const,getOpcodeName(int),758,0,commons-bcel
-80,-exp,1,1,1,2,2,2,100.00%,True,AODU exp,,ODL exp,AODU exp,,org.apache.bcel.Const,getInterfacesImplementedByArrays(),675,commons-bcel
-103,-exp,1,1,1,2,2,2,100.00%,True,AODU exp,,ODL exp,AODU exp,,org.apache.bcel.Const,getInterfacesImplementedByArrays(),677,commons-bcel
 119,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.Const,getClassTypeName(int),723,0,commons-bcel
 135,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.Const,getAccessName(int),141,0,commons-bcel
 137,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bcel.Const,getTypeName(int),716,0,commons-bcel
@@ -5088,7 +5084,6 @@ id,target,mutants_in_minimal,test_suites,assertions,mutants,killed_mutants,not_e
 877,lexp > rexp,2,2,2,8,7,8,87.50%,True,ROR !=,ROR >=,ROR false,ROR >=,ROR <=,ROR <,ROR true,ROR !=,commons-compress
 880,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,getNextCPIOEntry(),140,0,commons-compress
 897,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,read(byte,commons-compress
-914,-exp,1,1,1,2,2,2,100.00%,True,AODU exp,,ODL exp,AODU exp,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,read(byte,int,commons-compress
 915,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,matches(byte,int),390,commons-compress
 943,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,matches(byte,commons-compress
 944,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,close(),89,0,commons-compress
@@ -5529,7 +5524,6 @@ id,target,mutants_in_minimal,test_suites,assertions,mutants,killed_mutants,not_e
 1063,lexp + rexp,2,2,2,2,2,2,100.00%,True,ODL rexp,ODL lexp,,ODL rexp,ODL lexp,,org.apache.commons.imaging.common.bytesource.ByteSourceArray,getBlock(long,commons-imaging
 1070,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.imaging.common.bytesource.ByteSourceArray,getBlock(long,commons-imaging
 1073,lexp + rexp,2,2,2,4,4,4,100.00%,True,ODL lexp,ODL rexp,,CDL rexp,ODL lexp,ODL rexp,VDL lexp,,commons-imaging
-1366,-exp,1,1,1,2,2,2,100.00%,True,AODU exp,,ODL exp,AODU exp,,org.apache.commons.imaging.common.mylzw.MyLzwDecompressor,decompress(java.io.InputStream,int),commons-imaging
 1367,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,ODL rexp,CDL lexp,,org.apache.commons.imaging.common.mylzw.MyLzwDecompressor,commons-imaging
 1373,exp,5,5,5,5,5,5,100.00%,True,AOIS exp++,AOIS ++exp,AOIS exp--,AOIS --exp,LOI ~exp,,AOIS ++exp,LOI ~exp,commons-imaging
 1389,lexp + rexp,2,2,2,3,3,3,100.00%,True,ODL lexp,ODL rexp,,ODL lexp,ODL rexp,CDL lexp,,org.apache.commons.imaging.common.mylzw.MyLzwDecompressor,commons-imaging
@@ -6233,7 +6227,6 @@ id,target,mutants_in_minimal,test_suites,assertions,mutants,killed_mutants,not_e
 1035,exp,6,6,6,6,6,6,100.00%,True,AOIS ++exp,AOIS --exp,AOIU -exp,AOIS exp--,LOI ~exp,AOIS exp++,,AOIS --exp,commons-text
 1038,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDistance,unlimitedCompare(java.lang.CharSequence,java.lang.CharSequence),121,commons-text
 1039,exp,6,6,6,6,6,6,100.00%,True,AOIU -exp,AOIS exp--,LOI ~exp,AOIS ++exp,AOIS --exp,AOIS exp++,,AOIS --exp,commons-text
-1040,-exp,1,1,1,2,2,2,100.00%,True,AODU exp,,ODL exp,AODU exp,,org.apache.commons.text.similarity.LevenshteinDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,commons-text
 1046,exp,6,6,6,6,6,6,100.00%,True,AOIS exp++,AOIU -exp,AOIS exp--,AOIS ++exp,AOIS --exp,LOI ~exp,,AOIS --exp,commons-text
 1047,lexp - rexp,3,3,3,8,8,8,100.00%,True,ODL rexp,AORB %,ODL lexp,,AORB +,ODL rexp,AORB %,AORB /,commons-text
 1049,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDistance,unlimitedCompare(java.lang.CharSequence,java.lang.CharSequence),128,commons-text
