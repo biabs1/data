@@ -4352,7 +4352,6 @@ id,target,mutants_in_minimal,test_suites,assertions,mutants,killed_mutants,not_e
 1140,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.collections4.bloomfilter.hasher.function.Murmur32x86Iterative,apply(byte,int),26,commons-collections
 5,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.fileupload2.FileUploadException,printStackTrace(java.io.PrintStream),41,0,commons-fileupload
 8,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.fileupload2.InvalidFileNameException,getName(),23,0,commons-fileupload
-15,!exp,1,1,1,2,2,2,100.00%,True,COD exp,,ODL exp,COD exp,,org.apache.commons.fileupload2.ParameterParser,parseQuotedToken(char),95,commons-fileupload
 18,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.fileupload2.ParameterParser,parse(char,int,int,commons-fileupload
 47,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.fileupload2.ParameterParser,parse(char,int,int,commons-fileupload
 49,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.fileupload2.ParameterParser,parseToken(char),83,0,commons-fileupload
@@ -4379,7 +4378,6 @@ id,target,mutants_in_minimal,test_suites,assertions,mutants,killed_mutants,not_e
 135,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,ROR ==,COI !(),,org.apache.commons.fileupload2.ParameterParser,parse(java.lang.String,char),commons-fileupload
 138,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.fileupload2.ParameterParser,parse(char,int,int,commons-fileupload
 157,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.fileupload2.ParameterParser,parse(char,int,int,commons-fileupload
-172,!exp,1,1,1,2,2,2,100.00%,True,COD exp,,ODL exp,COD exp,,org.apache.commons.fileupload2.ParameterParser,parseQuotedToken(char),98,commons-fileupload
 174,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,COI !(),ROR ==,,org.apache.commons.fileupload2.ParameterParser,parse(char,int,commons-fileupload
 201,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.fileupload2.util.FileItemHeadersImpl,addHeader(java.lang.String,java.lang.String),commons-fileupload
 202,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.fileupload2.util.FileItemHeadersImpl,getHeaders(java.lang.String),44,commons-fileupload
@@ -4494,7 +4492,6 @@ id,target,mutants_in_minimal,test_suites,assertions,mutants,killed_mutants,not_e
 347,lexp == rexp,3,3,3,8,8,8,100.00%,True,ROR false,ROR >=,ROR <=,,ROR false,ROR !=,ROR <,COI !(),commons-cli
 349,lexp == rexp,3,3,3,8,8,8,100.00%,True,ROR false,ROR >=,ROR <=,,COI !(),ROR >,ROR <,ROR !=,commons-cli
 350,lexp == rexp,3,3,3,8,8,8,100.00%,True,ROR false,ROR <=,ROR >=,,COI !(),ROR <=,ROR >=,ROR <,commons-cli
-355,!exp,1,1,1,2,2,2,100.00%,True,COD exp,,ODL exp,COD exp,,org.apache.commons.cli.PatternOptionBuilder,parsePattern(java.lang.String),81,commons-cli
 356,exp,6,6,6,6,6,6,100.00%,True,AOIS exp++,LOI ~exp,AOIS --exp,AOIS ++exp,AOIU -exp,AOIS exp--,,AOIU -exp,commons-cli
 361,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.cli.PatternOptionBuilder,parsePattern(java.lang.String),97,0,commons-cli
 369,lexp == rexp,3,3,3,8,8,8,100.00%,True,ROR false,ROR >=,ROR <=,,ROR <,ROR true,COI !(),ROR <=,commons-cli
@@ -4510,7 +4507,6 @@ id,target,mutants_in_minimal,test_suites,assertions,mutants,killed_mutants,not_e
 395,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.cli.PosixParser,gobble(java.util.Iterator),86,0,commons-cli
 397,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.cli.PosixParser,gobble(java.util.Iterator),91,0,commons-cli
 400,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.cli.PosixParser,init(),27,0,commons-cli
-401,!exp,1,1,1,2,2,2,100.00%,True,COD exp,,ODL exp,COD exp,,org.apache.commons.cli.PosixParser,flatten(org.apache.commons.cli.Options,java.lang.String[],commons-cli
 404,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.cli.PosixParser,flatten(org.apache.commons.cli.Options,java.lang.String[],boolean),commons-cli
 410,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.cli.PosixParser,processNonOptionToken(java.lang.String,boolean),97,commons-cli
 416,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.cli.PosixParser,burstToken(java.lang.String,boolean),123,commons-cli
@@ -4921,7 +4917,6 @@ id,target,mutants_in_minimal,test_suites,assertions,mutants,killed_mutants,not_e
 397,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.StringUtils,isValidPackageName(java.lang.String),248,0,commons-bsf
 400,lexp || rexp,4,4,4,9,9,9,100.00%,True,ODL rexp,ODL lexp,COR true,COR !=,,COR ^,COR true,COR &&,commons-bsf
 406,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.StringUtils,getCommaListFromVector(java.util.Vector),104,0,commons-bsf
-408,!exp,1,1,1,2,2,2,100.00%,True,COD exp,,ODL exp,COD exp,,org.apache.bsf.util.StringUtils,isValidPackageName(java.lang.String),238,commons-bsf
 411,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.StringUtils,isValidIdentifierName(java.lang.String),223,0,commons-bsf
 424,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.StringUtils,getSafeString(java.lang.String),156,0,commons-bsf
 425,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.bsf.util.StringUtils,getValidIdentifierName(java.lang.String),205,0,commons-bsf
@@ -5132,7 +5127,6 @@ id,target,mutants_in_minimal,test_suites,assertions,mutants,killed_mutants,not_e
 1258,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioUtil,byteArray2long(byte,boolean),29,commons-compress
 1260,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioUtil,long2byteArray(long,int,boolean),commons-compress
 1263,exp,5,5,5,5,5,5,100.00%,True,AOIS --exp,AOIS exp++,LOI ~exp,AOIS ++exp,AOIS exp--,,AOIS --exp,LOI ~exp,commons-compress
-1268,!exp,1,1,1,2,2,2,100.00%,True,COD exp,,ODL exp,COD exp,,org.apache.commons.compress.archivers.cpio.CpioUtil,long2byteArray(long,int,commons-compress
 1271,lexp - rexp,3,3,3,8,8,8,100.00%,True,ODL rexp,ODL lexp,AORB %,,AORB /,AORB %,AORB *,VDL rexp,commons-compress
 1272,lexp & rexp,2,2,2,6,6,6,100.00%,True,ODL rexp,ODL lexp,,CDL lexp,LOR ^,ODL rexp,LOR |,VDL rexp,commons-compress
 1273,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.compress.archivers.cpio.CpioUtil,long2byteArray(long,int,boolean),commons-compress
@@ -5318,7 +5312,6 @@ id,target,mutants_in_minimal,test_suites,assertions,mutants,killed_mutants,not_e
 14,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.dbcp2.SQLExceptionList,,20,commons-dbcp
 22,lexp != rexp,1,1,1,2,2,2,100.00%,True,ROR ==,,ROR ==,COI !(),,org.apache.commons.dbcp2.datasources.PoolKey,equals(java.lang.Object),33,commons-dbcp
 24,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.dbcp2.datasources.PoolKey,equals(java.lang.Object),37,commons-dbcp
-29,!exp,1,1,1,2,2,2,100.00%,True,COD exp,,ODL exp,COD exp,,org.apache.commons.dbcp2.datasources.PoolKey,equals(java.lang.Object),51,commons-dbcp
 30,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.dbcp2.datasources.PoolKey,equals(java.lang.Object),45,0,commons-dbcp
 32,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.dbcp2.datasources.PoolKey,equals(java.lang.Object),commons-dbcp
 33,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,ROR !=,COI !(),,org.apache.commons.dbcp2.datasources.PoolKey,equals(java.lang.Object),30,commons-dbcp
@@ -5850,7 +5843,6 @@ id,target,mutants_in_minimal,test_suites,assertions,mutants,killed_mutants,not_e
 550,!exp,1,1,1,2,2,2,100.00%,True,COD exp,,COD exp,ODL exp,,org.apache.commons.net.ftp.FTPFile,toFormattedString(java.lang.String),224,commons-net
 551,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ftp.FTPFile,getName(),137,0,commons-net
 552,lexp == rexp,1,1,1,2,2,2,100.00%,True,ROR !=,,COI !(),ROR !=,,org.apache.commons.net.ftp.FTPFile,hasPermission(int,int),commons-net
-563,!exp,1,1,1,2,2,2,100.00%,True,COD exp,,ODL exp,COD exp,,org.apache.commons.net.ftp.FTPFile,toFormattedString(java.lang.String),240,commons-net
 565,exp,4,4,4,4,4,4,100.00%,True,AOIU -exp,AOIS exp++,LOI ~exp,AOIS exp--,,AOIU -exp,AOIS exp++,LOI ~exp,commons-net
 567,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ftp.FTPFile,toFormattedString(java.lang.String),257,0,commons-net
 570,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.net.ftp.FTPFile,toFormattedString(java.lang.String),265,0,commons-net
@@ -5905,7 +5897,6 @@ id,target,mutants_in_minimal,test_suites,assertions,mutants,killed_mutants,not_e
 1,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.CompositeFormat,reformat(java.lang.String),52,0,commons-text
 4,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.FormattableUtils,append(java.lang.CharSequence,java.util.Formatter,int,commons-text
 7,lexp == rexp,1,1,1,1,1,1,100.00%,True,ROR !=,,ROR !=,,org.apache.commons.text.FormattableUtils,append(java.lang.CharSequence,java.util.Formatter,int,commons-text
-12,!exp,1,1,1,2,2,2,100.00%,True,COD exp,,ODL exp,COD exp,,org.apache.commons.text.FormattableUtils,append(java.lang.CharSequence,java.util.Formatter,commons-text
 15,lexp || rexp,4,4,4,8,8,8,100.00%,True,ODL lexp,COR true,COR !=,ODL rexp,,ODL lexp,COR !=,COR true,commons-text
 16,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.FormattableUtils,toString(java.util.Formattable),25,0,commons-text
 18,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.FormattableUtils,append(java.lang.CharSequence,java.util.Formatter,int,commons-text
