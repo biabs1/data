@@ -5101,7 +5101,6 @@ id,target,mutants_in_minimal,test_suites,assertions,mutants,killed_mutants,not_e
 1155,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,ensureOpen(),102,0,commons-compress
 1202,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,available(),81,0,commons-compress
 1211,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream,matches(byte,commons-compress
-1211,!exp,1,1,1,2,2,2,100.00%,True,COD exp,,ODL exp,COD exp,,org.apache.commons.compress.archivers.cpio.CpioUtil,byteArray2long(byte,boolean),commons-compress
 1213,return_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.compress.archivers.cpio.CpioUtil,fileType(long),13,0,commons-compress
 1214,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.compress.archivers.cpio.CpioUtil,long2byteArray(long,commons-compress
 1215,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.compress.archivers.cpio.CpioUtil,byteArray2long(byte,boolean),29,commons-compress
