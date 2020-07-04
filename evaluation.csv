@@ -4141,7 +4141,6 @@ id,target,mutants_in_minimal,test_suites,assertions,mutants,killed_mutants,not_e
 4,lexp && rexp,4,4,4,9,9,9,100.00%,True,COR false,ODL rexp,ODL lexp,COR ==,,COR false,COR ==,COR !=,commons-collections
 5,lexp - rexp,3,3,3,8,8,8,100.00%,True,ODL rexp,AORB %,ODL lexp,,ODL lexp,CDL lexp,AORB *,AORB +,commons-collections
 7,if_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.collections4.ArrayStack,pop(),commons-collections
-13,lexp >= rexp,2,2,2,6,6,6,100.00%,True,ROR ==,ROR >,,ROR >,ROR ==,ROR <=,ROR !=,ROR <,commons-collections
 14,stm_list,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.collections4.ArrayStack,peek(),commons-collections
 15,return_stm,2,2,2,2,2,2,100.00%,True,SDL,SDL,,SDL,SDL,,org.apache.commons.collections4.ArrayStack,empty(),commons-collections
 16,lexp - rexp,3,3,3,7,7,7,100.00%,True,AORB %,ODL rexp,ODL lexp,,AORB *,ODL lexp,ODL rexp,AORB /,commons-collections
@@ -4503,7 +4502,6 @@ id,target,mutants_in_minimal,test_suites,assertions,mutants,killed_mutants,not_e
 388,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.cli.PosixParser,burstToken(java.lang.String,boolean),125,commons-cli
 389,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.cli.PosixParser,flatten(org.apache.commons.cli.Options,java.lang.String[],boolean),commons-cli
 392,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.cli.PosixParser,flatten(org.apache.commons.cli.Options,java.lang.String[],boolean),commons-cli
-393,lexp < rexp,2,2,2,7,7,7,100.00%,True,ROR !=,ROR <=,,ROR <=,ROR >=,ROR !=,ROR ==,ROR >,commons-cli
 395,exp,1,1,1,1,1,1,100.00%,True,COI !exp,,COI !exp,,org.apache.commons.cli.PosixParser,gobble(java.util.Iterator),86,0,commons-cli
 397,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.cli.PosixParser,gobble(java.util.Iterator),91,0,commons-cli
 400,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.cli.PosixParser,init(),27,0,commons-cli
@@ -6109,7 +6107,6 @@ id,target,mutants_in_minimal,test_suites,assertions,mutants,killed_mutants,not_e
 747,exp,6,6,6,6,6,6,100.00%,True,AOIS exp++,AOIS --exp,AOIU -exp,AOIS ++exp,AOIS exp--,LOI ~exp,,AOIS exp++,commons-text
 748,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,int),commons-text
 752,exp,6,6,6,6,6,6,100.00%,True,AOIS --exp,LOI ~exp,AOIU -exp,AOIS ++exp,AOIS exp++,AOIS exp--,,AOIS exp++,commons-text
-753,lexp <= rexp,2,2,2,6,6,6,100.00%,True,ROR ==,ROR <,,ROR <,ROR >,ROR !=,ROR >=,ROR ==,commons-text
 757,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,int),commons-text
 761,lexp + rexp,3,3,3,8,8,8,100.00%,True,AORB %,ODL rexp,ODL lexp,,ODL lexp,AORB *,ODL rexp,AORB -,commons-text
 763,stm_list,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDetailedDistance,unlimitedCompare(java.lang.CharSequence,java.lang.CharSequence),169,commons-text
@@ -6175,7 +6172,6 @@ id,target,mutants_in_minimal,test_suites,assertions,mutants,killed_mutants,not_e
 938,exp,1,1,1,1,1,1,100.00%,True,LOI ~exp,,LOI ~exp,,org.apache.commons.text.similarity.LevenshteinDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,int),commons-text
 940,exp,6,6,6,6,6,6,100.00%,True,LOI ~exp,AOIU -exp,AOIS ++exp,AOIS exp++,AOIS --exp,AOIS exp--,,AOIS --exp,commons-text
 945,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,int),commons-text
-947,lexp <= rexp,2,2,2,7,7,7,100.00%,True,ROR ==,ROR <,,ROR <,ROR >,COI !(),ROR true,ROR ==,commons-text
 950,exp,4,4,4,4,4,4,100.00%,True,AOIS exp--,AOIS exp++,AOIU -exp,LOI ~exp,,AOIS exp++,AOIS exp--,AOIU -exp,commons-text
 952,lexp + rexp,3,3,3,8,8,8,100.00%,True,ODL rexp,ODL lexp,AORB %,,ODL rexp,CDL lexp,AORB *,AORB /,commons-text
 953,if_stm,1,1,1,1,1,1,100.00%,True,SDL,,SDL,,org.apache.commons.text.similarity.LevenshteinDistance,limitedCompare(java.lang.CharSequence,java.lang.CharSequence,int),commons-text
